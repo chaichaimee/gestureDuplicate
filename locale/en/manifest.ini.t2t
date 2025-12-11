@@ -1,0 +1,2 @@
+summary = "gestureDuplicate"
+description = """Identifies and manages conflicting keyboard shortcuts in your NVDA configuration"""

@@ -1,0 +1,10 @@
+﻿{
+  "addon_name": "gestureDuplicate",
+  "addon_description": "Identifies and manages conflicting keyboard shortcuts in your NVDA configuration",
+  "addon_version": "2025.12",
+  "addon_author": "chaichaimee",
+  "addon_url": "https://github.com/chaichaimee/gestureDuplicate",
+"addon_download_url": "https://github.com/chaichaimee/gestureDuplicate/releases/download/v2025.12/gestureDuplicate-v2025.12.nvda-addon",  
+  "addon_min_nvda_version": "2022.4"
+}
+

@@ -1,0 +1,74 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: gestureDuplicate 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-11 13:09+0700\n"
+"PO-Revision-Date: 2025-12-11 16:24+0700\n"
+"Last-Translator: Automatically generated <>\n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Manual extraction\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: __init__.py:38
+msgid "Duplicate Gestures"
+msgstr "Gestes en double"
+
+#: __init__.py:51
+msgid "Select a duplicate gesture and use the buttons or context menu to manage it."
+msgstr "Sélectionnez un geste en double et utilisez les boutons ou le menu contextuel pour le gérer."
+
+#: __init__.py:57
+msgid "Found {} duplicate gestures"
+msgstr "{} gestes en double trouvés"
+
+#: __init__.py:62
+msgid "Duplicate gestures:"
+msgstr "Gestes en double :"
+
+#: __init__.py:74
+msgid "Gesture"
+msgstr "Geste"
+
+#: __init__.py:75
+msgid "Function"
+msgstr "Fonction"
+
+#: __init__.py:76
+msgid "Category/Context"
+msgstr "Catégorie/Contexte"
+
+#: __init__.py:89
+msgid "&Delete Gesture"
+msgstr "&Supprimer le geste"
+
+#: __init__.py:94
+msgid "&Edit in Input Gestures..."
+msgstr "&Modifier dans les gestes d’entrée…"
+
+#: __init__.py:99
+msgid "&Close"
+msgstr "&Fermer"
+
+#: __init__.py:117
+msgid "No duplicate gestures found"
+msgstr "Aucun geste en double trouvé"
+
+#: __init__.py:297
+msgid "Are you sure you want to delete the gesture '{gesture}' for the function '{function}' in context '{context}'?"
+msgstr "Voulez-vous vraiment supprimer le geste « {gesture} » de la fonction « {function} » dans le contexte « {context} » ?"
+
+#: __init__.py:309
+msgid "Gesture '{gesture}' deleted successfully."
+msgstr "Le geste « {gesture} » a été supprimé avec succès."
+
+#: __init__.py:362
+msgid "&Check Duplicate Gestures"
+msgstr "&Vérifier les gestes en double"
+
+#: __init__.py:481
+msgid "Check for duplicate input gestures"
+msgstr "Vérifier les gestes d’entrée en double"

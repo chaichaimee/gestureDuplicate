@@ -1,0 +1,94 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: gestureDuplicate 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-11 13:09+0700\n"
+"PO-Revision-Date: 2025-12-11 08:42+0700\n"
+"Last-Translator: Automatically generated <>\n"
+"Language-Team: German\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.7\n"
+
+#: __init__.py:38
+msgid "Duplicate Gestures"
+msgstr "Doppelte Tastenbelegungen"
+
+#: __init__.py:51
+msgid "Select a duplicate gesture and use the buttons or context menu to manage it."
+msgstr "W?hlen Sie eine doppelte Tastenbelegung aus und verwalten Sie sie mit den Schaltfl?chen oder dem Kontextmen?."
+
+#: __init__.py:57
+msgid "Found {} duplicate gestures"
+msgstr "{} doppelte Tastenbelegungen gefunden"
+
+#: __init__.py:62
+msgid "Duplicate gestures:"
+msgstr "Doppelte Tastenbelegungen:"
+
+#: __init__.py:74
+msgid "Gesture"
+msgstr "Tastenkombination"
+
+#: __init__.py:75
+msgid "Function"
+msgstr "Funktion"
+
+#: __init__.py:76
+msgid "Category/Context"
+msgstr "Kategorie/Kontext"
+
+#: __init__.py:82
+msgid "Note: Gestures are checked from all contexts (global and application-specific)."
+msgstr "Hinweis: Es werden Gesten aus allen Kontexten gepr?ft (global und anwendungsspezifisch)."
+
+#: __init__.py:89
+msgid "&Delete Gesture"
+msgstr "Tastenbelegung &l?schen"
+
+#: __init__.py:94
+msgid "&Edit in Input Gestures..."
+msgstr "&In Eingabegesten bearbeiten…"
+
+#: __init__.py:99
+msgid "&Close"
+msgstr "&Schlie?en"
+
+#: __init__.py:117
+msgid "No duplicate gestures found"
+msgstr "Keine doppelten Tastenbelegungen gefunden"
+
+#: __init__.py:297
+msgid "Are you sure you want to delete the gesture '{gesture}' for the function '{function}' in context '{context}'?"
+msgstr "Soll die Tastenbelegung \"{gesture}“ f?r die Funktion \"{function}“ im Kontext \"{context}“ wirklich gel?scht werden?"
+
+#: __init__.py:309
+msgid "Gesture '{gesture}' deleted successfully."
+msgstr "Tastenbelegung \"{gesture}“ wurde erfolgreich gel?scht."
+
+#: __init__.py:315
+msgid "Error: Cannot delete the gesture. (May be a non-customizable default gesture)"
+msgstr "Fehler: Die Tastenbelegung kann nicht gel?scht werden (m?glicherweise eine nicht anpassbare Standardbelegung)."
+
+#: __init__.py:335
+msgid "Cannot open Input Gestures dialog. NVDA's Input Gestures dialog module is missing."
+msgstr "Der Dialog \"Eingabegesten“ kann nicht ge?ffnet werden. Das NVDA-Modul fehlt."
+
+#: __init__.py:340
+msgid "Cannot open Input Gestures dialog"
+msgstr "Der Dialog \"Eingabegesten“ kann nicht ge?ffnet werden"
+
+#: __init__.py:362
+msgid "&Check Duplicate Gestures"
+msgstr "Doppelte Tastenbelegungen &pr?fen"
+
+#: __init__.py:481
+msgid "Check for duplicate input gestures"
+msgstr "Nach doppelten Eingabegesten suchen"
+
+#: __init__.py:507
+msgid "Error checking for duplicate gestures"
+msgstr "Fehler beim Pr?fen auf doppelte Gesten"
