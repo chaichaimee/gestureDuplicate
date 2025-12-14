@@ -1,0 +1,103 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: gestureDuplicate 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-11 13:09+0700\n"
+"PO-Revision-Date: 2025-12-14 09:06+0800\n"
+"Last-Translator: 完美很难 <1872265132@qq.com>\n"
+"Language-Team: English\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.7\n"
+
+#: __init__.py:38
+msgid "Duplicate Gestures"
+msgstr "重复的手势"
+
+#: __init__.py:51
+msgid ""
+"Select a duplicate gesture and use the buttons or context menu to manage it."
+msgstr "选择一个重复的手势，使用按钮或上下文菜单对其进行管理。"
+
+#: __init__.py:57
+msgid "Found {} duplicate gestures"
+msgstr "找到 {} 个重复的手势"
+
+#: __init__.py:62
+msgid "Duplicate gestures:"
+msgstr "重复的手势："
+
+#: __init__.py:74
+msgid "Gesture"
+msgstr "手势"
+
+#: __init__.py:75
+msgid "Function"
+msgstr "功能"
+
+#: __init__.py:76
+msgid "Category/Context"
+msgstr "类别/上下文"
+
+#: __init__.py:82
+msgid ""
+"Note: Gestures are checked from all contexts (global and application-"
+"specific)."
+msgstr "注意：从所有上下文（全局和特定应用）检查手势。"
+
+#: __init__.py:89
+msgid "&Delete Gesture"
+msgstr "删除手势(&D)"
+
+#: __init__.py:94
+msgid "&Edit in Input Gestures..."
+msgstr "在按键与手势中编辑(&E)..."
+
+#: __init__.py:99
+msgid "&Close"
+msgstr "关闭(&C)"
+
+#: __init__.py:117
+msgid "No duplicate gestures found"
+msgstr "未找到重复的手势"
+
+#: __init__.py:297
+msgid ""
+"Are you sure you want to delete the gesture '{gesture}' for the function "
+"'{function}' in context '{context}'?"
+msgstr ""
+"您确定要删除在上下文“{context}”中为功能“{function}”设置的手势“{gesture}”吗？"
+
+#: __init__.py:309
+msgid "Gesture '{gesture}' deleted successfully."
+msgstr "手势 \"{gesture}\" 删除成功。"
+
+#: __init__.py:315
+msgid ""
+"Error: Cannot delete the gesture. (May be a non-customizable default gesture)"
+msgstr "错误：无法删除手势。（可能是不可自定义的默认手势）"
+
+#: __init__.py:335
+msgid ""
+"Cannot open Input Gestures dialog. NVDA's Input Gestures dialog module is "
+"missing."
+msgstr "无法打开“按键与手势”对话框。NVDA 的按键与手势对话框模块缺失。"
+
+#: __init__.py:340
+msgid "Cannot open Input Gestures dialog"
+msgstr "无法打开“按键与手势”对话框"
+
+#: __init__.py:362
+msgid "&Check Duplicate Gestures"
+msgstr "检查重复手势(&C)"
+
+#: __init__.py:481
+msgid "Check for duplicate input gestures"
+msgstr "检查重复的按键或手势"
+
+#: __init__.py:507
+msgid "Error checking for duplicate gestures"
+msgstr "检查重复手势时出错"
