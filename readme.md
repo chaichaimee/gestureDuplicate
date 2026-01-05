@@ -1,40 +1,63 @@
 <div align="center">
 
+![NVDA Logo](https://github.com/nvaccess/nvda/raw/master/source/NVDA.png)
+
 # gestureDuplicate
 
-**Identifies and manages conflicting keyboard shortcuts in your NVDA configuration**
+Identifies and manages conflicting keyboard shortcuts in your NVDA configuration
 
 </div>
 
-## Author
-**chai chaimee**
+**Author:** Chai Chaimee  
+**Repository:** https://github.com/chaichaimee/gestureDuplicate
 
-## Repository & Download
-https://github.com/chaichaimee/gestureDuplicate
+---
 
 ## Description
-**Duplicate Gestures Checker** is an NVDA add-on that helps you identify and manage conflicting keyboard shortcuts (gestures) in your NVDA configuration. When multiple functions are assigned to the same gesture, this add-on detects them and allows you to resolve the conflicts easily.
 
-## Default Hotkey
-**Windows+Shift+G** : Open the gestureDuplicate window
+**gestureDuplicate** is an NVDA add-on that helps you identify and manage **conflicting/duplicate input gestures** (keyboard shortcuts) as well as clean up leftover custom gestures from uninstalled add-ons in your NVDA configuration.
 
-## Alternative Access
-You can also open the add-on via:  
-**NVDA menu  Tools  gestureDuplicate  Check Duplicate Gestures**
+It includes two powerful tools:
+
+- **Check Duplicate Gestures**  
+  Scans and lists all duplicate gestures across every context (global, app modules, etc.)
+
+- **My Gestures Management**  
+  View and safely remove custom gestures that belong to add-ons which have already been uninstalled
+
+> **Important**  
+> After uninstalling add-ons, many custom gesture assignments often remain in `gestures.ini`, causing confusion or conflicts.  
+> This add-on helps you clean them up easily and safely.
+
+## Hot Keys
+
+| Shortcut                                   | Action                                          |
+|--------------------------------------------|-------------------------------------------------|
+| <kbd>Windows</kbd> + <kbd>Shift</kbd> + <kbd>G</kbd> (single tap)   | Open **Check Duplicate Gestures** dialog       |
+| <kbd>Windows</kbd> + <kbd>Shift</kbd> + <kbd>G</kbd> (double tap)   | Open **My Gestures Management** dialog         |
+
+Or access via menu:  
+**NVDA → Tools → gestureDuplicate →**  
+  • Check Duplicate Gestures  
+  • My Gestures Management
 
 ## Features
 
-- Detects duplicate gestures across **all contexts** (global and application-specific)
+- Detects **duplicate gestures** throughout all of NVDA (core + add-ons)
+- Clean, readable list showing: gesture • script name • context/category
+- One-click jump to NVDA's built-in **Input Gestures** dialog with pre-filtered script name
+- Manages **leftover gestures** from previously installed (now uninstalled) add-ons
+- Only shows gestures that belong to add-ons (ignores built-in NVDA gestures)
+- Gestures from uninstalled add-ons are displayed in **gray text**
+- Remove individual gestures or delete all gestures of a specific add-on at once
+- **Clear All** function — removes custom gestures from all add-ons in one operation
+- Supports **double-tap** on the hotkey for quick switching between both tools
+- Fully keyboard accessible dialogs (Enter, Delete, Escape supported)
 
-- Clean, organized display showing only essential information:  
-  **gesture**, **function**, and **category**
+> **Recommendation**  
+> After uninstalling any add-on, always use **My Gestures Management** to clean up remaining assignments and prevent potential conflicts.
 
-- Direct management options � **edit** or **delete** conflicting gestures directly from the dialog
+---
 
-- Quick integration with NVDA's standard **Input Gestures** dialog for further editing if needed
-
-<div align="center">
-
-**Keep your NVDA keyboard shortcuts clean and conflict-free!**
-
-</div>
+Feedback, suggestions, bug reports, and pull requests are all very welcome!  
+Happy to hear from you on the [Issues page](https://github.com/chaichaimee/gestureDuplicate/issues).
