@@ -1,74 +1,146 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: gestureDuplicate 1.0\n"
+"Project-Id-Version: Duplicate Gestures &\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-11 13:09+0700\n"
-"PO-Revision-Date: 2025-12-11 16:24+0700\n"
-"Last-Translator: Automatically generated <>\n"
-"Language-Team: French\n"
+"POT-Creation-Date: 2026-01-05 12:00+0700\n"
+"PO-Revision-Date: 2026-01-05 17:08+0700\n"
+"Last-Translator: \n"
+"Language-Team: French <fr@li.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Manual extraction\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.7\n"
 
-#: __init__.py:38
-msgid "Duplicate Gestures"
-msgstr "Gestes en double"
-
-#: __init__.py:51
-msgid "Select a duplicate gesture and use the buttons or context menu to manage it."
-msgstr "Sélectionnez un geste en double et utilisez les boutons ou le menu contextuel pour le gérer."
-
-#: __init__.py:57
-msgid "Found {} duplicate gestures"
-msgstr "{} gestes en double trouvés"
-
-#: __init__.py:62
-msgid "Duplicate gestures:"
-msgstr "Gestes en double :"
-
-#: __init__.py:74
-msgid "Gesture"
-msgstr "Geste"
-
-#: __init__.py:75
-msgid "Function"
-msgstr "Fonction"
-
-#: __init__.py:76
-msgid "Category/Context"
-msgstr "Catégorie/Contexte"
-
-#: __init__.py:89
-msgid "&Delete Gesture"
-msgstr "&Supprimer le geste"
-
-#: __init__.py:94
-msgid "&Edit in Input Gestures..."
-msgstr "&Modifier dans les gestes d’entrée…"
-
-#: __init__.py:99
-msgid "&Close"
-msgstr "&Fermer"
-
-#: __init__.py:117
-msgid "No duplicate gestures found"
-msgstr "Aucun geste en double trouvé"
-
-#: __init__.py:297
-msgid "Are you sure you want to delete the gesture '{gesture}' for the function '{function}' in context '{context}'?"
-msgstr "Voulez-vous vraiment supprimer le geste « {gesture} » de la fonction « {function} » dans le contexte « {context} » ?"
-
-#: __init__.py:309
-msgid "Gesture '{gesture}' deleted successfully."
-msgstr "Le geste « {gesture} » a été supprimé avec succès."
-
-#: __init__.py:362
+#: __init__.py:28
 msgid "&Check Duplicate Gestures"
 msgstr "&Vérifier les gestes en double"
 
-#: __init__.py:481
-msgid "Check for duplicate input gestures"
-msgstr "Vérifier les gestes d’entrée en double"
+#: __init__.py:31
+msgid "&My Gestures Management"
+msgstr "&Gestion de mes gestes"
+
+#: __init__.py:44
+msgid "Check for duplicate input gestures (single tap), My Gestures Management (double tap)"
+msgstr "Vérifier les gestes d'entrée en double (simple appui), Gestion de mes gestes (double appui)"
+
+#: __init__.py:58
+msgid "My Gestures Management (single tap), Check Duplicate Gestures (double tap)"
+msgstr "Gestion de mes gestes (simple appui), Vérifier les gestes en double (double appui)"
+
+#: CheckDuplicateGestures.py:41
+msgid "Duplicate Gestures"
+msgstr "Gestes en double"
+
+#: CheckDuplicateGestures.py:47
+msgid "Found {} duplicate entries. Select an item and click 'Open' to fix."
+msgstr "{} entrées en double trouvées. Sélectionnez un élément et cliquez sur « Ouvrir » pour corriger."
+
+#: CheckDuplicateGestures.py:58 mygesturesManagement.py:70
+msgid "Gesture"
+msgstr "Geste"
+
+#: CheckDuplicateGestures.py:59 mygesturesManagement.py:71
+msgid "Function"
+msgstr "Fonction"
+
+#: CheckDuplicateGestures.py:60 mygesturesManagement.py:72
+msgid "Context"
+msgstr "Contexte"
+
+#: CheckDuplicateGestures.py:67
+msgid "&Open Input Gestures"
+msgstr "&Ouvrir les gestes d'entrée"
+
+#: CheckDuplicateGestures.py:69 mygesturesManagement.py:83
+msgid "&Close"
+msgstr "&Fermer"
+
+#: CheckDuplicateGestures.py:119
+msgid "Unknown"
+msgstr "Inconnu"
+
+#: CheckDuplicateGestures.py:123
+msgid "Application: "
+msgstr "Application : "
+
+#: CheckDuplicateGestures.py:170
+msgid "Input gestures dialog opened. Navigate with arrow keys to see Add and Remove buttons."
+msgstr "Dialogue des gestes d'entrée ouvert. Naviguez avec les flèches pour voir les boutons Ajouter et Supprimer."
+
+#: CheckDuplicateGestures.py:176
+msgid "Failed to open Input Gestures dialog"
+msgstr "Échec de l'ouverture du dialogue des gestes d'entrée"
+
+#: mygesturesManagement.py:38
+msgid "My Gestures Management"
+msgstr "Gestion de mes gestes"
+
+#: mygesturesManagement.py:50
+msgid "Clean up gestures for uninstalled addons from gestures.ini:"
+msgstr "Nettoyer les gestes des extensions désinstallées dans gestures.ini :"
+
+#: mygesturesManagement.py:56
+msgid "Addon name:"
+msgstr "Nom de l'extension :"
+
+#: mygesturesManagement.py:79
+msgid "&Remove addon"
+msgstr "&Supprimer l'extension"
+
+#: mygesturesManagement.py:81
+msgid "C&lear All"
+msgstr "&Tout effacer"
+
+#: mygesturesManagement.py:202
+msgid "&Remove Selected"
+msgstr "&Supprimer la sélection"
+
+#: mygesturesManagement.py:247
+msgid ""
+"Remove this custom gesture for addon '{}'?\n"
+"\n"
+"Gesture: {}\n"
+"Function: {}"
+msgstr ""
+"Supprimer ce geste personnalisé pour l'extension '{}' ?\n"
+"\n"
+"Geste : {}\n"
+"Fonction : {}"
+
+#: mygesturesManagement.py:249 mygesturesManagement.py:312
+msgid "Confirm"
+msgstr "Confirmer"
+
+#: mygesturesManagement.py:261 mygesturesManagement.py:330
+msgid "Success"
+msgstr "Succès"
+
+#: mygesturesManagement.py:265
+msgid "Failed to remove gesture from configuration."
+msgstr "Échec de la suppression du geste de la configuration."
+
+#: mygesturesManagement.py:268
+msgid "Failed to remove gesture."
+msgstr "Échec de la suppression du geste."
+
+#: mygesturesManagement.py:293
+msgid "Remove all {} custom gestures for addon '{}'?"
+msgstr "Supprimer les {} gestes personnalisés de l'extension '{}' ?"
+
+#: mygesturesManagement.py:309
+msgid "Remove all {} custom gestures from {} addons?"
+msgstr "Supprimer les {} gestes personnalisés de {} extensions ?"
+
+#: mygesturesManagement.py:324
+msgid "No addon gestures to clear."
+msgstr "Aucun geste d'extension à effacer."
+
+#: mygesturesManagement.py:334
+msgid "Failed to clear gestures from configuration."
+msgstr "Échec du nettoyage des gestes dans la configuration."
+
+#: mygesturesManagement.py:337
+msgid "Error during mass deletion."
+msgstr "Erreur lors de la suppression massive."

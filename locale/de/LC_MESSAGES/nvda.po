@@ -1,11 +1,11 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: gestureDuplicate 1.0\n"
+"Project-Id-Version: Duplicate Gestures\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-11 13:09+0700\n"
-"PO-Revision-Date: 2025-12-11 08:42+0700\n"
-"Last-Translator: Automatically generated <>\n"
-"Language-Team: German\n"
+"POT-Creation-Date: 2026-01-05 12:00+0700\n"
+"PO-Revision-Date: 2026-01-05 17:01+0700\n"
+"Last-Translator: \n"
+"Language-Team: German <de@li.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -13,82 +13,134 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.7\n"
 
-#: __init__.py:38
+#: __init__.py:28
+msgid "&Check Duplicate Gestures"
+msgstr "&Doppelte Tastenbefehle prüfen"
+
+#: __init__.py:31
+msgid "&My Gestures Management"
+msgstr "&Meine Tastenbefehle verwalten"
+
+#: __init__.py:44
+msgid "Check for duplicate input gestures (single tap), My Gestures Management (double tap)"
+msgstr "Doppelte Tastenbefehle prüfen (Einzeltipp), Meine Tastenbefehle verwalten (Doppeltipp)"
+
+#: __init__.py:58
+msgid "My Gestures Management (single tap), Check Duplicate Gestures (double tap)"
+msgstr "Meine Tastenbefehle verwalten (Einzeltipp), Doppelte Tastenbefehle prüfen (Doppeltipp)"
+
+#: CheckDuplicateGestures.py:41
 msgid "Duplicate Gestures"
-msgstr "Doppelte Tastenbelegungen"
+msgstr "Doppelte Tastenbefehle"
 
-#: __init__.py:51
-msgid "Select a duplicate gesture and use the buttons or context menu to manage it."
-msgstr "W?hlen Sie eine doppelte Tastenbelegung aus und verwalten Sie sie mit den Schaltfl?chen oder dem Kontextmen?."
+#: CheckDuplicateGestures.py:47
+msgid "Found {} duplicate entries. Select an item and click 'Open' to fix."
+msgstr "{} doppelte Einträge gefunden. Wählen Sie einen Eintrag aus und klicken Sie auf „Öffnen“, um zu korrigieren."
 
-#: __init__.py:57
-msgid "Found {} duplicate gestures"
-msgstr "{} doppelte Tastenbelegungen gefunden"
-
-#: __init__.py:62
-msgid "Duplicate gestures:"
-msgstr "Doppelte Tastenbelegungen:"
-
-#: __init__.py:74
+#: CheckDuplicateGestures.py:58 mygesturesManagement.py:70
 msgid "Gesture"
-msgstr "Tastenkombination"
+msgstr "Tastenbefehl"
 
-#: __init__.py:75
+#: CheckDuplicateGestures.py:59 mygesturesManagement.py:71
 msgid "Function"
 msgstr "Funktion"
 
-#: __init__.py:76
-msgid "Category/Context"
-msgstr "Kategorie/Kontext"
+#: CheckDuplicateGestures.py:60 mygesturesManagement.py:72
+msgid "Context"
+msgstr "Kontext"
 
-#: __init__.py:82
-msgid "Note: Gestures are checked from all contexts (global and application-specific)."
-msgstr "Hinweis: Es werden Gesten aus allen Kontexten gepr?ft (global und anwendungsspezifisch)."
+#: CheckDuplicateGestures.py:67
+msgid "&Open Input Gestures"
+msgstr "&Tastenbefehle öffnen"
 
-#: __init__.py:89
-msgid "&Delete Gesture"
-msgstr "Tastenbelegung &l?schen"
-
-#: __init__.py:94
-msgid "&Edit in Input Gestures..."
-msgstr "&In Eingabegesten bearbeiten…"
-
-#: __init__.py:99
+#: CheckDuplicateGestures.py:69 mygesturesManagement.py:83
 msgid "&Close"
-msgstr "&Schlie?en"
+msgstr "&Schließen"
 
-#: __init__.py:117
-msgid "No duplicate gestures found"
-msgstr "Keine doppelten Tastenbelegungen gefunden"
+#: CheckDuplicateGestures.py:119
+msgid "Unknown"
+msgstr "Unbekannt"
 
-#: __init__.py:297
-msgid "Are you sure you want to delete the gesture '{gesture}' for the function '{function}' in context '{context}'?"
-msgstr "Soll die Tastenbelegung \"{gesture}“ f?r die Funktion \"{function}“ im Kontext \"{context}“ wirklich gel?scht werden?"
+#: CheckDuplicateGestures.py:123
+msgid "Application: "
+msgstr "Anwendung: "
 
-#: __init__.py:309
-msgid "Gesture '{gesture}' deleted successfully."
-msgstr "Tastenbelegung \"{gesture}“ wurde erfolgreich gel?scht."
+#: CheckDuplicateGestures.py:170
+msgid "Input gestures dialog opened. Navigate with arrow keys to see Add and Remove buttons."
+msgstr "Dialog für Tastenbefehle wurde geöffnet. Navigieren Sie mit den Pfeiltasten, um die Schaltflächen Hinzufügen und Entfernen zu sehen."
 
-#: __init__.py:315
-msgid "Error: Cannot delete the gesture. (May be a non-customizable default gesture)"
-msgstr "Fehler: Die Tastenbelegung kann nicht gel?scht werden (m?glicherweise eine nicht anpassbare Standardbelegung)."
+#: CheckDuplicateGestures.py:176
+msgid "Failed to open Input Gestures dialog"
+msgstr "Tastenbefehle-Dialog konnte nicht geöffnet werden"
 
-#: __init__.py:335
-msgid "Cannot open Input Gestures dialog. NVDA's Input Gestures dialog module is missing."
-msgstr "Der Dialog \"Eingabegesten“ kann nicht ge?ffnet werden. Das NVDA-Modul fehlt."
+#: mygesturesManagement.py:38
+msgid "My Gestures Management"
+msgstr "Meine Tastenbefehle verwalten"
 
-#: __init__.py:340
-msgid "Cannot open Input Gestures dialog"
-msgstr "Der Dialog \"Eingabegesten“ kann nicht ge?ffnet werden"
+#: mygesturesManagement.py:50
+msgid "Clean up gestures for uninstalled addons from gestures.ini:"
+msgstr "Tastenbefehle von deinstallierten Erweiterungen aus gestures.ini bereinigen:"
 
-#: __init__.py:362
-msgid "&Check Duplicate Gestures"
-msgstr "Doppelte Tastenbelegungen &pr?fen"
+#: mygesturesManagement.py:56
+msgid "Addon name:"
+msgstr "Name der Erweiterung:"
 
-#: __init__.py:481
-msgid "Check for duplicate input gestures"
-msgstr "Nach doppelten Eingabegesten suchen"
+#: mygesturesManagement.py:79
+msgid "&Remove addon"
+msgstr "&Erweiterung entfernen"
 
-#: __init__.py:507
-msgid "Error checking for duplicate gestures"
-msgstr "Fehler beim Pr?fen auf doppelte Gesten"
+#: mygesturesManagement.py:81
+msgid "C&lear All"
+msgstr "A&lles löschen"
+
+#: mygesturesManagement.py:202
+msgid "&Remove Selected"
+msgstr "&Ausgewähltes entfernen"
+
+#: mygesturesManagement.py:247
+msgid ""
+"Remove this custom gesture for addon '{}'?\n"
+"\n"
+"Gesture: {}\n"
+"Function: {}"
+msgstr ""
+"Diesen benutzerdefinierten Tastenbefehl für die Erweiterung '{}' entfernen?\n"
+"\n"
+"Tastenbefehl: {}\n"
+"Funktion: {}"
+
+#: mygesturesManagement.py:249 mygesturesManagement.py:312
+msgid "Confirm"
+msgstr "Bestätigen"
+
+#: mygesturesManagement.py:261 mygesturesManagement.py:330
+msgid "Success"
+msgstr "Erfolgreich"
+
+#: mygesturesManagement.py:265
+msgid "Failed to remove gesture from configuration."
+msgstr "Tastenbefehl konnte nicht aus der Konfiguration entfernt werden."
+
+#: mygesturesManagement.py:268
+msgid "Failed to remove gesture."
+msgstr "Tastenbefehl konnte nicht entfernt werden."
+
+#: mygesturesManagement.py:293
+msgid "Remove all {} custom gestures for addon '{}'?"
+msgstr "Alle {} benutzerdefinierten Tastenbefehle für die Erweiterung '{}' entfernen?"
+
+#: mygesturesManagement.py:309
+msgid "Remove all {} custom gestures from {} addons?"
+msgstr "Alle {} benutzerdefinierten Tastenbefehle aus {} Erweiterungen entfernen?"
+
+#: mygesturesManagement.py:324
+msgid "No addon gestures to clear."
+msgstr "Keine Tastenbefehle von Erweiterungen zum Löschen vorhanden."
+
+#: mygesturesManagement.py:334
+msgid "Failed to clear gestures from configuration."
+msgstr "Tastenbefehle konnten nicht aus der Konfiguration gelöscht werden."
+
+#: mygesturesManagement.py:337
+msgid "Error during mass deletion."
+msgstr "Fehler beim Massenlöschen."
