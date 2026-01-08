@@ -1,0 +1,198 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: gestureDuplicate 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-05 12:00+0700\n"
+"PO-Revision-Date: 2026-01-08 16:21+0800\n"
+"Last-Translator: 完美很难 <1872265132@qq.com>\n"
+"Language-Team: English\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.8\n"
+
+#: __init__.py:28
+msgid "&Check Duplicate Gestures"
+msgstr "检查重复手势(&C)"
+
+#: __init__.py:31
+msgid "&My Gestures Management"
+msgstr "管理我的手势(&M)"
+
+#: __init__.py:44
+msgid ""
+"Check for duplicate input gestures (single tap), My Gestures Management "
+"(double tap)"
+msgstr "单击检查重复手势，双击管理我的手势"
+
+#: __init__.py:58
+msgid ""
+"My Gestures Management (single tap), Check Duplicate Gestures (double tap)"
+msgstr "单击管理我的手势，双击检查重复手势"
+
+#: CheckDuplicateGestures.py:41
+msgid "Duplicate Gestures"
+msgstr "重复的手势"
+
+#: CheckDuplicateGestures.py:47
+msgid "Found {} duplicate entries. Select an item and click 'Open' to fix."
+msgstr "发现 {} 个重复条目。选择一个项目，然后单击“打开”进行修复。"
+
+#: CheckDuplicateGestures.py:58 mygesturesManagement.py:70
+msgid "Gesture"
+msgstr "手势"
+
+#: CheckDuplicateGestures.py:59 mygesturesManagement.py:71
+msgid "Function"
+msgstr "功能"
+
+#: CheckDuplicateGestures.py:60 mygesturesManagement.py:72
+msgid "Context"
+msgstr "上下文"
+
+#: CheckDuplicateGestures.py:67
+msgid "&Open Input Gestures"
+msgstr "打开按键与手势(&O)"
+
+#: CheckDuplicateGestures.py:69 mygesturesManagement.py:83
+msgid "&Close"
+msgstr "关闭(&C)"
+
+#: CheckDuplicateGestures.py:119
+msgid "Unknown"
+msgstr "未知"
+
+#: CheckDuplicateGestures.py:123
+msgid "Application: "
+msgstr "应用："
+
+#: CheckDuplicateGestures.py:170
+msgid ""
+"Input gestures dialog opened. Navigate with arrow keys to see Add and Remove "
+"buttons."
+msgstr "按键与手势对话框已打开。使用光标键导航后可查看添加和移除按钮。"
+
+#: CheckDuplicateGestures.py:176
+msgid "Failed to open Input Gestures dialog"
+msgstr "无法打开“按键与手势”对话框"
+
+#: mygesturesManagement.py:38
+msgid "My Gestures Management"
+msgstr "管理我的手势"
+
+#: mygesturesManagement.py:50
+msgid "Clean up gestures for uninstalled addons from gestures.ini:"
+msgstr "从 gestures.ini 中清理已卸载插件的手势："
+
+#: mygesturesManagement.py:56
+msgid "Addon name:"
+msgstr "插件名称："
+
+#: mygesturesManagement.py:79
+msgid "&Remove addon"
+msgstr "删除插件(&R)"
+
+#: mygesturesManagement.py:81
+msgid "C&lear All"
+msgstr "全部清除(&L)"
+
+#: mygesturesManagement.py:202
+msgid "&Remove Selected"
+msgstr "删除所选(&R)"
+
+#: mygesturesManagement.py:247
+msgid ""
+"Remove this custom gesture for addon '{}'?\n"
+"\n"
+"Gesture: {}\n"
+"Function: {}"
+msgstr ""
+"是否删除 {} 插件的自定义手势？\n"
+"手势： {}\n"
+"功能：{}"
+
+#: mygesturesManagement.py:249 mygesturesManagement.py:312
+msgid "Confirm"
+msgstr "确认"
+
+#: mygesturesManagement.py:261 mygesturesManagement.py:330
+msgid "Success"
+msgstr "成功"
+
+#: mygesturesManagement.py:265
+msgid "Failed to remove gesture from configuration."
+msgstr "未能从配置中删除手势。"
+
+#: mygesturesManagement.py:268
+msgid "Failed to remove gesture."
+msgstr "删除手势失败。"
+
+#: mygesturesManagement.py:293
+msgid "Remove all {} custom gestures for addon '{}'?"
+msgstr "是否删除 {} 插件的所有 {} 个自定义手势？"
+
+#: mygesturesManagement.py:309
+msgid "Remove all {} custom gestures from {} addons?"
+msgstr "是否从 {} 个插件中删除所有 {} 个自定义手势？"
+
+#: mygesturesManagement.py:324
+msgid "No addon gestures to clear."
+msgstr "没有要清除的插件手势。"
+
+#: mygesturesManagement.py:334
+msgid "Failed to clear gestures from configuration."
+msgstr "无法从配置中清除手势。"
+
+#: mygesturesManagement.py:337
+msgid "Error during mass deletion."
+msgstr "批量删除时出错。"
+
+#~ msgid ""
+#~ "Select a duplicate gesture and use the buttons or context menu to manage "
+#~ "it."
+#~ msgstr "选择一个重复的手势，使用按钮或上下文菜单对其进行管理。"
+
+#~ msgid "Found {} duplicate gestures"
+#~ msgstr "找到 {} 个重复的手势"
+
+#~ msgid "Duplicate gestures:"
+#~ msgstr "重复的手势："
+
+#~ msgid ""
+#~ "Note: Gestures are checked from all contexts (global and application-"
+#~ "specific)."
+#~ msgstr "注意：从所有上下文（全局和特定应用）检查手势。"
+
+#~ msgid "&Delete Gesture"
+#~ msgstr "删除手势(&D)"
+
+#~ msgid "No duplicate gestures found"
+#~ msgstr "未找到重复的手势"
+
+#~ msgid ""
+#~ "Are you sure you want to delete the gesture '{gesture}' for the function "
+#~ "'{function}' in context '{context}'?"
+#~ msgstr ""
+#~ "您确定要删除在上下文“{context}”中为功能“{function}”设置的手"
+#~ "势“{gesture}”吗？"
+
+#~ msgid "Gesture '{gesture}' deleted successfully."
+#~ msgstr "手势 \"{gesture}\" 删除成功。"
+
+#~ msgid ""
+#~ "Error: Cannot delete the gesture. (May be a non-customizable default "
+#~ "gesture)"
+#~ msgstr "错误：无法删除手势。（可能是不可自定义的默认手势）"
+
+#~ msgid ""
+#~ "Cannot open Input Gestures dialog. NVDA's Input Gestures dialog module is "
+#~ "missing."
+#~ msgstr "无法打开“按键与手势”对话框。NVDA 的按键与手势对话框模块缺失。"
+
+#~ msgid "Check for duplicate input gestures"
+#~ msgstr "检查重复的按键或手势"
+
+#~ msgid "Error checking for duplicate gestures"
+#~ msgstr "检查重复手势时出错"
