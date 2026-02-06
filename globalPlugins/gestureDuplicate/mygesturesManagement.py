@@ -8,8 +8,6 @@ import ui
 from logHandler import log
 import inputCore
 import addonHandler
-import globalPluginHandler
-import appModuleHandler
 from typing import List, Dict
 try:
     addonHandler.initTranslation()
@@ -59,6 +57,10 @@ class MyGesturesManagementDialog(wx.Dialog):
             parts = section.split(".")
             if len(parts) >= 2:
                 return parts[1]  # addon name
+        elif section.startswith("appModules."):
+            parts = section.split(".")
+            if len(parts) >= 2:
+                return _("Application: ") + parts[1]
         return section
 
     def _setup_ui(self):
@@ -73,7 +75,7 @@ class MyGesturesManagementDialog(wx.Dialog):
         addon_sizer.Add(addon_label, 0, wx.RIGHT | wx.ALIGN_CENTER_VERTICAL, 5)
 
         self.addon_combo = wx.ComboBox(self, style=wx.CB_READONLY)
-        self.addon_combo.Bind(wx.EVT_COMBOBOX, self.onAddonChanged)
+        self.addon_combo.Bind(wx.EVT_COMBOBOX, lambda evt: self.onAddonChanged())
         addon_sizer.Add(self.addon_combo, 1, wx.EXPAND)
 
         main_sizer.Add(addon_sizer, 0, wx.LEFT | wx.RIGHT | wx.BOTTOM | wx.EXPAND, 10)
@@ -89,10 +91,10 @@ class MyGesturesManagementDialog(wx.Dialog):
 
         self.deleteBtn = wx.Button(self, label=_("&Remove addon"))
         self.deleteBtn.Disable()
-        self.deleteBtn.Bind(wx.EVT_BUTTON, self.onDelete)
+        self.deleteBtn.Bind(wx.EVT_BUTTON, lambda evt: self.onDelete())
 
         self.clearBtn = wx.Button(self, label=_("C&lear All"))
-        self.clearBtn.Bind(wx.EVT_BUTTON, self.onClearAll)
+        self.clearBtn.Bind(wx.EVT_BUTTON, lambda evt: self.onClearAll())
 
         closeBtn = wx.Button(self, wx.ID_CLOSE, label=_("&Close"))
 
@@ -104,8 +106,8 @@ class MyGesturesManagementDialog(wx.Dialog):
 
         self.SetSizer(main_sizer)
 
-        self.gesturesList.Bind(wx.EVT_LIST_ITEM_SELECTED, self.onItemSelected)
-        self.gesturesList.Bind(wx.EVT_CHAR_HOOK, self.onKeyDown)
+        self.gesturesList.Bind(wx.EVT_LIST_ITEM_SELECTED, lambda evt: self.onItemSelected())
+        self.gesturesList.Bind(wx.EVT_CHAR_HOOK, lambda evt: self.onKeyDown(evt))
 
     def _get_gestures_ini_path(self):
         """Get the path to gestures.ini file."""
@@ -143,9 +145,11 @@ class MyGesturesManagementDialog(wx.Dialog):
                         if script_name == "None":
                             continue
 
-                        # Only process addon gestures
+                        # Process both globalPlugins and appModules as addons
                         is_addon = False
                         addon_name = ""
+                        
+                        # Check for globalPlugins
                         if section.startswith("globalPlugins."):
                             parts = section.split('.')
                             if len(parts) > 1:
@@ -153,12 +157,17 @@ class MyGesturesManagementDialog(wx.Dialog):
                                 if addon_module_name.lower() not in ['main', 'run']:
                                     is_addon = True
                                     addon_name = addon_module_name
-
-                                    if addon_name not in self.addon_sections:
-                                        self.addon_sections[addon_name] = []
-                                    if section not in self.addon_sections[addon_name]:
-                                        self.addon_sections[addon_name].append(section)
-
+                        
+                        # Check for appModules (treat as addons)
+                        elif section.startswith("appModules."):
+                            parts = section.split('.')
+                            if len(parts) > 1:
+                                # Extract addon name from appModules section
+                                # Format: appModules.addonName.moduleName
+                                addon_module_name = parts[1]
+                                is_addon = True
+                                addon_name = addon_module_name
+                        
                         # Only add addon gestures to the list
                         if is_addon:
                             display_name = self._get_script_display_name(script_name, section)
@@ -170,8 +179,14 @@ class MyGesturesManagementDialog(wx.Dialog):
                                 'display_name': display_name,
                                 'is_addon': True,
                                 'addon_name': addon_name,
-                                'is_still_installed': self._is_addon_still_installed(addon_name)
+                                'is_still_installed': self._is_addon_still_installed(addon_name, section)
                             })
+                            
+                            # Update addon_sections for both globalPlugins and appModules
+                            if addon_name not in self.addon_sections:
+                                self.addon_sections[addon_name] = []
+                            if section not in self.addon_sections[addon_name]:
+                                self.addon_sections[addon_name].append(section)
 
             self._apply_filter()
             self._populate_addon_combo()
@@ -179,14 +194,22 @@ class MyGesturesManagementDialog(wx.Dialog):
         except Exception as e:
             log.error(f"Error loading gestures: {e}")
 
-    def _is_addon_still_installed(self, addon_name: str) -> bool:
+    def _is_addon_still_installed(self, addon_name: str, section: str) -> bool:
         """Check if an addon is still installed in NVDA."""
         try:
+            # First check globalPlugins in addonHandler
             for addon in addonHandler.getAvailableAddons():
                 if (addon.name == addon_name or 
                     addon.manifest.get('name') == addon_name or
                     addon.manifest.get('summary') == addon_name):
                     return True
+            
+            # For appModules, we can't easily check if they're still installed
+            # since they might be part of a globalPlugin addon or standalone
+            # We'll return True for appModules to let user decide
+            if section.startswith("appModules."):
+                return True
+                
             return False
         except Exception as e:
             log.debug(f"Error checking if addon is installed: {e}")
@@ -246,21 +269,20 @@ class MyGesturesManagementDialog(wx.Dialog):
 
     def _update_delete_button(self):
         """Update delete button label and state based on current selection."""
-        selected_gesture_index = self.gesturesList.GetFirstSelected()
-
-        if selected_gesture_index != -1:
-            # If a specific gesture is selected, change label to "Remove Selected"
-            self.deleteBtn.SetLabel(_("&Remove Selected"))
-            self.deleteBtn.Enable()
-        elif self.selected_addon:
-            # If an addon is selected in combo but no gesture is selected in list, change to "Remove addon"
+        if self.selected_addon:
+            # Always show "Remove addon" when an addon is selected from combo
             self.deleteBtn.SetLabel(_("&Remove addon"))
             self.deleteBtn.Enable()
         else:
-            self.deleteBtn.SetLabel(_("&Remove addon"))
-            self.deleteBtn.Disable()
+            selected_gesture_index = self.gesturesList.GetFirstSelected()
+            if selected_gesture_index != -1:
+                self.deleteBtn.SetLabel(_("&Remove Selected"))
+                self.deleteBtn.Enable()
+            else:
+                self.deleteBtn.SetLabel(_("&Remove addon"))
+                self.deleteBtn.Disable()
 
-    def onAddonChanged(self, event):
+    def onAddonChanged(self):
         """Handle addon selection change."""
         selection = self.addon_combo.GetSelection()
         if selection == 0:
@@ -271,12 +293,12 @@ class MyGesturesManagementDialog(wx.Dialog):
         self._apply_filter()
         wx.CallAfter(self.addon_combo.SetFocus)
 
-    def onItemSelected(self, event):
+    def onItemSelected(self):
         self._update_delete_button()
 
     def onKeyDown(self, event):
         if event.GetKeyCode() == wx.WXK_DELETE:
-            self.onDelete(None)
+            self.onDelete()
         elif event.GetKeyCode() == wx.WXK_ESCAPE:
             self.Close()
         else:
@@ -290,7 +312,8 @@ class MyGesturesManagementDialog(wx.Dialog):
 
             sections_to_remove = []
             for section in conf.sections:
-                if section.startswith("globalPlugins."):
+                # Check both globalPlugins and appModules
+                if section.startswith("globalPlugins.") or section.startswith("appModules."):
                     parts = section.split('.')
                     if len(parts) > 1 and parts[1] == addon_name:
                         sections_to_remove.append(section)
@@ -314,9 +337,14 @@ class MyGesturesManagementDialog(wx.Dialog):
 
             sections_to_remove = []
             for section in conf.sections:
+                # Remove both globalPlugins and appModules
                 if section.startswith("globalPlugins."):
                     parts = section.split('.')
                     if len(parts) > 1 and parts[1].lower() not in ['main', 'run']:
+                        sections_to_remove.append(section)
+                elif section.startswith("appModules."):
+                    parts = section.split('.')
+                    if len(parts) > 1:
                         sections_to_remove.append(section)
 
             for section in sections_to_remove:
@@ -330,18 +358,16 @@ class MyGesturesManagementDialog(wx.Dialog):
 
         return False
 
-    def onDelete(self, event):
-        """Handle delete action - either remove selected gesture or entire addon."""
-        selected_gesture_index = self.gesturesList.GetFirstSelected()
-
-        if selected_gesture_index != -1:
-            # User selected a specific gesture in the list
-            self._remove_selected_gesture(selected_gesture_index)
-        elif self.selected_addon:
-            # User selected an addon in combo but no specific gesture in list
+    def onDelete(self):
+        """Handle delete action - delete entire addon when addon is selected from combo."""
+        if self.selected_addon:
+            # Always delete entire addon when addon is selected in combo
             self._remove_selected_addon()
         else:
-            return
+            # Only delete single gesture when in "All addons" view and a gesture is selected
+            selected_gesture_index = self.gesturesList.GetFirstSelected()
+            if selected_gesture_index != -1:
+                self._remove_selected_gesture(selected_gesture_index)
 
     def _remove_selected_gesture(self, index):
         """Remove the selected gesture from the list and ini file."""
@@ -419,7 +445,7 @@ class MyGesturesManagementDialog(wx.Dialog):
                 log.error(f"Failed to remove addon gestures: {e}")
                 ui.message(_("Error during addon gesture removal."))
 
-    def onClearAll(self, event):
+    def onClearAll(self):
         """Clears all addon gestures from the ini file."""
         addon_count = len(self.addon_sections)
         gesture_count = len(self.all_gestures)

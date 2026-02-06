@@ -10,7 +10,6 @@ import wx
 import config
 from logHandler import log
 from scriptHandler import script
-from inputCore import InputGesture
 import time
 
 try:
@@ -50,10 +49,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
         self.subMenu = wx.Menu()
         
         item_check = self.subMenu.Append(wx.ID_ANY, _("&Check Duplicate Gestures"))
-        gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onCheckDuplicates, item_check)
+        gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, lambda evt: self.onCheckDuplicates(), item_check)
         
         item_manage = self.subMenu.Append(wx.ID_ANY, _("&My Gestures Management"))
-        gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onManageUserGestures, item_manage)
+        gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, lambda evt: self.onManageUserGestures(), item_manage)
         
         self.mainItem = self.menu.AppendSubMenu(self.subMenu, _(ADDON_SUMMARY))
 
@@ -65,7 +64,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
             pass
         super().terminate()
 
-    def onCheckDuplicates(self, event):
+    def onCheckDuplicates(self, event=None):
         """Launch the Duplicate Gestures Dialog."""
         def run():
             try:
@@ -78,7 +77,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
                 log.error(f"Failed to launch CheckDuplicates: {e}")
         wx.CallAfter(run)
 
-    def onManageUserGestures(self, event):
+    def onManageUserGestures(self, event=None):
         """Launch the My Gestures Management Dialog."""
         def run():
             try:
@@ -107,10 +106,11 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
         def execute_action():
             global _tap_count_check
             if _tap_count_check == 1:
-                self.onCheckDuplicates(None)
+                self.onCheckDuplicates()
             elif _tap_count_check >= 2:
-                self.onManageUserGestures(None)
+                self.onManageUserGestures()
             
             _tap_count_check = 0
         
         wx.CallLater(int(_double_tap_threshold * 1000), execute_action)
+

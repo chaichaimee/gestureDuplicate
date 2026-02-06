@@ -1,146 +1,169 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Duplicate Gestures\n"
+"Project-Id-Version: gestureDuplicate 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-05 12:00+0700\n"
-"PO-Revision-Date: 2026-01-05 17:04+0700\n"
-"Last-Translator: \n"
-"Language-Team: Spanish <es@li.org>\n"
+"POT-Creation-Date: 2026-02-06 12:00+0700\n"
+"PO-Revision-Date: 2026-02-06 12:40+0700\n"
+"Last-Translator: Chai Chaimee <chai@example.com>\n"
+"Language-Team: Spanish\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.7\n"
 
-#: __init__.py:28
+#: __init__.py:~60
 msgid "&Check Duplicate Gestures"
 msgstr "&Comprobar gestos duplicados"
 
-#: __init__.py:31
+#: __init__.py:~63
 msgid "&My Gestures Management"
-msgstr "&Gesti?n de mis gestos"
+msgstr "&Gestión de mis gestos"
 
-#: __init__.py:44
+#: __init__.py:~120
 msgid "Check for duplicate input gestures (single tap), My Gestures Management (double tap)"
-msgstr "Comprobar gestos de entrada duplicados (toque simple), Gesti?n de mis gestos (doble toque)"
+msgstr "Comprobar gestos de entrada duplicados (toque simple), Gestión de mis gestos (toque doble)"
 
-#: __init__.py:58
-msgid "My Gestures Management (single tap), Check Duplicate Gestures (double tap)"
-msgstr "Gesti?n de mis gestos (toque simple), Comprobar gestos duplicados (doble toque)"
-
-#: CheckDuplicateGestures.py:41
+#: CheckDuplicateGestures.py:~80
 msgid "Duplicate Gestures"
 msgstr "Gestos duplicados"
 
-#: CheckDuplicateGestures.py:47
+#: CheckDuplicateGestures.py:~110
+msgid "Unknown context"
+msgstr "Desconocido"
+
+#: CheckDuplicateGestures.py:~113
+msgid "Application context: "
+msgstr "Aplicación: "
+
+#: CheckDuplicateGestures.py:~135
 msgid "Found {} duplicate entries. Select an item and click 'Open' to fix."
 msgstr "Se encontraron {} entradas duplicadas. Seleccione un elemento y haga clic en 'Abrir' para corregir."
 
-#: CheckDuplicateGestures.py:58 mygesturesManagement.py:70
-msgid "Gesture"
+#: CheckDuplicateGestures.py:~140
+msgid "Gesture (column header)"
 msgstr "Gesto"
 
-#: CheckDuplicateGestures.py:59 mygesturesManagement.py:71
-msgid "Function"
-msgstr "Funci?n"
+#: CheckDuplicateGestures.py:~141
+msgid "Function (column header)"
+msgstr "Función"
 
-#: CheckDuplicateGestures.py:60 mygesturesManagement.py:72
-msgid "Context"
+#: CheckDuplicateGestures.py:~142
+msgid "Context (column header)"
 msgstr "Contexto"
 
-#: CheckDuplicateGestures.py:67
+#: CheckDuplicateGestures.py:~148
 msgid "&Open Input Gestures"
 msgstr "&Abrir gestos de entrada"
 
-#: CheckDuplicateGestures.py:69 mygesturesManagement.py:83
-msgid "&Close"
+#: CheckDuplicateGestures.py:~150
+msgid "&Close (Duplicate Dialog)"
 msgstr "&Cerrar"
 
-#: CheckDuplicateGestures.py:119
-msgid "Unknown"
-msgstr "Desconocido"
-
-#: CheckDuplicateGestures.py:123
-msgid "Application: "
-msgstr "Aplicaci?n: "
-
-#: CheckDuplicateGestures.py:170
+#: CheckDuplicateGestures.py:~240
 msgid "Input gestures dialog opened. Navigate with arrow keys to see Add and Remove buttons."
-msgstr "Di?logo de gestos de entrada abierto. Navegue con las teclas de flecha para ver los botones A?adir y Eliminar."
+msgstr "Diálogo de gestos de entrada abierto. Navegue con flechas para ver botones Agregar y Eliminar."
 
-#: CheckDuplicateGestures.py:176
+#: CheckDuplicateGestures.py:~250
 msgid "Failed to open Input Gestures dialog"
-msgstr "No se pudo abrir el di?logo de gestos de entrada"
+msgstr "Error al abrir el diálogo de gestos de entrada"
 
-#: mygesturesManagement.py:38
+#: mygesturesManagement.py:~50
 msgid "My Gestures Management"
-msgstr "Gesti?n de mis gestos"
+msgstr "Gestión de mis gestos"
 
-#: mygesturesManagement.py:50
+#: mygesturesManagement.py:~110
 msgid "Clean up gestures for uninstalled addons from gestures.ini:"
-msgstr "Limpiar gestos de complementos desinstalados desde gestures.ini:"
+msgstr "Limpiar gestos de complementos desinstalados de gestures.ini:"
 
-#: mygesturesManagement.py:56
+#: mygesturesManagement.py:~120
 msgid "Addon name:"
 msgstr "Nombre del complemento:"
 
-#: mygesturesManagement.py:79
+#: mygesturesManagement.py:~130
+msgid "All addons (filter)"
+msgstr "Todos los complementos"
+
+#: mygesturesManagement.py:~140
+msgid "Gesture (management column)"
+msgstr "Gesto"
+
+#: mygesturesManagement.py:~141
+msgid "Function (management column)"
+msgstr "Función"
+
+#: mygesturesManagement.py:~142
+msgid "Context (management column)"
+msgstr "Contexto"
+
+#: mygesturesManagement.py:~150
 msgid "&Remove addon"
 msgstr "&Eliminar complemento"
 
-#: mygesturesManagement.py:81
+#: mygesturesManagement.py:~152
 msgid "C&lear All"
-msgstr "&Borrar todo"
+msgstr "&Limpiar todo"
 
-#: mygesturesManagement.py:202
+#: mygesturesManagement.py:~154
+msgid "&Close (Management Dialog)"
+msgstr "&Cerrar"
+
+#: mygesturesManagement.py:~300
 msgid "&Remove Selected"
 msgstr "&Eliminar seleccionado"
 
-#: mygesturesManagement.py:247
+#: mygesturesManagement.py:~320
+msgid "No addon gestures to clear."
+msgstr "No hay gestos de complementos para limpiar."
+
+#: mygesturesManagement.py:~330
+msgid "Remove all {} custom gestures from {} addons?"
+msgstr "¿Eliminar todos los {} gestos personalizados de {} complementos?"
+
+#: mygesturesManagement.py:~340
+msgid "Confirm removal"
+msgstr "Confirmar eliminación"
+
+#: mygesturesManagement.py:~350
+msgid "Operation successful"
+msgstr "Éxito"
+
+#: mygesturesManagement.py:~360
+msgid "Failed to clear gestures from configuration."
+msgstr "Error al limpiar gestos de la configuración."
+
+#: mygesturesManagement.py:~370
+msgid "Error during mass deletion."
+msgstr "Error durante la eliminación masiva."
+
+#: mygesturesManagement.py:~400
 msgid ""
 "Remove this custom gesture for addon '{}'?\n"
 "\n"
 "Gesture: {}\n"
 "Function: {}"
 msgstr ""
-"?Eliminar este gesto personalizado para el complemento '{}'?\n"
+"¿Eliminar este gesto personalizado del complemento '{}'?\n"
 "\n"
 "Gesto: {}\n"
-"Funci?n: {}"
+"Función: {}"
 
-#: mygesturesManagement.py:249 mygesturesManagement.py:312
-msgid "Confirm"
-msgstr "Confirmar"
-
-#: mygesturesManagement.py:261 mygesturesManagement.py:330
-msgid "Success"
-msgstr "?xito"
-
-#: mygesturesManagement.py:265
+#: mygesturesManagement.py:~420
 msgid "Failed to remove gesture from configuration."
-msgstr "No se pudo eliminar el gesto de la configuraci?n."
+msgstr "Error al eliminar el gesto de la configuración."
 
-#: mygesturesManagement.py:268
+#: mygesturesManagement.py:~425
 msgid "Failed to remove gesture."
-msgstr "No se pudo eliminar el gesto."
+msgstr "Error al eliminar el gesto."
 
-#: mygesturesManagement.py:293
+#: mygesturesManagement.py:~450
 msgid "Remove all {} custom gestures for addon '{}'?"
-msgstr "?Eliminar los {} gestos personalizados del complemento '{}'?"
+msgstr "¿Eliminar todos los {} gestos personalizados del complemento '{}'?"
 
-#: mygesturesManagement.py:309
-msgid "Remove all {} custom gestures from {} addons?"
-msgstr "?Eliminar los {} gestos personalizados de {} complementos?"
+#: mygesturesManagement.py:~470
+msgid "Failed to remove addon from configuration."
+msgstr "Error al eliminar el complemento de la configuración."
 
-#: mygesturesManagement.py:324
-msgid "No addon gestures to clear."
-msgstr "No hay gestos de complementos para eliminar."
-
-#: mygesturesManagement.py:334
-msgid "Failed to clear gestures from configuration."
-msgstr "No se pudieron eliminar los gestos de la configuraci?n."
-
-#: mygesturesManagement.py:337
-msgid "Error during mass deletion."
-msgstr "Error durante la eliminaci?n masiva."
+#: mygesturesManagement.py:~475
+msgid "Error during addon gesture removal."
+msgstr "Error durante la eliminación de gestos del complemento."
