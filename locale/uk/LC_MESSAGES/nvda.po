@@ -1,0 +1,179 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2026-02-13 10:08+0200\n"
+"PO-Revision-Date: 2026-02-15 07:31+0200\n"
+"Last-Translator: Volodymyr Pyrih <vp88.mobile@gmail.com>\n"
+"Language-Team: \n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+"X-Poedit-Basepath: ../../../globalPlugins\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: gestureDuplicate/CheckDuplicateGestures.py:72
+msgid "Duplicate Gestures"
+msgstr "Повторювані жести"
+
+#: gestureDuplicate/CheckDuplicateGestures.py:91
+msgid "Unknown"
+msgstr "Невідомо"
+
+#: gestureDuplicate/CheckDuplicateGestures.py:99
+#: gestureDuplicate/mygesturesManagement.py:63
+msgid "Application: "
+msgstr "Додаток: "
+
+#: gestureDuplicate/CheckDuplicateGestures.py:105
+#, python-brace-format
+msgid "Found {} duplicate entries. Select an item and click 'Open' to fix."
+msgstr ""
+"Знайдено {} повторюваних жестів. Виберіть елемент і натисніть «Відкрити», "
+"щоб виправити."
+
+#: gestureDuplicate/CheckDuplicateGestures.py:110
+#: gestureDuplicate/mygesturesManagement.py:84
+msgid "Gesture"
+msgstr "Жест"
+
+#: gestureDuplicate/CheckDuplicateGestures.py:111
+#: gestureDuplicate/mygesturesManagement.py:85
+msgid "Function"
+msgstr "Функція"
+
+#: gestureDuplicate/CheckDuplicateGestures.py:112
+#: gestureDuplicate/mygesturesManagement.py:86
+msgid "Context"
+msgstr "Контекст"
+
+#: gestureDuplicate/CheckDuplicateGestures.py:117
+msgid "&Open Input Gestures"
+msgstr "&Відкрити Жести вводу"
+
+#: gestureDuplicate/CheckDuplicateGestures.py:121
+#: gestureDuplicate/mygesturesManagement.py:99
+msgid "&Close"
+msgstr "&Закрити"
+
+#: gestureDuplicate/CheckDuplicateGestures.py:221
+msgid ""
+"Input gestures dialog opened. Navigate with arrow keys to see Add and Remove "
+"buttons."
+msgstr ""
+"Відкрито діалог жестів вводу. Щоб побачити кнопки «Додати» та «Видалити», "
+"використовуйте клавіші зі стрілками."
+
+#: gestureDuplicate/CheckDuplicateGestures.py:230
+msgid "Failed to open Input Gestures dialog"
+msgstr "Не вдалося відкрити діалог жестів вводу"
+
+#: gestureDuplicate/__init__.py:51
+msgid "&Check Duplicate Gestures"
+msgstr "&Перевірити повторювані жести"
+
+#: gestureDuplicate/__init__.py:54
+msgid "&My Gestures Management"
+msgstr "&Керування моїми жестами"
+
+#: gestureDuplicate/__init__.py:93
+msgid ""
+"Check for duplicate input gestures (single tap), My Gestures Management "
+"(double tap)"
+msgstr ""
+"Перевірити наявність повторюваних жестів вводу (одноразове натискання), "
+"керування моїми жестами (подвійне натискання)"
+
+#: gestureDuplicate/mygesturesManagement.py:21
+msgid "My Gestures Management"
+msgstr "Керування моїми жестами"
+
+#: gestureDuplicate/mygesturesManagement.py:69
+msgid "Clean up gestures for uninstalled addons from gestures.ini:"
+msgstr "Очищення жестів для видалених додатків з файлу gestures.ini:"
+
+#: gestureDuplicate/mygesturesManagement.py:74
+msgid "Addon name:"
+msgstr "Назва додатка:"
+
+#: gestureDuplicate/mygesturesManagement.py:92
+#: gestureDuplicate/mygesturesManagement.py:274
+#: gestureDuplicate/mygesturesManagement.py:282
+msgid "&Remove addon"
+msgstr "&Видалити додаток"
+
+#: gestureDuplicate/mygesturesManagement.py:96
+msgid "C&lear All"
+msgstr "О&чистити все"
+
+#: gestureDuplicate/mygesturesManagement.py:221
+msgid "All addons"
+msgstr "Всі додатки"
+
+#: gestureDuplicate/mygesturesManagement.py:279
+msgid "&Remove Selected"
+msgstr "&Видалити вибране"
+
+#: gestureDuplicate/mygesturesManagement.py:380
+#, python-brace-format
+msgid ""
+"Remove this custom gesture for addon '{}'?\n"
+"\n"
+"Gesture: {}\n"
+"Function: {}"
+msgstr ""
+"Видалити цей користувацький жест для додатка «{}»?\n"
+"\n"
+"Жест: {}\n"
+"Функція: {}"
+
+#: gestureDuplicate/mygesturesManagement.py:383
+#: gestureDuplicate/mygesturesManagement.py:433
+#: gestureDuplicate/mygesturesManagement.py:459
+msgid "Confirm"
+msgstr "Підтвердити"
+
+#: gestureDuplicate/mygesturesManagement.py:411
+#: gestureDuplicate/mygesturesManagement.py:436
+#: gestureDuplicate/mygesturesManagement.py:462
+msgid "Success"
+msgstr "Успішно"
+
+#: gestureDuplicate/mygesturesManagement.py:418
+msgid "Failed to remove gesture from configuration."
+msgstr "Не вдалося видалити жест із конфігурації."
+
+#: gestureDuplicate/mygesturesManagement.py:421
+msgid "Failed to remove gesture."
+msgstr "Не вдалося видалити жест."
+
+#: gestureDuplicate/mygesturesManagement.py:431
+#, python-brace-format
+msgid "Remove all {} custom gestures for addon '{}'?"
+msgstr "Видалити всі {}  користувацьких жестів для додатка \"{}\"?"
+
+#: gestureDuplicate/mygesturesManagement.py:443
+msgid "Failed to remove addon from configuration."
+msgstr "Не вдалося видалити додаток із конфігурації."
+
+#: gestureDuplicate/mygesturesManagement.py:446
+msgid "Error during addon gesture removal."
+msgstr "Помилка під час видалення жестів додатка."
+
+#: gestureDuplicate/mygesturesManagement.py:454
+msgid "No addon gestures to clear."
+msgstr "Немає жестів додатків для очищення."
+
+#: gestureDuplicate/mygesturesManagement.py:457
+#, python-brace-format
+msgid "Remove all {} custom gestures from {} addons?"
+msgstr "Видалити всі ({}) користувацькіх жестів із ({}) додатків?"
+
+#: gestureDuplicate/mygesturesManagement.py:469
+msgid "Failed to clear gestures from configuration."
+msgstr "Не вдалося видалити жести з конфігурації."
+
+#: gestureDuplicate/mygesturesManagement.py:472
+msgid "Error during mass deletion."
+msgstr "Помилка під час масового видалення."
