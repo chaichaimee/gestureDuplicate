@@ -1,0 +1,2 @@
+summary = "重复手势检查"
+description = """识别和管理 NVDA 配置中冲突的键盘快捷键"""
