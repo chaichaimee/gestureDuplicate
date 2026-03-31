@@ -1,0 +1,26 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: gestureDuplicate 2026.3.4\n"
+"Language: de\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: CheckDuplicateGestures.py:121
+msgid "&Close"
+msgstr "&Schließen"
+
+#: CheckDuplicateGestures.py:117
+msgid "&Open Input Gestures"
+msgstr "Eingabegesten &öffnen"
+
+#: mygesturesManagement.py:245
+msgid "&Remove addon"
+msgstr "Add-on ent&fernen"
+
+#: mygesturesManagement.py:73
+msgid "Clean up gestures for uninstalled addons from gestures.ini:"
+msgstr "Gesten für deinstallierte Add-ons in gestures.ini bereinigen:"
+
+#: __init__.py:85
+msgid "Multi-tap: 1=Check, 2=Manage, 3=Clean"
+msgstr "Mehrfach-Tippen: 1=Prüfen, 2=Verwalten, 3=Bereinigen"

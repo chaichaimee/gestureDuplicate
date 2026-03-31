@@ -1,0 +1,22 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: gestureDuplicate 2026.3.4\n"
+"Language: fr\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: CheckDuplicateGestures.py:121
+msgid "&Close"
+msgstr "&Fermer"
+
+#: CheckDuplicateGestures.py:117
+msgid "&Open Input Gestures"
+msgstr "&Ouvrir les gestes de commandes"
+
+#: CheckDuplicateGestures.py:72
+msgid "Duplicate Gestures"
+msgstr "Gestes en double"
+
+#: CleanConfig.py:94
+msgid "Removed successfully."
+msgstr "Supprimé avec succès."
