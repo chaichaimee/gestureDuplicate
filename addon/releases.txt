@@ -1,0 +1,7 @@
+gestureDuplicate v2026.4.1
+
+https://github.com/chaichaimee/gestureDuplicate/releases/download/2026.4.1/gestureDuplicate-v2026.4.1.nvda-addon
+
+https://github.com/chaichaimee/gestureDuplicate
+
+chai chaimee
