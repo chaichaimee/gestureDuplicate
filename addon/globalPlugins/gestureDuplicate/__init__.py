@@ -8,6 +8,7 @@ import gui
 import wx
 import time
 import ui
+import core
 from scriptHandler import script
 from logHandler import log
 
@@ -25,6 +26,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	_tap_count = 0
 	_last_tap_time = 0
 	_threshold = 0.4
+	_pendingCallLater = None
 
 	# Menu items will be stored to remove them on termination
 	_tools_menu_items = []
@@ -93,11 +95,26 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		else:
 			self._tap_count += 1
 		self._last_tap_time = now
-		wx.CallLater(int(self._threshold * 1000), self._execute_action, self._tap_count)
+
+		# Cancel any pending timer before creating a new one
+		if self._pendingCallLater:
+			self._pendingCallLater.Stop()
+			self._pendingCallLater = None
+
+		self._pendingCallLater = core.callLater(
+			int(self._threshold * 1000),
+			self._execute_action,
+			self._tap_count
+		)
 
 	def _execute_action(self, count_at_time):
+		# Clear reference immediately to avoid duplicate stopping
+		if self._pendingCallLater:
+			self._pendingCallLater = None
+
 		if count_at_time != self._tap_count:
 			return
+
 		taps = self._tap_count
 		self._tap_count = 0
 
@@ -109,7 +126,28 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			self.onCleanConfig(None)
 
 	def terminate(self):
-		# Remove menu items to prevent memory leaks
+		# Cancel any pending timer
+		if self._pendingCallLater:
+			self._pendingCallLater.Stop()
+			self._pendingCallLater = None
+
+		# Remove submenu from tools menu to avoid reference issues during NVDA shutdown
+		try:
+			tools_menu = None
+			if hasattr(gui, 'mainFrame') and gui.mainFrame:
+				if hasattr(gui.mainFrame, 'sysTrayIcon') and gui.mainFrame.sysTrayIcon:
+					tools_menu = gui.mainFrame.sysTrayIcon.toolsMenu
+				if not tools_menu and hasattr(gui.mainFrame, 'toolsMenu'):
+					tools_menu = gui.mainFrame.toolsMenu
+			if tools_menu and hasattr(self, 'gesture_menu') and self.gesture_menu:
+				for item in tools_menu.GetMenuItems():
+					if item.GetSubMenu() == self.gesture_menu:
+						tools_menu.Remove(item)
+						break
+		except Exception as e:
+			log.debug(f"Error removing submenu: {e}")
+
+		# Destroy menu items
 		for item in self._tools_menu_items:
 			try:
 				item.Destroy()
