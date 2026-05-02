@@ -1,0 +1,202 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: gestureDuplicate 2026.5.1\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-05-02 09:45+0700\n"
+"PO-Revision-Date: 2026-05-02 10:25+0700\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Romanian\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: CheckDuplicateGestures.py:121
+msgid "&Close"
+msgstr "Î&nchide"
+
+#: CheckDuplicateGestures.py:117
+msgid "&Open Input Gestures"
+msgstr "&Deschide Comenzi de intrare"
+
+#: mygesturesManagement.py:245
+msgid "&Remove addon"
+msgstr "&Elimină add-on"
+
+#: mygesturesManagement.py:78
+msgid "Addon name:"
+msgstr "Nume add-on:"
+
+#: mygesturesManagement.py:194
+msgid "All addons"
+msgstr "Toate add-on-urile"
+
+#: CheckDuplicateGestures.py:99
+#: mygesturesManagement.py:67
+msgid "Application: "
+msgstr "Aplicație: "
+
+#: __init__.py:49
+msgid "Check Duplicate Gestures..."
+msgstr "Verifică comenzi duplicate..."
+
+#: CleanConfig.py:30
+msgid "Check sections to remove. Press Space to toggle, Delete to remove."
+msgstr "Bifează secțiunile de eliminat. Apasă Spațiu pentru comutare, Delete pentru eliminare."
+
+#: __init__.py:68
+msgid "Checking duplicate gestures..."
+msgstr "Se verifică comenzile duplicate..."
+
+#: __init__.py:53
+msgid "Clean Configuration..."
+msgstr "Curăță configurația..."
+
+#: CleanConfig.py:16
+msgid "Clean NVDA.ini Sections"
+msgstr "Curăță secțiunile NVDA.ini"
+
+#: mygesturesManagement.py:73
+msgid "Clean up gestures for uninstalled addons from gestures.ini:"
+msgstr "Curăță comenzile pentru add-on-urile dezinstalate din gestures.ini:"
+
+#: mygesturesManagement.py:98
+msgid "Clear All"
+msgstr "Șterge tot"
+
+#: CleanConfig.py:44
+#: mygesturesManagement.py:101
+msgid "Close"
+msgstr "Închide"
+
+#: CleanConfig.py:88
+#: mygesturesManagement.py:325
+#: mygesturesManagement.py:342
+#: mygesturesManagement.py:365
+msgid "Confirm"
+msgstr "Confirmă"
+
+#: CheckDuplicateGestures.py:112
+msgid "Context"
+msgstr "Context"
+
+#: CleanConfig.py:86
+msgid "Delete {count} sections?"
+msgstr "Ștergi cele {count} secțiuni?"
+
+#: CheckDuplicateGestures.py:72
+msgid "Duplicate Gestures"
+msgstr "Comenzi duplicate"
+
+#: mygesturesManagement.py:373
+msgid "Failed to clear gestures from configuration."
+msgstr "Eșec la curățarea comenzilor din configurație."
+
+#: CheckDuplicateGestures.py:230
+msgid "Failed to open Input Gestures dialog"
+msgstr "Eșec la deschiderea dialogului Comenzi de intrare"
+
+#: mygesturesManagement.py:332
+msgid "Failed to remove addon from configuration."
+msgstr "Eșec la eliminarea add-on-ului din configurație."
+
+#: mygesturesManagement.py:349
+msgid "Failed to remove selected gestures."
+msgstr "Eșec la eliminarea comenzilor selectate."
+
+#: CheckDuplicateGestures.py:105
+msgid "Found {} duplicate entries. Select an item and click 'Open' to fix."
+msgstr "Am găsit {} intrări duplicate. Selectează un element și apasă 'Deschide' pentru a repara."
+
+#: CheckDuplicateGestures.py:111
+msgid "Function"
+msgstr "Funcție"
+
+#: CheckDuplicateGestures.py:110
+msgid "Gesture"
+msgstr "Comandă"
+
+#: __init__.py:58
+msgid "Gesture Duplicate"
+msgstr "Comenzi duplicate"
+
+#: CheckDuplicateGestures.py:221
+msgid "Input gestures dialog opened. Navigate with arrow keys to see Add and Remove buttons."
+msgstr "Dialogul comenzilor de intrare a fost deschis. Navighează cu săgețile pentru butoanele Adaugă și Elimină."
+
+#: __init__.py:51
+msgid "Manage Custom Gestures..."
+msgstr "Gestionează comenzi personalizate..."
+
+#: __init__.py:87
+msgid "Multi-tap: 1=Check, 2=Manage, 3=Clean"
+msgstr "Apăsări multiple: 1=Verifică, 2=Gestionează, 3=Curăță"
+
+#: mygesturesManagement.py:23
+msgid "My Gestures Management"
+msgstr "Managementul comenzilor mele"
+
+#: mygesturesManagement.py:360
+msgid "No addon gestures to clear."
+msgstr "Nu există comenzi de add-on de curățat."
+
+#: CleanConfig.py:82
+#: mygesturesManagement.py:337
+msgid "No items selected."
+msgstr "Niciun element selectat."
+
+#: __init__.py:83
+msgid "Opening clean configuration..."
+msgstr "Se deschide curățarea configurației..."
+
+#: __init__.py:77
+msgid "Opening gestures management..."
+msgstr "Se deschide managementul comenzilor..."
+
+#: mygesturesManagement.py:95
+#: mygesturesManagement.py:248
+msgid "Remove Checked"
+msgstr "Elimină ce este bifat"
+
+#: CleanConfig.py:40
+msgid "Remove Selected"
+msgstr "Elimină selecția"
+
+#: mygesturesManagement.py:324
+msgid "Remove all {} custom gestures for addon '{}'?"
+msgstr "Elimini toate cele {} comenzi personalizate pentru add-on-ul '{}'?"
+
+#: mygesturesManagement.py:363
+msgid "Remove all {} custom gestures from {} addons?"
+msgstr "Elimini toate cele {} comenzi personalizate din {} add-on-uri?"
+
+#: mygesturesManagement.py:341
+msgid "Remove {} selected gesture(s)?"
+msgstr "Elimini cele {} comenzi selectate?"
+
+#: CleanConfig.py:94
+msgid "Removed successfully."
+msgstr "Eliminat cu succes."
+
+#: mygesturesManagement.py:327
+#: mygesturesManagement.py:344
+#: mygesturesManagement.py:368
+msgid "Success"
+msgstr "Succes"
+
+#: CheckDuplicateGestures.py:91
+msgid "Unknown"
+msgstr "Necunoscut"
+
+#: CleanConfig.py:65
+#: mygesturesManagement.py:234
+#: mygesturesManagement.py:270
+msgid "checked"
+msgstr "bifat"
+
+#: CleanConfig.py:65
+#: mygesturesManagement.py:234
+#: mygesturesManagement.py:270
+msgid "not checked"
+msgstr "nebifat"

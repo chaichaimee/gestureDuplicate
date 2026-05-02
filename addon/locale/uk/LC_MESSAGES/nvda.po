@@ -1,9 +1,16 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: gestureDuplicate 2026.3.4\n"
+"Project-Id-Version: gestureDuplicate 2026.5.1\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-05-02 09:45+0700\n"
+"PO-Revision-Date: 2026-05-02 10:30+0700\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Ukrainian\n"
 "Language: uk\n"
+"MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
 
 #: CheckDuplicateGestures.py:121
 msgid "&Close"
@@ -11,7 +18,7 @@ msgstr "&Закрити"
 
 #: CheckDuplicateGestures.py:117
 msgid "&Open Input Gestures"
-msgstr "&Відкрити жести вводу"
+msgstr "&Відкрити «Жести вводу»"
 
 #: mygesturesManagement.py:245
 msgid "&Remove addon"
@@ -30,21 +37,21 @@ msgstr "Усі додатки"
 msgid "Application: "
 msgstr "Програма: "
 
-#: __init__.py:47
+#: __init__.py:49
 msgid "Check Duplicate Gestures..."
 msgstr "Перевірити дублікати жестів..."
 
 #: CleanConfig.py:30
 msgid "Check sections to remove. Press Space to toggle, Delete to remove."
-msgstr "Виберіть розділи для видалення. Пробіл — позначити, Delete — видалити."
+msgstr "Позначте розділи для видалення. Пробіл — перемкнути, Delete — видалити."
 
-#: __init__.py:66
+#: __init__.py:68
 msgid "Checking duplicate gestures..."
-msgstr "Перевірка дублікатів жестів..."
+msgstr "Пошук дублікатів жестів..."
 
-#: __init__.py:51
+#: __init__.py:53
 msgid "Clean Configuration..."
-msgstr "Очистити конфігурацію..."
+msgstr "Очищення конфігурації..."
 
 #: CleanConfig.py:16
 msgid "Clean NVDA.ini Sections"
@@ -76,7 +83,7 @@ msgstr "Контекст"
 
 #: CleanConfig.py:86
 msgid "Delete {count} sections?"
-msgstr "Видалити {count} розділів?"
+msgstr "Видалити ці розділи ({count})?"
 
 #: CheckDuplicateGestures.py:72
 msgid "Duplicate Gestures"
@@ -88,7 +95,7 @@ msgstr "Не вдалося очистити жести з конфігурац�
 
 #: CheckDuplicateGestures.py:230
 msgid "Failed to open Input Gestures dialog"
-msgstr "Не вдалося відкрити вікно жестів вводу"
+msgstr "Не вдалося відкрити діалог «Жести вводу»"
 
 #: mygesturesManagement.py:332
 msgid "Failed to remove addon from configuration."
@@ -100,7 +107,7 @@ msgstr "Не вдалося видалити вибрані жести."
 
 #: CheckDuplicateGestures.py:105
 msgid "Found {} duplicate entries. Select an item and click 'Open' to fix."
-msgstr "Знайдено {} дублікатів. Виберіть елемент і натисніть 'Відкрити', щоб виправити."
+msgstr "Знайдено {} дублікатів. Виберіть пункт і натисніть «Відкрити» для виправлення."
 
 #: CheckDuplicateGestures.py:111
 msgid "Function"
@@ -110,21 +117,21 @@ msgstr "Функція"
 msgid "Gesture"
 msgstr "Жест"
 
-#: __init__.py:56
+#: __init__.py:58
 msgid "Gesture Duplicate"
-msgstr "Gesture Duplicate"
+msgstr "Дублікати жестів"
 
 #: CheckDuplicateGestures.py:221
 msgid "Input gestures dialog opened. Navigate with arrow keys to see Add and Remove buttons."
-msgstr "Вікно жестів вводу відкрито. Використовуйте стрілки, щоб знайти кнопки Додати та Видалити."
+msgstr "Діалог жестів вводу відкрито. Використовуйте стрілки, щоб знайти кнопки «Додати» та «Видалити»."
 
-#: __init__.py:49
+#: __init__.py:51
 msgid "Manage Custom Gestures..."
-msgstr "Керування власними жестами..."
+msgstr "Керування жестами..."
 
-#: __init__.py:85
+#: __init__.py:87
 msgid "Multi-tap: 1=Check, 2=Manage, 3=Clean"
-msgstr "Мульти-натискання: 1=Перевірити, 2=Керувати, 3=Очистити"
+msgstr "Багатократне натискання: 1 — перевірити, 2 — керувати, 3 — очистити"
 
 #: mygesturesManagement.py:23
 msgid "My Gestures Management"
@@ -137,36 +144,36 @@ msgstr "Немає жестів додатків для очищення."
 #: CleanConfig.py:82
 #: mygesturesManagement.py:337
 msgid "No items selected."
-msgstr "Елементи не вибрано."
+msgstr "Нічого не вибрано."
 
-#: __init__.py:81
+#: __init__.py:83
 msgid "Opening clean configuration..."
 msgstr "Відкриття очищення конфігурації..."
 
-#: __init__.py:75
+#: __init__.py:77
 msgid "Opening gestures management..."
 msgstr "Відкриття керування жестами..."
 
 #: mygesturesManagement.py:95
 #: mygesturesManagement.py:248
 msgid "Remove Checked"
-msgstr "Видалити вибране"
+msgstr "Видалити позначене"
 
 #: CleanConfig.py:40
 msgid "Remove Selected"
-msgstr "Видалити виділене"
+msgstr "Видалити вибране"
 
 #: mygesturesManagement.py:324
 msgid "Remove all {} custom gestures for addon '{}'?"
-msgstr "Видалити всі {} власні жести для додатка '{}'?"
+msgstr "Видалити всі користувацькі жести ({}) для додатка «{}»?"
 
 #: mygesturesManagement.py:363
 msgid "Remove all {} custom gestures from {} addons?"
-msgstr "Видалити всі {} власні жести з {} додатків?"
+msgstr "Видалити всі користувацькі жести ({}) з усіх додатків ({})?"
 
 #: mygesturesManagement.py:341
 msgid "Remove {} selected gesture(s)?"
-msgstr "Видалити {} вибраних жестів?"
+msgstr "Видалити вибрані жести ({})?"
 
 #: CleanConfig.py:94
 msgid "Removed successfully."

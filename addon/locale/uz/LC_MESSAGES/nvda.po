@@ -1,0 +1,202 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: gestureDuplicate 2026.5.1\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-05-02 09:45+0700\n"
+"PO-Revision-Date: 2026-05-02 10:30+0700\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Uzbek\n"
+"Language: uz\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: CheckDuplicateGestures.py:121
+msgid "&Close"
+msgstr "&Yopish"
+
+#: CheckDuplicateGestures.py:117
+msgid "&Open Input Gestures"
+msgstr "&Kirish ishoralarini ochish"
+
+#: mygesturesManagement.py:245
+msgid "&Remove addon"
+msgstr "&Qo'shimchani olib tashlash"
+
+#: mygesturesManagement.py:78
+msgid "Addon name:"
+msgstr "Qo'shimcha nomi:"
+
+#: mygesturesManagement.py:194
+msgid "All addons"
+msgstr "Barcha qo'shimchalar"
+
+#: CheckDuplicateGestures.py:99
+#: mygesturesManagement.py:67
+msgid "Application: "
+msgstr "Ilova: "
+
+#: __init__.py:49
+msgid "Check Duplicate Gestures..."
+msgstr "Takroriy ishoralarni tekshirish..."
+
+#: CleanConfig.py:30
+msgid "Check sections to remove. Press Space to toggle, Delete to remove."
+msgstr "Olib tashlanadigan bo'limlarni belgilang. O'zgartirish uchun 'Space', o'chirish uchun 'Delete' bosing."
+
+#: __init__.py:68
+msgid "Checking duplicate gestures..."
+msgstr "Takroriy ishoralar tekshirilmoqda..."
+
+#: __init__.py:53
+msgid "Clean Configuration..."
+msgstr "Sozlamalarni tozalash..."
+
+#: CleanConfig.py:16
+msgid "Clean NVDA.ini Sections"
+msgstr "NVDA.ini bo'limlarini tozalash"
+
+#: mygesturesManagement.py:73
+msgid "Clean up gestures for uninstalled addons from gestures.ini:"
+msgstr "gestures.ini faylidan o'chirilgan qo'shimchalar ishoralarini tozalash:"
+
+#: mygesturesManagement.py:98
+msgid "Clear All"
+msgstr "Hammasini tozalash"
+
+#: CleanConfig.py:44
+#: mygesturesManagement.py:101
+msgid "Close"
+msgstr "Yopish"
+
+#: CleanConfig.py:88
+#: mygesturesManagement.py:325
+#: mygesturesManagement.py:342
+#: mygesturesManagement.py:365
+msgid "Confirm"
+msgstr "Tasdiqlash"
+
+#: CheckDuplicateGestures.py:112
+msgid "Context"
+msgstr "Kontekst"
+
+#: CleanConfig.py:86
+msgid "Delete {count} sections?"
+msgstr "{count} ta bo'limni o'chirishni xohlaysizmi?"
+
+#: CheckDuplicateGestures.py:72
+msgid "Duplicate Gestures"
+msgstr "Takroriy ishoralar"
+
+#: mygesturesManagement.py:373
+msgid "Failed to clear gestures from configuration."
+msgstr "Sozlamalardan ishoralarni tozalab bo'lmadi."
+
+#: CheckDuplicateGestures.py:230
+msgid "Failed to open Input Gestures dialog"
+msgstr "Kirish ishoralari oynasini ochib bo'lmadi"
+
+#: mygesturesManagement.py:332
+msgid "Failed to remove addon from configuration."
+msgstr "Sozlamalardan qo'shimchani olib tashlab bo'lmadi."
+
+#: mygesturesManagement.py:349
+msgid "Failed to remove selected gestures."
+msgstr "Tanlangan ishoralarni olib tashlab bo'lmadi."
+
+#: CheckDuplicateGestures.py:105
+msgid "Found {} duplicate entries. Select an item and click 'Open' to fix."
+msgstr "{} ta takroriy yozuv topildi. Birini tanlang va tuzatish uchun 'Ochish' ni bosing."
+
+#: CheckDuplicateGestures.py:111
+msgid "Function"
+msgstr "Funksiya"
+
+#: CheckDuplicateGestures.py:110
+msgid "Gesture"
+msgstr "Ishora"
+
+#: __init__.py:58
+msgid "Gesture Duplicate"
+msgstr "Ishora takrorlanishi"
+
+#: CheckDuplicateGestures.py:221
+msgid "Input gestures dialog opened. Navigate with arrow keys to see Add and Remove buttons."
+msgstr "Kirish ishoralari oynasi ochildi. Qo'shish va Olib tashlash tugmalarini ko'rish uchun yo'nalish tugmalaridan foydalaning."
+
+#: __init__.py:51
+msgid "Manage Custom Gestures..."
+msgstr "Xususiy ishoralarni boshqarish..."
+
+#: __init__.py:87
+msgid "Multi-tap: 1=Check, 2=Manage, 3=Clean"
+msgstr "Ko'p marta bosish: 1=Tekshirish, 2=Boshqarish, 3=Tozalash"
+
+#: mygesturesManagement.py:23
+msgid "My Gestures Management"
+msgstr "Mening ishoralarimni boshqarish"
+
+#: mygesturesManagement.py:360
+msgid "No addon gestures to clear."
+msgstr "Tozalash uchun qo'shimcha ishoralari yo'q."
+
+#: CleanConfig.py:82
+#: mygesturesManagement.py:337
+msgid "No items selected."
+msgstr "Hech narsa tanlanmadi."
+
+#: __init__.py:83
+msgid "Opening clean configuration..."
+msgstr "Sozlamalarni tozalash ochilmoqda..."
+
+#: __init__.py:77
+msgid "Opening gestures management..."
+msgstr "Ishoralarni boshqarish ochilmoqda..."
+
+#: mygesturesManagement.py:95
+#: mygesturesManagement.py:248
+msgid "Remove Checked"
+msgstr "Belgilanganlarni olib tashlash"
+
+#: CleanConfig.py:40
+msgid "Remove Selected"
+msgstr "Tanlanganlarni olib tashlash"
+
+#: mygesturesManagement.py:324
+msgid "Remove all {} custom gestures for addon '{}'?"
+msgstr "'{}' qo'shimchasi uchun barcha {} ta xususiy ishorani olib tashlashni xohlaysizmi?"
+
+#: mygesturesManagement.py:363
+msgid "Remove all {} custom gestures from {} addons?"
+msgstr "{} ta qo'shimchadan barcha {} ta xususiy ishorani olib tashlashni xohlaysizmi?"
+
+#: mygesturesManagement.py:341
+msgid "Remove {} selected gesture(s)?"
+msgstr "Tanlangan {} ta ishorani olib tashlashni xohlaysizmi?"
+
+#: CleanConfig.py:94
+msgid "Removed successfully."
+msgstr "Muvaffaqiyatli olib tashlandi."
+
+#: mygesturesManagement.py:327
+#: mygesturesManagement.py:344
+#: mygesturesManagement.py:368
+msgid "Success"
+msgstr "Muvaffaqiyat"
+
+#: CheckDuplicateGestures.py:91
+msgid "Unknown"
+msgstr "Noma'lum"
+
+#: CleanConfig.py:65
+#: mygesturesManagement.py:234
+#: mygesturesManagement.py:270
+msgid "checked"
+msgstr "belgilangan"
+
+#: CleanConfig.py:65
+#: mygesturesManagement.py:234
+#: mygesturesManagement.py:270
+msgid "not checked"
+msgstr "belgilanmagan"

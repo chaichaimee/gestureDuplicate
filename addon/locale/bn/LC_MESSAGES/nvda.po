@@ -1,0 +1,202 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: gestureDuplicate 2026.5.1\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-05-02 09:45+0700\n"
+"PO-Revision-Date: 2026-05-02 10:00+0700\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Bengali\n"
+"Language: bn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: CheckDuplicateGestures.py:121
+msgid "&Close"
+msgstr "বন্ধ করুন (&C)"
+
+#: CheckDuplicateGestures.py:117
+msgid "&Open Input Gestures"
+msgstr "ইনপুট জেসচার খুলুন (&O)"
+
+#: mygesturesManagement.py:245
+msgid "&Remove addon"
+msgstr "অ্যাড-অন সরান (&R)"
+
+#: mygesturesManagement.py:78
+msgid "Addon name:"
+msgstr "অ্যাড-অনের নাম:"
+
+#: mygesturesManagement.py:194
+msgid "All addons"
+msgstr "সমস্ত অ্যাড-অন"
+
+#: CheckDuplicateGestures.py:99
+#: mygesturesManagement.py:67
+msgid "Application: "
+msgstr "অ্যাপ্লিকেশন: "
+
+#: __init__.py:49
+msgid "Check Duplicate Gestures..."
+msgstr "ডুপ্লিকেট জেসচার পরীক্ষা করুন..."
+
+#: CleanConfig.py:30
+msgid "Check sections to remove. Press Space to toggle, Delete to remove."
+msgstr "সরানোর জন্য বিভাগগুলি চিহ্নিত করুন। টগল করতে স্পেস, সরাতে ডিলিট টিপুন।"
+
+#: __init__.py:68
+msgid "Checking duplicate gestures..."
+msgstr "ডুপ্লিকেট জেসচার পরীক্ষা করা হচ্ছে..."
+
+#: __init__.py:53
+msgid "Clean Configuration..."
+msgstr "কনফিগারেশন পরিষ্কার করুন..."
+
+#: CleanConfig.py:16
+msgid "Clean NVDA.ini Sections"
+msgstr "NVDA.ini বিভাগগুলি পরিষ্কার করুন"
+
+#: mygesturesManagement.py:73
+msgid "Clean up gestures for uninstalled addons from gestures.ini:"
+msgstr "আনইনস্টল করা অ্যাড-অনের জেসচার gestures.ini থেকে পরিষ্কার করুন:"
+
+#: mygesturesManagement.py:98
+msgid "Clear All"
+msgstr "সব মুছে ফেলুন"
+
+#: CleanConfig.py:44
+#: mygesturesManagement.py:101
+msgid "Close"
+msgstr "বন্ধ করুন"
+
+#: CleanConfig.py:88
+#: mygesturesManagement.py:325
+#: mygesturesManagement.py:342
+#: mygesturesManagement.py:365
+msgid "Confirm"
+msgstr "নিশ্চিত করুন"
+
+#: CheckDuplicateGestures.py:112
+msgid "Context"
+msgstr "প্রসঙ্গ"
+
+#: CleanConfig.py:86
+msgid "Delete {count} sections?"
+msgstr "{count}টি বিভাগ মুছে ফেলবেন?"
+
+#: CheckDuplicateGestures.py:72
+msgid "Duplicate Gestures"
+msgstr "ডুপ্লিকেট জেসচার"
+
+#: mygesturesManagement.py:373
+msgid "Failed to clear gestures from configuration."
+msgstr "কনফিগারেশন থেকে জেসচার পরিষ্কার করতে ব্যর্থ।"
+
+#: CheckDuplicateGestures.py:230
+msgid "Failed to open Input Gestures dialog"
+msgstr "ইনপুট জেসচার ডায়ালগ খুলতে ব্যর্থ"
+
+#: mygesturesManagement.py:332
+msgid "Failed to remove addon from configuration."
+msgstr "কনফিগারেশন থেকে অ্যাড-অন সরাতে ব্যর্থ।"
+
+#: mygesturesManagement.py:349
+msgid "Failed to remove selected gestures."
+msgstr "নির্বাচিত জেসচার সরাতে ব্যর্থ।"
+
+#: CheckDuplicateGestures.py:105
+msgid "Found {} duplicate entries. Select an item and click 'Open' to fix."
+msgstr "{}টি ডুপ্লিকেট এন্ট্রি পাওয়া গেছে। একটি আইটেম নির্বাচন করুন এবং ঠিক করতে 'খুলুন' ক্লিক করুন।"
+
+#: CheckDuplicateGestures.py:111
+msgid "Function"
+msgstr "ফাংশন"
+
+#: CheckDuplicateGestures.py:110
+msgid "Gesture"
+msgstr "জেসচার"
+
+#: __init__.py:58
+msgid "Gesture Duplicate"
+msgstr "জেসচার ডুপ্লিকেট"
+
+#: CheckDuplicateGestures.py:221
+msgid "Input gestures dialog opened. Navigate with arrow keys to see Add and Remove buttons."
+msgstr "ইনপুট জেসচার ডায়ালগ খোলা হয়েছে। যোগ এবং সরানোর বোতামগুলি দেখতে অ্যারো কি দিয়ে নেভিগেট করুন।"
+
+#: __init__.py:51
+msgid "Manage Custom Gestures..."
+msgstr "কাস্টম জেসচার পরিচালনা করুন..."
+
+#: __init__.py:87
+msgid "Multi-tap: 1=Check, 2=Manage, 3=Clean"
+msgstr "মাল্টি-ট্যাপ: ১=পরীক্ষা, ২=পরিচালনা, ৩=পরিষ্কার"
+
+#: mygesturesManagement.py:23
+msgid "My Gestures Management"
+msgstr "আমার জেসচার পরিচালনা"
+
+#: mygesturesManagement.py:360
+msgid "No addon gestures to clear."
+msgstr "পরিষ্কার করার মতো কোনো অ্যাড-অন জেসচার নেই।"
+
+#: CleanConfig.py:82
+#: mygesturesManagement.py:337
+msgid "No items selected."
+msgstr "কোনো আইটেম নির্বাচিত হয়নি।"
+
+#: __init__.py:83
+msgid "Opening clean configuration..."
+msgstr "ক্লিন কনফিগারেশন খোলা হচ্ছে..."
+
+#: __init__.py:77
+msgid "Opening gestures management..."
+msgstr "জেসচার ম্যানেজমেন্ট খোলা হচ্ছে..."
+
+#: mygesturesManagement.py:95
+#: mygesturesManagement.py:248
+msgid "Remove Checked"
+msgstr "চিহ্নিতগুলো সরান"
+
+#: CleanConfig.py:40
+msgid "Remove Selected"
+msgstr "নির্বাচিতগুলো সরান"
+
+#: mygesturesManagement.py:324
+msgid "Remove all {} custom gestures for addon '{}'?"
+msgstr "'{}' অ্যাড-অনের জন্য সমস্ত {}টি কাস্টম জেসচার সরিয়ে দেবেন?"
+
+#: mygesturesManagement.py:363
+msgid "Remove all {} custom gestures from {} addons?"
+msgstr "{}টি অ্যাড-অন থেকে সমস্ত {}টি কাস্টম জেসচার সরিয়ে দেবেন?"
+
+#: mygesturesManagement.py:341
+msgid "Remove {} selected gesture(s)?"
+msgstr "{}টি নির্বাচিত জেসচার সরিয়ে দেবেন?"
+
+#: CleanConfig.py:94
+msgid "Removed successfully."
+msgstr "সফলভাবে সরানো হয়েছে।"
+
+#: mygesturesManagement.py:327
+#: mygesturesManagement.py:344
+#: mygesturesManagement.py:368
+msgid "Success"
+msgstr "সফল"
+
+#: CheckDuplicateGestures.py:91
+msgid "Unknown"
+msgstr "অজানা"
+
+#: CleanConfig.py:65
+#: mygesturesManagement.py:234
+#: mygesturesManagement.py:270
+msgid "checked"
+msgstr "চিহ্নিত"
+
+#: CleanConfig.py:65
+#: mygesturesManagement.py:234
+#: mygesturesManagement.py:270
+msgid "not checked"
+msgstr "অচিহ্নিত"

@@ -1,0 +1,202 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: gestureDuplicate 2026.5.1\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-05-02 09:45+0700\n"
+"PO-Revision-Date: 2026-05-02 10:20+0700\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Korean\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: CheckDuplicateGestures.py:121
+msgid "&Close"
+msgstr "닫기(&C)"
+
+#: CheckDuplicateGestures.py:117
+msgid "&Open Input Gestures"
+msgstr "입력 제스처 열기(&O)"
+
+#: mygesturesManagement.py:245
+msgid "&Remove addon"
+msgstr "부가 기능 제거(&R)"
+
+#: mygesturesManagement.py:78
+msgid "Addon name:"
+msgstr "부가 기능 이름:"
+
+#: mygesturesManagement.py:194
+msgid "All addons"
+msgstr "모든 부가 기능"
+
+#: CheckDuplicateGestures.py:99
+#: mygesturesManagement.py:67
+msgid "Application: "
+msgstr "응용 프로그램: "
+
+#: __init__.py:49
+msgid "Check Duplicate Gestures..."
+msgstr "중복 제스처 확인..."
+
+#: CleanConfig.py:30
+msgid "Check sections to remove. Press Space to toggle, Delete to remove."
+msgstr "제거할 섹션을 선택하십시오. 스페이스로 전환하고 Delete로 제거합니다."
+
+#: __init__.py:68
+msgid "Checking duplicate gestures..."
+msgstr "중복 제스처 확인 중..."
+
+#: __init__.py:53
+msgid "Clean Configuration..."
+msgstr "설정 정리..."
+
+#: CleanConfig.py:16
+msgid "Clean NVDA.ini Sections"
+msgstr "NVDA.ini 섹션 정리"
+
+#: mygesturesManagement.py:73
+msgid "Clean up gestures for uninstalled addons from gestures.ini:"
+msgstr "제거된 부가 기능의 제스처를 gestures.ini에서 정리:"
+
+#: mygesturesManagement.py:98
+msgid "Clear All"
+msgstr "모두 지우기"
+
+#: CleanConfig.py:44
+#: mygesturesManagement.py:101
+msgid "Close"
+msgstr "닫기"
+
+#: CleanConfig.py:88
+#: mygesturesManagement.py:325
+#: mygesturesManagement.py:342
+#: mygesturesManagement.py:365
+msgid "Confirm"
+msgstr "확인"
+
+#: CheckDuplicateGestures.py:112
+msgid "Context"
+msgstr "컨텍스트"
+
+#: CleanConfig.py:86
+msgid "Delete {count} sections?"
+msgstr "{count}개의 섹션을 삭제하시겠습니까?"
+
+#: CheckDuplicateGestures.py:72
+msgid "Duplicate Gestures"
+msgstr "중복 제스처"
+
+#: mygesturesManagement.py:373
+msgid "Failed to clear gestures from configuration."
+msgstr "설정에서 제스처를 정리하지 못했습니다."
+
+#: CheckDuplicateGestures.py:230
+msgid "Failed to open Input Gestures dialog"
+msgstr "입력 제스처 대화 상자를 열지 못했습니다"
+
+#: mygesturesManagement.py:332
+msgid "Failed to remove addon from configuration."
+msgstr "설정에서 부가 기능을 제거하지 못했습니다."
+
+#: mygesturesManagement.py:349
+msgid "Failed to remove selected gestures."
+msgstr "선택한 제스처를 제거하지 못했습니다."
+
+#: CheckDuplicateGestures.py:105
+msgid "Found {} duplicate entries. Select an item and click 'Open' to fix."
+msgstr "{}개의 중복 항목을 찾았습니다. 항목을 선택하고 '열기'를 클릭하여 수정하십시오."
+
+#: CheckDuplicateGestures.py:111
+msgid "Function"
+msgstr "기능"
+
+#: CheckDuplicateGestures.py:110
+msgid "Gesture"
+msgstr "제스처"
+
+#: __init__.py:58
+msgid "Gesture Duplicate"
+msgstr "제스처 중복"
+
+#: CheckDuplicateGestures.py:221
+msgid "Input gestures dialog opened. Navigate with arrow keys to see Add and Remove buttons."
+msgstr "입력 제스처 대화 상자가 열렸습니다. 화살표 키로 이동하여 추가 및 제거 버튼을 확인하십시오."
+
+#: __init__.py:51
+msgid "Manage Custom Gestures..."
+msgstr "사용자 정의 제스처 관리..."
+
+#: __init__.py:87
+msgid "Multi-tap: 1=Check, 2=Manage, 3=Clean"
+msgstr "멀티탭: 1=확인, 2=관리, 3=정리"
+
+#: mygesturesManagement.py:23
+msgid "My Gestures Management"
+msgstr "내 제스처 관리"
+
+#: mygesturesManagement.py:360
+msgid "No addon gestures to clear."
+msgstr "정리할 부가 기능 제스처가 없습니다."
+
+#: CleanConfig.py:82
+#: mygesturesManagement.py:337
+msgid "No items selected."
+msgstr "선택된 항목이 없습니다."
+
+#: __init__.py:83
+msgid "Opening clean configuration..."
+msgstr "설정 정리 여는 중..."
+
+#: __init__.py:77
+msgid "Opening gestures management..."
+msgstr "제스처 관리 여는 중..."
+
+#: mygesturesManagement.py:95
+#: mygesturesManagement.py:248
+msgid "Remove Checked"
+msgstr "선택 항목 제거"
+
+#: CleanConfig.py:40
+msgid "Remove Selected"
+msgstr "선택된 항목 제거"
+
+#: mygesturesManagement.py:324
+msgid "Remove all {} custom gestures for addon '{}'?"
+msgstr "부가 기능 '{}'에 대한 모든 {}개의 사용자 정의 제스처를 제거하시겠습니까?"
+
+#: mygesturesManagement.py:363
+msgid "Remove all {} custom gestures from {} addons?"
+msgstr "{}개의 부가 기능에서 모든 {}개의 사용자 정의 제스처를 제거하시겠습니까?"
+
+#: mygesturesManagement.py:341
+msgid "Remove {} selected gesture(s)?"
+msgstr "선택한 {}개의 제스처를 제거하시겠습니까?"
+
+#: CleanConfig.py:94
+msgid "Removed successfully."
+msgstr "성공적으로 제거되었습니다."
+
+#: mygesturesManagement.py:327
+#: mygesturesManagement.py:344
+#: mygesturesManagement.py:368
+msgid "Success"
+msgstr "성공"
+
+#: CheckDuplicateGestures.py:91
+msgid "Unknown"
+msgstr "알 수 없음"
+
+#: CleanConfig.py:65
+#: mygesturesManagement.py:234
+#: mygesturesManagement.py:270
+msgid "checked"
+msgstr "선택됨"
+
+#: CleanConfig.py:65
+#: mygesturesManagement.py:234
+#: mygesturesManagement.py:270
+msgid "not checked"
+msgstr "선택 안 됨"

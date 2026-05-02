@@ -1,0 +1,202 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: gestureDuplicate 2026.5.1\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-05-02 09:45+0700\n"
+"PO-Revision-Date: 2026-05-02 10:20+0700\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Kazakh\n"
+"Language: kk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: CheckDuplicateGestures.py:121
+msgid "&Close"
+msgstr "&Жабу"
+
+#: CheckDuplicateGestures.py:117
+msgid "&Open Input Gestures"
+msgstr "Енгізу ым-ишараларын &ашу"
+
+#: mygesturesManagement.py:245
+msgid "&Remove addon"
+msgstr "Қосымшаны ө&шіру"
+
+#: mygesturesManagement.py:78
+msgid "Addon name:"
+msgstr "Қосымша атауы:"
+
+#: mygesturesManagement.py:194
+msgid "All addons"
+msgstr "Барлық қосымшалар"
+
+#: CheckDuplicateGestures.py:99
+#: mygesturesManagement.py:67
+msgid "Application: "
+msgstr "Қолданба: "
+
+#: __init__.py:49
+msgid "Check Duplicate Gestures..."
+msgstr "Қайталанатын ым-ишараларды тексеру..."
+
+#: CleanConfig.py:30
+msgid "Check sections to remove. Press Space to toggle, Delete to remove."
+msgstr "Өшірілетін бөлімдерді белгілеңіз. Ауыстыру үшін Бос орынды, өшіру үшін Delete пернесін басыңыз."
+
+#: __init__.py:68
+msgid "Checking duplicate gestures..."
+msgstr "Қайталанатын ым-ишаралар тексерілуде..."
+
+#: __init__.py:53
+msgid "Clean Configuration..."
+msgstr "Конфигурацияны тазалау..."
+
+#: CleanConfig.py:16
+msgid "Clean NVDA.ini Sections"
+msgstr "NVDA.ini бөлімдерін тазалау"
+
+#: mygesturesManagement.py:73
+msgid "Clean up gestures for uninstalled addons from gestures.ini:"
+msgstr "gestures.ini файлынан жойылған қосымшалардың ым-ишараларын тазалау:"
+
+#: mygesturesManagement.py:98
+msgid "Clear All"
+msgstr "Барлығын тазалау"
+
+#: CleanConfig.py:44
+#: mygesturesManagement.py:101
+msgid "Close"
+msgstr "Жабу"
+
+#: CleanConfig.py:88
+#: mygesturesManagement.py:325
+#: mygesturesManagement.py:342
+#: mygesturesManagement.py:365
+msgid "Confirm"
+msgstr "Растау"
+
+#: CheckDuplicateGestures.py:112
+msgid "Context"
+msgstr "Контекст"
+
+#: CleanConfig.py:86
+msgid "Delete {count} sections?"
+msgstr "{count} бөлімді өшіру керек пе?"
+
+#: CheckDuplicateGestures.py:72
+msgid "Duplicate Gestures"
+msgstr "Қайталанатын ым-ишаралар"
+
+#: mygesturesManagement.py:373
+msgid "Failed to clear gestures from configuration."
+msgstr "Конфигурациядан ым-ишараларды тазалау сәтсіз аяқталды."
+
+#: CheckDuplicateGestures.py:230
+msgid "Failed to open Input Gestures dialog"
+msgstr "Енгізу ым-ишаралары терезесін ашу сәтсіз аяқталды"
+
+#: mygesturesManagement.py:332
+msgid "Failed to remove addon from configuration."
+msgstr "Қосымшаны конфигурациядан өшіру сәтсіз аяқталды."
+
+#: mygesturesManagement.py:349
+msgid "Failed to remove selected gestures."
+msgstr "Таңдалған ым-ишараларды өшіру сәтсіз аяқталды."
+
+#: CheckDuplicateGestures.py:105
+msgid "Found {} duplicate entries. Select an item and click 'Open' to fix."
+msgstr "{} қайталанатын жазба табылды. Элементті таңдап, түзету үшін 'Ашу' түймесін басыңыз."
+
+#: CheckDuplicateGestures.py:111
+msgid "Function"
+msgstr "Функция"
+
+#: CheckDuplicateGestures.py:110
+msgid "Gesture"
+msgstr "Ым-ишара"
+
+#: __init__.py:58
+msgid "Gesture Duplicate"
+msgstr "Ым-ишаралардың қайталануы"
+
+#: CheckDuplicateGestures.py:221
+msgid "Input gestures dialog opened. Navigate with arrow keys to see Add and Remove buttons."
+msgstr "Енгізу ым-ишаралары терезесі ашылды. Қосу және Өшіру түймелерін көру үшін көрсеткі пернелермен шарлаңыз."
+
+#: __init__.py:51
+msgid "Manage Custom Gestures..."
+msgstr "Пайдаланушы ым-ишараларын басқару..."
+
+#: __init__.py:87
+msgid "Multi-tap: 1=Check, 2=Manage, 3=Clean"
+msgstr "Көп реттік басу: 1=Тексеру, 2=Басқару, 3=Тазалау"
+
+#: mygesturesManagement.py:23
+msgid "My Gestures Management"
+msgstr "Менің ым-ишараларымды басқару"
+
+#: mygesturesManagement.py:360
+msgid "No addon gestures to clear."
+msgstr "Тазалайтын қосымша ым-ишаралары жоқ."
+
+#: CleanConfig.py:82
+#: mygesturesManagement.py:337
+msgid "No items selected."
+msgstr "Элементтер таңдалған жоқ."
+
+#: __init__.py:83
+msgid "Opening clean configuration..."
+msgstr "Конфигурацияны тазалау ашылуда..."
+
+#: __init__.py:77
+msgid "Opening gestures management..."
+msgstr "Ым-ишараларды басқару ашылуда..."
+
+#: mygesturesManagement.py:95
+#: mygesturesManagement.py:248
+msgid "Remove Checked"
+msgstr "Белгіленгендерді өшіру"
+
+#: CleanConfig.py:40
+msgid "Remove Selected"
+msgstr "Таңдалғандарды өшіру"
+
+#: mygesturesManagement.py:324
+msgid "Remove all {} custom gestures for addon '{}'?"
+msgstr "'{}' қосымшасының барлық {} пайдаланушы ым-ишарасын өшіру керек пе?"
+
+#: mygesturesManagement.py:363
+msgid "Remove all {} custom gestures from {} addons?"
+msgstr "{} қосымшадан барлық {} пайдаланушы ым-ишарасын өшіру керек пе?"
+
+#: mygesturesManagement.py:341
+msgid "Remove {} selected gesture(s)?"
+msgstr "{} таңдалған ым-ишараны өшіру керек пе?"
+
+#: CleanConfig.py:94
+msgid "Removed successfully."
+msgstr "Сәтті өшірілді."
+
+#: mygesturesManagement.py:327
+#: mygesturesManagement.py:344
+#: mygesturesManagement.py:368
+msgid "Success"
+msgstr "Сәтті"
+
+#: CheckDuplicateGestures.py:91
+msgid "Unknown"
+msgstr "Белгісіз"
+
+#: CleanConfig.py:65
+#: mygesturesManagement.py:234
+#: mygesturesManagement.py:270
+msgid "checked"
+msgstr "белгіленген"
+
+#: CleanConfig.py:65
+#: mygesturesManagement.py:234
+#: mygesturesManagement.py:270
+msgid "not checked"
+msgstr "белгіленбеген"

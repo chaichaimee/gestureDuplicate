@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: gestureDuplicate 2026.3.4\n"
+"Project-Id-Version: gestureDuplicate 2026.5.1\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-03-31 06:17+0700\n"
+"POT-Creation-Date: 2026-05-02 09:45+0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: English\n"
@@ -37,7 +37,7 @@ msgstr "All addons"
 msgid "Application: "
 msgstr "Application: "
 
-#: __init__.py:47
+#: __init__.py:49
 msgid "Check Duplicate Gestures..."
 msgstr "Check Duplicate Gestures..."
 
@@ -45,11 +45,11 @@ msgstr "Check Duplicate Gestures..."
 msgid "Check sections to remove. Press Space to toggle, Delete to remove."
 msgstr "Check sections to remove. Press Space to toggle, Delete to remove."
 
-#: __init__.py:66
+#: __init__.py:68
 msgid "Checking duplicate gestures..."
 msgstr "Checking duplicate gestures..."
 
-#: __init__.py:51
+#: __init__.py:53
 msgid "Clean Configuration..."
 msgstr "Clean Configuration..."
 
@@ -117,7 +117,7 @@ msgstr "Function"
 msgid "Gesture"
 msgstr "Gesture"
 
-#: __init__.py:56
+#: __init__.py:58
 msgid "Gesture Duplicate"
 msgstr "Gesture Duplicate"
 
@@ -125,11 +125,11 @@ msgstr "Gesture Duplicate"
 msgid "Input gestures dialog opened. Navigate with arrow keys to see Add and Remove buttons."
 msgstr "Input gestures dialog opened. Navigate with arrow keys to see Add and Remove buttons."
 
-#: __init__.py:49
+#: __init__.py:51
 msgid "Manage Custom Gestures..."
 msgstr "Manage Custom Gestures..."
 
-#: __init__.py:85
+#: __init__.py:87
 msgid "Multi-tap: 1=Check, 2=Manage, 3=Clean"
 msgstr "Multi-tap: 1=Check, 2=Manage, 3=Clean"
 
@@ -146,11 +146,11 @@ msgstr "No addon gestures to clear."
 msgid "No items selected."
 msgstr "No items selected."
 
-#: __init__.py:81
+#: __init__.py:83
 msgid "Opening clean configuration..."
 msgstr "Opening clean configuration..."
 
-#: __init__.py:75
+#: __init__.py:77
 msgid "Opening gestures management..."
 msgstr "Opening gestures management..."
 

@@ -1,0 +1,202 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: gestureDuplicate 2026.5.1\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-05-02 09:45+0700\n"
+"PO-Revision-Date: 2026-05-02 10:25+0700\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Burmese\n"
+"Language: my\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: CheckDuplicateGestures.py:121
+msgid "&Close"
+msgstr "ပိတ်ရန် (&C)"
+
+#: CheckDuplicateGestures.py:117
+msgid "&Open Input Gestures"
+msgstr "ခလုပ်အမိန့်များ ဖွင့်ရန် (&O)"
+
+#: mygesturesManagement.py:245
+msgid "&Remove addon"
+msgstr "အပိုဆောင်းကို ဖယ်ရှားရန် (&R)"
+
+#: mygesturesManagement.py:78
+msgid "Addon name:"
+msgstr "အပိုဆောင်းအမည် -"
+
+#: mygesturesManagement.py:194
+msgid "All addons"
+msgstr "အပိုဆောင်းအားလုံး"
+
+#: CheckDuplicateGestures.py:99
+#: mygesturesManagement.py:67
+msgid "Application: "
+msgstr "အပလီကေးရှင်း - "
+
+#: __init__.py:49
+msgid "Check Duplicate Gestures..."
+msgstr "ထပ်နေသော ခလုပ်အမိန့်များ စစ်ဆေးရန်..."
+
+#: CleanConfig.py:30
+msgid "Check sections to remove. Press Space to toggle, Delete to remove."
+msgstr "ဖယ်ရှားရန် အပိုင်းများကို ရွေးပါ။ Space ကိုနှိပ်၍ ရွေးချယ်ရန်၊ Delete ကိုနှိပ်၍ ဖယ်ရှားရန်။"
+
+#: __init__.py:68
+msgid "Checking duplicate gestures..."
+msgstr "ထပ်နေသော ခလုပ်အမိန့်များ စစ်ဆေးနေသည်..."
+
+#: __init__.py:53
+msgid "Clean Configuration..."
+msgstr "ဆက်တင်များ ရှင်းလင်းရန်..."
+
+#: CleanConfig.py:16
+msgid "Clean NVDA.ini Sections"
+msgstr "NVDA.ini အပိုင်းများကို ရှင်းလင်းရန်"
+
+#: mygesturesManagement.py:73
+msgid "Clean up gestures for uninstalled addons from gestures.ini:"
+msgstr "မရှိတော့သော အပိုဆောင်းများ၏ ခလုပ်အမိန့်များကို gestures.ini မှ ရှင်းလင်းရန် -"
+
+#: mygesturesManagement.py:98
+msgid "Clear All"
+msgstr "အားလုံးရှင်းရန်"
+
+#: CleanConfig.py:44
+#: mygesturesManagement.py:101
+msgid "Close"
+msgstr "ပိတ်ရန်"
+
+#: CleanConfig.py:88
+#: mygesturesManagement.py:325
+#: mygesturesManagement.py:342
+#: mygesturesManagement.py:365
+msgid "Confirm"
+msgstr "အတည်ပြုရန်"
+
+#: CheckDuplicateGestures.py:112
+msgid "Context"
+msgstr "အခြေအနေ"
+
+#: CleanConfig.py:86
+msgid "Delete {count} sections?"
+msgstr "ဤအပိုင်း {count} ခုကို ဖျက်မလား?"
+
+#: CheckDuplicateGestures.py:72
+msgid "Duplicate Gestures"
+msgstr "ထပ်နေသော ခလုပ်အမိန့်များ"
+
+#: mygesturesManagement.py:373
+msgid "Failed to clear gestures from configuration."
+msgstr "ဆက်တင်မှ ခလုပ်အမိန့်များ ရှင်းလင်းရန် မအောင်မြင်ပါ။"
+
+#: CheckDuplicateGestures.py:230
+msgid "Failed to open Input Gestures dialog"
+msgstr "ခလုပ်အမိန့်များ ဖွင့်ရန် မအောင်မြင်ပါ"
+
+#: mygesturesManagement.py:332
+msgid "Failed to remove addon from configuration."
+msgstr "ဆက်တင်မှ အပိုဆောင်းကို ဖယ်ရှားရန် မအောင်မြင်ပါ။"
+
+#: mygesturesManagement.py:349
+msgid "Failed to remove selected gestures."
+msgstr "ရွေးချယ်ထားသော ခလုပ်အမိန့်များ ဖယ်ရှားရန် မအောင်မြင်ပါ။"
+
+#: CheckDuplicateGestures.py:105
+msgid "Found {} duplicate entries. Select an item and click 'Open' to fix."
+msgstr "ထပ်နေသော အချက်အလက် {} ခု တွေ့ရှိသည်။ ပြင်ဆင်ရန် အချက်အလက်ကိုရွေး၍ 'ဖွင့်ရန်' ကိုနှိပ်ပါ။"
+
+#: CheckDuplicateGestures.py:111
+msgid "Function"
+msgstr "လုပ်ဆောင်ချက်"
+
+#: CheckDuplicateGestures.py:110
+msgid "Gesture"
+msgstr "ခလုပ်အမိန့်"
+
+#: __init__.py:58
+msgid "Gesture Duplicate"
+msgstr "ခလုပ်အမိန့် ထပ်ခြင်း"
+
+#: CheckDuplicateGestures.py:221
+msgid "Input gestures dialog opened. Navigate with arrow keys to see Add and Remove buttons."
+msgstr "ခလုပ်အမိန့်များ ဖွင့်လိုက်ပါပြီ။ 'ထည့်ရန်' နှင့် 'ဖယ်ရှားရန်' ခလုတ်များကိုကြည့်ရန် မြှားခလုတ်များဖြင့် သွားပါ။"
+
+#: __init__.py:51
+msgid "Manage Custom Gestures..."
+msgstr "စိတ်ကြိုက် ခလုပ်အမိန့်များ စီမံရန်..."
+
+#: __init__.py:87
+msgid "Multi-tap: 1=Check, 2=Manage, 3=Clean"
+msgstr "အကြိမ်ကြိမ်နှိပ်ခြင်း - ၁=စစ်ဆေးရန်၊ ၂=စီမံရန်၊ ၃=ရှင်းလင်းရန်"
+
+#: mygesturesManagement.py:23
+msgid "My Gestures Management"
+msgstr "ကျွန်ုပ်၏ ခလုပ်အမိန့်များ စီမံခန့်ခွဲမှု"
+
+#: mygesturesManagement.py:360
+msgid "No addon gestures to clear."
+msgstr "ရှင်းလင်းရန် အပိုဆောင်း ခလုပ်အမိန့်များ မရှိပါ။"
+
+#: CleanConfig.py:82
+#: mygesturesManagement.py:337
+msgid "No items selected."
+msgstr "မည်သည့်အရာမှ မရွေးချယ်ထားပါ။"
+
+#: __init__.py:83
+msgid "Opening clean configuration..."
+msgstr "ဆက်တင်များ ရှင်းလင်းမှု ဖွင့်နေသည်..."
+
+#: __init__.py:77
+msgid "Opening gestures management..."
+msgstr "ခလုပ်အမိန့် စီမံခန့်ခွဲမှု ဖွင့်နေသည်..."
+
+#: mygesturesManagement.py:95
+#: mygesturesManagement.py:248
+msgid "Remove Checked"
+msgstr "ရွေးချယ်ထားသည်ကို ဖယ်ရှားရန်"
+
+#: CleanConfig.py:40
+msgid "Remove Selected"
+msgstr "ရွေးထားသည်ကို ဖယ်ရှားရန်"
+
+#: mygesturesManagement.py:324
+msgid "Remove all {} custom gestures for addon '{}'?"
+msgstr "အပိုဆောင်း '{}' အတွက် စိတ်ကြိုက် ခလုပ်အမိန့် {} ခုလုံးကို ဖယ်ရှားမလား?"
+
+#: mygesturesManagement.py:363
+msgid "Remove all {} custom gestures from {} addons?"
+msgstr "အပိုဆောင်း {} ခုမှ စိတ်ကြိုက် ခလုပ်အမိန့် {} ခုလုံးကို ဖယ်ရှားမလား?"
+
+#: mygesturesManagement.py:341
+msgid "Remove {} selected gesture(s)?"
+msgstr "ရွေးချယ်ထားသော ခလုပ်အမိန့် {} ခုကို ဖယ်ရှားမလား?"
+
+#: CleanConfig.py:94
+msgid "Removed successfully."
+msgstr "အောင်မြင်စွာ ဖယ်ရှားပြီးပါပြီ။"
+
+#: mygesturesManagement.py:327
+#: mygesturesManagement.py:344
+#: mygesturesManagement.py:368
+msgid "Success"
+msgstr "အောင်မြင်သည်"
+
+#: CheckDuplicateGestures.py:91
+msgid "Unknown"
+msgstr "အမည်မသိ"
+
+#: CleanConfig.py:65
+#: mygesturesManagement.py:234
+#: mygesturesManagement.py:270
+msgid "checked"
+msgstr "ရွေးချယ်ထားသည်"
+
+#: CleanConfig.py:65
+#: mygesturesManagement.py:234
+#: mygesturesManagement.py:270
+msgid "not checked"
+msgstr "မရွေးချယ်ထားပါ"

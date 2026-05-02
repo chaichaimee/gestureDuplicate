@@ -1,0 +1,202 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: gestureDuplicate 2026.5.1\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-05-02 09:45+0700\n"
+"PO-Revision-Date: 2026-05-02 10:30+0700\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Telugu\n"
+"Language: te\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: CheckDuplicateGestures.py:121
+msgid "&Close"
+msgstr "మూసివేయి (&C)"
+
+#: CheckDuplicateGestures.py:117
+msgid "&Open Input Gestures"
+msgstr "ఇన్‌పుట్ సంజ్ఞలను తెరువు (&O)"
+
+#: mygesturesManagement.py:245
+msgid "&Remove addon"
+msgstr "యాడ్-ఆన్‌ను తీసివేయి (&R)"
+
+#: mygesturesManagement.py:78
+msgid "Addon name:"
+msgstr "యాడ్-ఆన్ పేరు:"
+
+#: mygesturesManagement.py:194
+msgid "All addons"
+msgstr "అన్ని యాడ్-ఆన్‌లు"
+
+#: CheckDuplicateGestures.py:99
+#: mygesturesManagement.py:67
+msgid "Application: "
+msgstr "అప్లికేషన్: "
+
+#: __init__.py:49
+msgid "Check Duplicate Gestures..."
+msgstr "డూప్లికేట్ సంజ్ఞలను తనిఖీ చేయండి..."
+
+#: CleanConfig.py:30
+msgid "Check sections to remove. Press Space to toggle, Delete to remove."
+msgstr "తీసివేయవలసిన విభాగాలను ఎంచుకోండి. మార్చడానికి Space, తీసివేయడానికి Delete నొక్కండి."
+
+#: __init__.py:68
+msgid "Checking duplicate gestures..."
+msgstr "డూప్లికేట్ సంజ్ఞలను తనిఖీ చేస్తోంది..."
+
+#: __init__.py:53
+msgid "Clean Configuration..."
+msgstr "కాన్ఫిగరేషన్‌ను క్లీన్ చేయండి..."
+
+#: CleanConfig.py:16
+msgid "Clean NVDA.ini Sections"
+msgstr "NVDA.ini విభాగాలను క్లీన్ చేయండి"
+
+#: mygesturesManagement.py:73
+msgid "Clean up gestures for uninstalled addons from gestures.ini:"
+msgstr "gestures.ini నుండి అన్‌ఇన్‌స్టాల్ చేసిన యాడ్-ఆన్‌ల సంజ్ఞలను క్లీన్ చేయండి:"
+
+#: mygesturesManagement.py:98
+msgid "Clear All"
+msgstr "అన్నీ క్లియర్ చేయండి"
+
+#: CleanConfig.py:44
+#: mygesturesManagement.py:101
+msgid "Close"
+msgstr "మూసివేయి"
+
+#: CleanConfig.py:88
+#: mygesturesManagement.py:325
+#: mygesturesManagement.py:342
+#: mygesturesManagement.py:365
+msgid "Confirm"
+msgstr "ధృవీకరించు"
+
+#: CheckDuplicateGestures.py:112
+msgid "Context"
+msgstr "సందర్భం"
+
+#: CleanConfig.py:86
+msgid "Delete {count} sections?"
+msgstr "{count} విభాగాలను తొలగించాలా?"
+
+#: CheckDuplicateGestures.py:72
+msgid "Duplicate Gestures"
+msgstr "డూప్లికేట్ సంజ్ఞలు"
+
+#: mygesturesManagement.py:373
+msgid "Failed to clear gestures from configuration."
+msgstr "కాన్ఫిగరేషన్ నుండి సంజ్ఞలను క్లియర్ చేయడం విఫలమైంది."
+
+#: CheckDuplicateGestures.py:230
+msgid "Failed to open Input Gestures dialog"
+msgstr "ఇన్‌పుట్ సంజ్ఞల డైలాగ్‌ను తెరవడం విఫలమైంది"
+
+#: mygesturesManagement.py:332
+msgid "Failed to remove addon from configuration."
+msgstr "కాన్ఫిగరేషన్ నుండి యాడ్-ఆన్‌ను తీసివేయడం విఫలమైంది."
+
+#: mygesturesManagement.py:349
+msgid "Failed to remove selected gestures."
+msgstr "ఎంచుకున్న సంజ్ఞలను తీసివేయడం విఫలమైంది."
+
+#: CheckDuplicateGestures.py:105
+msgid "Found {} duplicate entries. Select an item and click 'Open' to fix."
+msgstr "{} డూప్లికేట్ ఎంట్రీలు కనుగొనబడ్డాయి. ఒక అంశాన్ని ఎంచుకుని, పరిష్కరించడానికి 'తెరువు' క్లిక్ చేయండి."
+
+#: CheckDuplicateGestures.py:111
+msgid "Function"
+msgstr "ఫంక్షన్"
+
+#: CheckDuplicateGestures.py:110
+msgid "Gesture"
+msgstr "సంజ్ఞ"
+
+#: __init__.py:58
+msgid "Gesture Duplicate"
+msgstr "సంజ్ఞ డూప్లికేట్"
+
+#: CheckDuplicateGestures.py:221
+msgid "Input gestures dialog opened. Navigate with arrow keys to see Add and Remove buttons."
+msgstr "ఇన్‌పుట్ సంజ్ఞల డైలాగ్ తెరవబడింది. జోడించు మరియు తీసివేయి బటన్‌లను చూడటానికి బాణం కీలతో నావిగేట్ చేయండి."
+
+#: __init__.py:51
+msgid "Manage Custom Gestures..."
+msgstr "అనుకూల సంజ్ఞలను నిర్వహించండి..."
+
+#: __init__.py:87
+msgid "Multi-tap: 1=Check, 2=Manage, 3=Clean"
+msgstr "మల్టీ-ట్యాప్: 1=తనిఖీ, 2=నిర్వహణ, 3=క్లీన్"
+
+#: mygesturesManagement.py:23
+msgid "My Gestures Management"
+msgstr "నా సంజ్ఞల నిర్వహణ"
+
+#: mygesturesManagement.py:360
+msgid "No addon gestures to clear."
+msgstr "క్లియర్ చేయడానికి యాడ్-ఆన్ సంజ్ఞలు లేవు."
+
+#: CleanConfig.py:82
+#: mygesturesManagement.py:337
+msgid "No items selected."
+msgstr "ఏ అంశాలు ఎంచుకోబడలేదు."
+
+#: __init__.py:83
+msgid "Opening clean configuration..."
+msgstr "క్లీన్ కాన్ఫిగరేషన్‌ను తెరుస్తోంది..."
+
+#: __init__.py:77
+msgid "Opening gestures management..."
+msgstr "సంజ్ఞల నిర్వహణను తెరుస్తోంది..."
+
+#: mygesturesManagement.py:95
+#: mygesturesManagement.py:248
+msgid "Remove Checked"
+msgstr "ఎంచుకున్నవి తీసివేయి"
+
+#: CleanConfig.py:40
+msgid "Remove Selected"
+msgstr "ఎంచుకున్నవి తీసివేయి"
+
+#: mygesturesManagement.py:324
+msgid "Remove all {} custom gestures for addon '{}'?"
+msgstr "యాడ్-ఆన్ '{}' కోసం అన్ని {} అనుకూల సంజ్ఞలను తీసివేయాలా?"
+
+#: mygesturesManagement.py:363
+msgid "Remove all {} custom gestures from {} addons?"
+msgstr "{} యాడ్-ఆన్‌ల నుండి అన్ని {} అనుకూల సంజ్ఞలను తీసివేయాలా?"
+
+#: mygesturesManagement.py:341
+msgid "Remove {} selected gesture(s)?"
+msgstr "ఎంచుకున్న {} సంజ్ఞలను తీసివేయాలా?"
+
+#: CleanConfig.py:94
+msgid "Removed successfully."
+msgstr "విజయవంతంగా తీసివేయబడింది."
+
+#: mygesturesManagement.py:327
+#: mygesturesManagement.py:344
+#: mygesturesManagement.py:368
+msgid "Success"
+msgstr "విజయం"
+
+#: CheckDuplicateGestures.py:91
+msgid "Unknown"
+msgstr "తెలియదు"
+
+#: CleanConfig.py:65
+#: mygesturesManagement.py:234
+#: mygesturesManagement.py:270
+msgid "checked"
+msgstr "ఎంచుకోబడింది"
+
+#: CleanConfig.py:65
+#: mygesturesManagement.py:234
+#: mygesturesManagement.py:270
+msgid "not checked"
+msgstr "ఎంచుకోబడలేదు"

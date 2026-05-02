@@ -1,0 +1,202 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: gestureDuplicate 2026.5.1\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-05-02 09:45+0700\n"
+"PO-Revision-Date: 2026-05-02 10:20+0700\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Croatian\n"
+"Language: hr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: CheckDuplicateGestures.py:121
+msgid "&Close"
+msgstr "&Zatvori"
+
+#: CheckDuplicateGestures.py:117
+msgid "&Open Input Gestures"
+msgstr "&Otvori ulazne gestu"
+
+#: mygesturesManagement.py:245
+msgid "&Remove addon"
+msgstr "&Ukloni dodatak"
+
+#: mygesturesManagement.py:78
+msgid "Addon name:"
+msgstr "Naziv dodatka:"
+
+#: mygesturesManagement.py:194
+msgid "All addons"
+msgstr "Svi dodaci"
+
+#: CheckDuplicateGestures.py:99
+#: mygesturesManagement.py:67
+msgid "Application: "
+msgstr "Aplikacija: "
+
+#: __init__.py:49
+msgid "Check Duplicate Gestures..."
+msgstr "Provjeri duplicirane geste..."
+
+#: CleanConfig.py:30
+msgid "Check sections to remove. Press Space to toggle, Delete to remove."
+msgstr "Označi odjeljke za uklanjanje. Razmak za promjenu, Delete za uklanjanje."
+
+#: __init__.py:68
+msgid "Checking duplicate gestures..."
+msgstr "Provjera dupliciranih gesti..."
+
+#: __init__.py:53
+msgid "Clean Configuration..."
+msgstr "Očisti konfiguraciju..."
+
+#: CleanConfig.py:16
+msgid "Clean NVDA.ini Sections"
+msgstr "Očisti odjeljke NVDA.ini"
+
+#: mygesturesManagement.py:73
+msgid "Clean up gestures for uninstalled addons from gestures.ini:"
+msgstr "Očisti geste deinstaliranih dodataka iz gestures.ini:"
+
+#: mygesturesManagement.py:98
+msgid "Clear All"
+msgstr "Očisti sve"
+
+#: CleanConfig.py:44
+#: mygesturesManagement.py:101
+msgid "Close"
+msgstr "Zatvori"
+
+#: CleanConfig.py:88
+#: mygesturesManagement.py:325
+#: mygesturesManagement.py:342
+#: mygesturesManagement.py:365
+msgid "Confirm"
+msgstr "Potvrdi"
+
+#: CheckDuplicateGestures.py:112
+msgid "Context"
+msgstr "Kontekst"
+
+#: CleanConfig.py:86
+msgid "Delete {count} sections?"
+msgstr "Obrisati {count} odjeljka?"
+
+#: CheckDuplicateGestures.py:72
+msgid "Duplicate Gestures"
+msgstr "Duplicirane geste"
+
+#: mygesturesManagement.py:373
+msgid "Failed to clear gestures from configuration."
+msgstr "Neuspješno čišćenje gesti iz konfiguracije."
+
+#: CheckDuplicateGestures.py:230
+msgid "Failed to open Input Gestures dialog"
+msgstr "Neuspješno otvaranje dijaloga ulaznih gesti"
+
+#: mygesturesManagement.py:332
+msgid "Failed to remove addon from configuration."
+msgstr "Neuspješno uklanjanje dodatka iz konfiguracije."
+
+#: mygesturesManagement.py:349
+msgid "Failed to remove selected gestures."
+msgstr "Neuspješno uklanjanje odabranih gesti."
+
+#: CheckDuplicateGestures.py:105
+msgid "Found {} duplicate entries. Select an item and click 'Open' to fix."
+msgstr "Pronađeno {} dupliciranih unosa. Odaberi stavku i klikni 'Otvori' za popravak."
+
+#: CheckDuplicateGestures.py:111
+msgid "Function"
+msgstr "Funkcija"
+
+#: CheckDuplicateGestures.py:110
+msgid "Gesture"
+msgstr "Gesta"
+
+#: __init__.py:58
+msgid "Gesture Duplicate"
+msgstr "Dupliciranje gesti"
+
+#: CheckDuplicateGestures.py:221
+msgid "Input gestures dialog opened. Navigate with arrow keys to see Add and Remove buttons."
+msgstr "Dijalog ulaznih gesti otvoren. Kreći se strelicama za gumbe Dodaj i Ukloni."
+
+#: __init__.py:51
+msgid "Manage Custom Gestures..."
+msgstr "Upravljaj prilagođenim gestama..."
+
+#: __init__.py:87
+msgid "Multi-tap: 1=Check, 2=Manage, 3=Clean"
+msgstr "Višestruki dodir: 1=Provjeri, 2=Upravljaj, 3=Očisti"
+
+#: mygesturesManagement.py:23
+msgid "My Gestures Management"
+msgstr "Upravljanje mojim gestama"
+
+#: mygesturesManagement.py:360
+msgid "No addon gestures to clear."
+msgstr "Nema gesti dodataka za čišćenje."
+
+#: CleanConfig.py:82
+#: mygesturesManagement.py:337
+msgid "No items selected."
+msgstr "Nema odabranih stavki."
+
+#: __init__.py:83
+msgid "Opening clean configuration..."
+msgstr "Otvaranje čišćenja konfiguracije..."
+
+#: __init__.py:77
+msgid "Opening gestures management..."
+msgstr "Otvaranje upravljanja gestama..."
+
+#: mygesturesManagement.py:95
+#: mygesturesManagement.py:248
+msgid "Remove Checked"
+msgstr "Ukloni označeno"
+
+#: CleanConfig.py:40
+msgid "Remove Selected"
+msgstr "Ukloni odabrano"
+
+#: mygesturesManagement.py:324
+msgid "Remove all {} custom gestures for addon '{}'?"
+msgstr "Ukloniti sve {} prilagođene geste za dodatak '{}'?"
+
+#: mygesturesManagement.py:363
+msgid "Remove all {} custom gestures from {} addons?"
+msgstr "Ukloniti sve {} prilagođene geste iz {} dodataka?"
+
+#: mygesturesManagement.py:341
+msgid "Remove {} selected gesture(s)?"
+msgstr "Ukloniti {} odabrane geste?"
+
+#: CleanConfig.py:94
+msgid "Removed successfully."
+msgstr "Uspješno uklonjeno."
+
+#: mygesturesManagement.py:327
+#: mygesturesManagement.py:344
+#: mygesturesManagement.py:368
+msgid "Success"
+msgstr "Uspjeh"
+
+#: CheckDuplicateGestures.py:91
+msgid "Unknown"
+msgstr "Nepoznato"
+
+#: CleanConfig.py:65
+#: mygesturesManagement.py:234
+#: mygesturesManagement.py:270
+msgid "checked"
+msgstr "označeno"
+
+#: CleanConfig.py:65
+#: mygesturesManagement.py:234
+#: mygesturesManagement.py:270
+msgid "not checked"
+msgstr "nije označeno"

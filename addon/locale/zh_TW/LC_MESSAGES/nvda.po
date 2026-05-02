@@ -1,0 +1,202 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: gestureDuplicate 2026.5.1\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-05-02 09:45+0700\n"
+"PO-Revision-Date: 2026-05-02 11:00+0700\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Chinese (Traditional)\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: CheckDuplicateGestures.py:121
+msgid "&Close"
+msgstr "關閉(&C)"
+
+#: CheckDuplicateGestures.py:117
+msgid "&Open Input Gestures"
+msgstr "開啟輸入手勢(&O)"
+
+#: mygesturesManagement.py:245
+msgid "&Remove addon"
+msgstr "移除元件(&R)"
+
+#: mygesturesManagement.py:78
+msgid "Addon name:"
+msgstr "元件名稱："
+
+#: mygesturesManagement.py:194
+msgid "All addons"
+msgstr "所有元件"
+
+#: CheckDuplicateGestures.py:99
+#: mygesturesManagement.py:67
+msgid "Application: "
+msgstr "應用程式： "
+
+#: __init__.py:49
+msgid "Check Duplicate Gestures..."
+msgstr "檢查重複手勢..."
+
+#: CleanConfig.py:30
+msgid "Check sections to remove. Press Space to toggle, Delete to remove."
+msgstr "勾選要移除的區段。按空格鍵切換狀態，按 Delete 鍵移除。"
+
+#: __init__.py:68
+msgid "Checking duplicate gestures..."
+msgstr "正在檢查重複手勢..."
+
+#: __init__.py:53
+msgid "Clean Configuration..."
+msgstr "清理設定..."
+
+#: CleanConfig.py:16
+msgid "Clean NVDA.ini Sections"
+msgstr "清理 NVDA.ini 區段"
+
+#: mygesturesManagement.py:73
+msgid "Clean up gestures for uninstalled addons from gestures.ini:"
+msgstr "從 gestures.ini 中清理已解除安裝元件的手勢："
+
+#: mygesturesManagement.py:98
+msgid "Clear All"
+msgstr "全部清除"
+
+#: CleanConfig.py:44
+#: mygesturesManagement.py:101
+msgid "Close"
+msgstr "關閉"
+
+#: CleanConfig.py:88
+#: mygesturesManagement.py:325
+#: mygesturesManagement.py:342
+#: mygesturesManagement.py:365
+msgid "Confirm"
+msgstr "確認"
+
+#: CheckDuplicateGestures.py:112
+msgid "Context"
+msgstr "內容"
+
+#: CleanConfig.py:86
+msgid "Delete {count} sections?"
+msgstr "刪除這 {count} 個區段嗎？"
+
+#: CheckDuplicateGestures.py:72
+msgid "Duplicate Gestures"
+msgstr "重複手勢"
+
+#: mygesturesManagement.py:373
+msgid "Failed to clear gestures from configuration."
+msgstr "從設定中清除手勢失敗。"
+
+#: CheckDuplicateGestures.py:230
+msgid "Failed to open Input Gestures dialog"
+msgstr "無法開啟輸入手勢對話框"
+
+#: mygesturesManagement.py:332
+msgid "Failed to remove addon from configuration."
+msgstr "從設定中移除元件失敗。"
+
+#: mygesturesManagement.py:349
+msgid "Failed to remove selected gestures."
+msgstr "無法移除選定的手勢。"
+
+#: CheckDuplicateGestures.py:105
+msgid "Found {} duplicate entries. Select an item and click 'Open' to fix."
+msgstr "發現 {} 處重複。請選擇一項並點擊「開啟」進行修復。"
+
+#: CheckDuplicateGestures.py:111
+msgid "Function"
+msgstr "功能"
+
+#: CheckDuplicateGestures.py:110
+msgid "Gesture"
+msgstr "手勢"
+
+#: __init__.py:58
+msgid "Gesture Duplicate"
+msgstr "手勢查重"
+
+#: CheckDuplicateGestures.py:221
+msgid "Input gestures dialog opened. Navigate with arrow keys to see Add and Remove buttons."
+msgstr "輸入手勢對話框已開啟。請使用方向鍵瀏覽以查看「新增」和「移除」按鈕。"
+
+#: __init__.py:51
+msgid "Manage Custom Gestures..."
+msgstr "管理自訂手勢..."
+
+#: __init__.py:87
+msgid "Multi-tap: 1=Check, 2=Manage, 3=Clean"
+msgstr "多次按鍵：1=檢查，2=管理，3=清理"
+
+#: mygesturesManagement.py:23
+msgid "My Gestures Management"
+msgstr "我的手勢管理"
+
+#: mygesturesManagement.py:360
+msgid "No addon gestures to clear."
+msgstr "沒有需要清除的元件手勢。"
+
+#: CleanConfig.py:82
+#: mygesturesManagement.py:337
+msgid "No items selected."
+msgstr "未選取任何項目。"
+
+#: __init__.py:83
+msgid "Opening clean configuration..."
+msgstr "正在開啟清理設定..."
+
+#: __init__.py:77
+msgid "Opening gestures management..."
+msgstr "正在開啟手勢管理..."
+
+#: mygesturesManagement.py:95
+#: mygesturesManagement.py:248
+msgid "Remove Checked"
+msgstr "移除選取項"
+
+#: CleanConfig.py:40
+msgid "Remove Selected"
+msgstr "移除所選"
+
+#: mygesturesManagement.py:324
+msgid "Remove all {} custom gestures for addon '{}'?"
+msgstr "移除元件「{1}」的所有 {0} 個自訂手勢嗎？"
+
+#: mygesturesManagement.py:363
+msgid "Remove all {} custom gestures from {} addons?"
+msgstr "移除來自 {1} 個元件的所有 {0} 個自訂手勢嗎？"
+
+#: mygesturesManagement.py:341
+msgid "Remove {} selected gesture(s)?"
+msgstr "移除選取的 {} 個手勢嗎？"
+
+#: CleanConfig.py:94
+msgid "Removed successfully."
+msgstr "成功移除。"
+
+#: mygesturesManagement.py:327
+#: mygesturesManagement.py:344
+#: mygesturesManagement.py:368
+msgid "Success"
+msgstr "成功"
+
+#: CheckDuplicateGestures.py:91
+msgid "Unknown"
+msgstr "未知"
+
+#: CleanConfig.py:65
+#: mygesturesManagement.py:234
+#: mygesturesManagement.py:270
+msgid "checked"
+msgstr "已勾選"
+
+#: CleanConfig.py:65
+#: mygesturesManagement.py:234
+#: mygesturesManagement.py:270
+msgid "not checked"
+msgstr "未勾選"

@@ -1,0 +1,202 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: gestureDuplicate 2026.5.1\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-05-02 09:45+0700\n"
+"PO-Revision-Date: 2026-05-02 10:00+0700\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Danish\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: CheckDuplicateGestures.py:121
+msgid "&Close"
+msgstr "&Luk"
+
+#: CheckDuplicateGestures.py:117
+msgid "&Open Input Gestures"
+msgstr "&Åbn Input-fagter"
+
+#: mygesturesManagement.py:245
+msgid "&Remove addon"
+msgstr "&Fjern tilføjelse"
+
+#: mygesturesManagement.py:78
+msgid "Addon name:"
+msgstr "Tilføjelsesnavn:"
+
+#: mygesturesManagement.py:194
+msgid "All addons"
+msgstr "Alle tilføjelser"
+
+#: CheckDuplicateGestures.py:99
+#: mygesturesManagement.py:67
+msgid "Application: "
+msgstr "Program: "
+
+#: __init__.py:49
+msgid "Check Duplicate Gestures..."
+msgstr "Tjek for dublerede fagter..."
+
+#: CleanConfig.py:30
+msgid "Check sections to remove. Press Space to toggle, Delete to remove."
+msgstr "Marker sektioner der skal fjernes. Tryk på Mellemrum for at skifte, Delete for at fjerne."
+
+#: __init__.py:68
+msgid "Checking duplicate gestures..."
+msgstr "Tjekker for dublerede fagter..."
+
+#: __init__.py:53
+msgid "Clean Configuration..."
+msgstr "Rens konfiguration..."
+
+#: CleanConfig.py:16
+msgid "Clean NVDA.ini Sections"
+msgstr "Rens NVDA.ini-sektioner"
+
+#: mygesturesManagement.py:73
+msgid "Clean up gestures for uninstalled addons from gestures.ini:"
+msgstr "Rens op i fagter for afinstallerede tilføjelser fra gestures.ini:"
+
+#: mygesturesManagement.py:98
+msgid "Clear All"
+msgstr "Ryd alle"
+
+#: CleanConfig.py:44
+#: mygesturesManagement.py:101
+msgid "Close"
+msgstr "Luk"
+
+#: CleanConfig.py:88
+#: mygesturesManagement.py:325
+#: mygesturesManagement.py:342
+#: mygesturesManagement.py:365
+msgid "Confirm"
+msgstr "Bekræft"
+
+#: CheckDuplicateGestures.py:112
+msgid "Context"
+msgstr "Kontekst"
+
+#: CleanConfig.py:86
+msgid "Delete {count} sections?"
+msgstr "Slet {count} sektioner?"
+
+#: CheckDuplicateGestures.py:72
+msgid "Duplicate Gestures"
+msgstr "Dublerede fagter"
+
+#: mygesturesManagement.py:373
+msgid "Failed to clear gestures from configuration."
+msgstr "Kunne ikke rydde fagter fra konfigurationen."
+
+#: CheckDuplicateGestures.py:230
+msgid "Failed to open Input Gestures dialog"
+msgstr "Kunne ikke åbne dialogboksen Input-fagter"
+
+#: mygesturesManagement.py:332
+msgid "Failed to remove addon from configuration."
+msgstr "Kunne ikke fjerne tilføjelsen fra konfigurationen."
+
+#: mygesturesManagement.py:349
+msgid "Failed to remove selected gestures."
+msgstr "Kunne ikke fjerne de valgte fagter."
+
+#: CheckDuplicateGestures.py:105
+msgid "Found {} duplicate entries. Select an item and click 'Open' to fix."
+msgstr "Fundet {} dublerede poster. Vælg et element og klik på 'Åbn' for at rette."
+
+#: CheckDuplicateGestures.py:111
+msgid "Function"
+msgstr "Funktion"
+
+#: CheckDuplicateGestures.py:110
+msgid "Gesture"
+msgstr "Fagte"
+
+#: __init__.py:58
+msgid "Gesture Duplicate"
+msgstr "Fagtedublering"
+
+#: CheckDuplicateGestures.py:221
+msgid "Input gestures dialog opened. Navigate with arrow keys to see Add and Remove buttons."
+msgstr "Dialogboksen Input-fagter er åben. Naviger med piletasterne for at se knapperne Tilføj og Fjern."
+
+#: __init__.py:51
+msgid "Manage Custom Gestures..."
+msgstr "Administrer brugerdefinerede fagter..."
+
+#: __init__.py:87
+msgid "Multi-tap: 1=Check, 2=Manage, 3=Clean"
+msgstr "Multi-tap: 1=Tjek, 2=Administrer, 3=Rens"
+
+#: mygesturesManagement.py:23
+msgid "My Gestures Management"
+msgstr "Min fagtestyring"
+
+#: mygesturesManagement.py:360
+msgid "No addon gestures to clear."
+msgstr "Ingen tilføjelsesfagter at rydde."
+
+#: CleanConfig.py:82
+#: mygesturesManagement.py:337
+msgid "No items selected."
+msgstr "Ingen elementer valgt."
+
+#: __init__.py:83
+msgid "Opening clean configuration..."
+msgstr "Åbner renskonfiguration..."
+
+#: __init__.py:77
+msgid "Opening gestures management..."
+msgstr "Åbner fagtestyring..."
+
+#: mygesturesManagement.py:95
+#: mygesturesManagement.py:248
+msgid "Remove Checked"
+msgstr "Fjern markerede"
+
+#: CleanConfig.py:40
+msgid "Remove Selected"
+msgstr "Fjern valgte"
+
+#: mygesturesManagement.py:324
+msgid "Remove all {} custom gestures for addon '{}'?"
+msgstr "Fjern alle {} brugerdefinerede fagter for tilføjelsen '{}'?"
+
+#: mygesturesManagement.py:363
+msgid "Remove all {} custom gestures from {} addons?"
+msgstr "Fjern alle {} brugerdefinerede fagter fra {} tilføjelser?"
+
+#: mygesturesManagement.py:341
+msgid "Remove {} selected gesture(s)?"
+msgstr "Fjern {} valgte fagte(r)?"
+
+#: CleanConfig.py:94
+msgid "Removed successfully."
+msgstr "Fjernet med succes."
+
+#: mygesturesManagement.py:327
+#: mygesturesManagement.py:344
+#: mygesturesManagement.py:368
+msgid "Success"
+msgstr "Succes"
+
+#: CheckDuplicateGestures.py:91
+msgid "Unknown"
+msgstr "Ukendt"
+
+#: CleanConfig.py:65
+#: mygesturesManagement.py:234
+#: mygesturesManagement.py:270
+msgid "checked"
+msgstr "markeret"
+
+#: CleanConfig.py:65
+#: mygesturesManagement.py:234
+#: mygesturesManagement.py:270
+msgid "not checked"
+msgstr "ikke markeret"
