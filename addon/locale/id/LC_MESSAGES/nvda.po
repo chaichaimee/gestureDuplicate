@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: gestureDuplicate 2026.5.1\n"
+"Project-Id-Version: gestureDuplicate 2026.9.9\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-02 09:45+0700\n"
-"PO-Revision-Date: 2026-05-02 10:20+0700\n"
+"POT-Creation-Date: 2026-09-08 16:37+0700\n"
+"PO-Revision-Date: \n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Indonesian\n"
 "Language: id\n"
@@ -12,28 +12,32 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: CheckDuplicateGestures.py:121
+#: CheckDuplicateGestures.py:127
 msgid "&Close"
 msgstr "&Tutup"
 
-#: CheckDuplicateGestures.py:117
+#: CheckDuplicateGestures.py:123
 msgid "&Open Input Gestures"
 msgstr "&Buka Gestur Masukan"
 
-#: mygesturesManagement.py:245
+#: mygesturesManagement.py:252
 msgid "&Remove addon"
 msgstr "&Hapus pengaya"
 
-#: mygesturesManagement.py:78
+#: mygesturesManagement.py:105
+msgid "&Restart NVDA Now"
+msgstr "&Muat ulang NVDA sekarang"
+
+#: mygesturesManagement.py:80
 msgid "Addon name:"
 msgstr "Nama pengaya:"
 
-#: mygesturesManagement.py:194
+#: mygesturesManagement.py:201
 msgid "All addons"
 msgstr "Semua pengaya"
 
-#: CheckDuplicateGestures.py:99
-#: mygesturesManagement.py:67
+#: CheckDuplicateGestures.py:105
+#: mygesturesManagement.py:69
 msgid "Application: "
 msgstr "Aplikasi: "
 
@@ -41,7 +45,7 @@ msgstr "Aplikasi: "
 msgid "Check Duplicate Gestures..."
 msgstr "Periksa Gestur Duplikat..."
 
-#: CleanConfig.py:30
+#: CleanConfig.py:31
 msgid "Check sections to remove. Press Space to toggle, Delete to remove."
 msgstr "Centang bagian yang akan dihapus. Tekan Spasi untuk beralih, Delete untuk menghapus."
 
@@ -57,63 +61,63 @@ msgstr "Bersihkan Konfigurasi..."
 msgid "Clean NVDA.ini Sections"
 msgstr "Bersihkan Bagian NVDA.ini"
 
-#: mygesturesManagement.py:73
+#: mygesturesManagement.py:75
 msgid "Clean up gestures for uninstalled addons from gestures.ini:"
 msgstr "Bersihkan gestur untuk pengaya yang sudah dihapus dari gestures.ini:"
 
-#: mygesturesManagement.py:98
+#: mygesturesManagement.py:100
 msgid "Clear All"
 msgstr "Bersihkan Semua"
 
-#: CleanConfig.py:44
-#: mygesturesManagement.py:101
+#: CleanConfig.py:45
+#: mygesturesManagement.py:103
 msgid "Close"
 msgstr "Tutup"
 
-#: CleanConfig.py:88
-#: mygesturesManagement.py:325
-#: mygesturesManagement.py:342
-#: mygesturesManagement.py:365
+#: CleanConfig.py:110
+#: mygesturesManagement.py:358
+#: mygesturesManagement.py:374
+#: mygesturesManagement.py:396
 msgid "Confirm"
 msgstr "Konfirmasi"
 
-#: CheckDuplicateGestures.py:112
+#: CheckDuplicateGestures.py:118
 msgid "Context"
 msgstr "Konteks"
 
-#: CleanConfig.py:86
+#: CleanConfig.py:108
 msgid "Delete {count} sections?"
 msgstr "Hapus {count} bagian?"
 
-#: CheckDuplicateGestures.py:72
+#: CheckDuplicateGestures.py:76
 msgid "Duplicate Gestures"
 msgstr "Gestur Duplikat"
 
-#: mygesturesManagement.py:373
+#: mygesturesManagement.py:403
 msgid "Failed to clear gestures from configuration."
 msgstr "Gagal membersihkan gestur dari konfigurasi."
 
-#: CheckDuplicateGestures.py:230
+#: CheckDuplicateGestures.py:236
 msgid "Failed to open Input Gestures dialog"
 msgstr "Gagal membuka dialog Gestur Masukan"
 
-#: mygesturesManagement.py:332
+#: mygesturesManagement.py:364
 msgid "Failed to remove addon from configuration."
 msgstr "Gagal menghapus pengaya dari konfigurasi."
 
-#: mygesturesManagement.py:349
+#: mygesturesManagement.py:380
 msgid "Failed to remove selected gestures."
 msgstr "Gagal menghapus gestur yang dipilih."
 
-#: CheckDuplicateGestures.py:105
+#: CheckDuplicateGestures.py:111
 msgid "Found {} duplicate entries. Select an item and click 'Open' to fix."
 msgstr "Ditemukan {} entri duplikat. Pilih item dan klik 'Buka' untuk memperbaiki."
 
-#: CheckDuplicateGestures.py:111
+#: CheckDuplicateGestures.py:117
 msgid "Function"
 msgstr "Fungsi"
 
-#: CheckDuplicateGestures.py:110
+#: CheckDuplicateGestures.py:116
 msgid "Gesture"
 msgstr "Gestur"
 
@@ -121,7 +125,11 @@ msgstr "Gestur"
 msgid "Gesture Duplicate"
 msgstr "Gestur Duplikat"
 
-#: CheckDuplicateGestures.py:221
+#: mygesturesManagement.py:263
+msgid "Gestures cleaned. Restart NVDA now to apply the changes."
+msgstr "Gestur telah dibersihkan. Muat ulang NVDA sekarang untuk menerapkan perubahan."
+
+#: CheckDuplicateGestures.py:227
 msgid "Input gestures dialog opened. Navigate with arrow keys to see Add and Remove buttons."
 msgstr "Dialog gestur masukan terbuka. Navigasi dengan tombol panah untuk melihat tombol Tambah dan Hapus."
 
@@ -133,16 +141,16 @@ msgstr "Kelola Gestur Kustom..."
 msgid "Multi-tap: 1=Check, 2=Manage, 3=Clean"
 msgstr "Ketukan ganda: 1=Periksa, 2=Kelola, 3=Bersihkan"
 
-#: mygesturesManagement.py:23
+#: mygesturesManagement.py:24
 msgid "My Gestures Management"
 msgstr "Manajemen Gestur Saya"
 
-#: mygesturesManagement.py:360
+#: mygesturesManagement.py:391
 msgid "No addon gestures to clear."
 msgstr "Tidak ada gestur pengaya untuk dibersihkan."
 
-#: CleanConfig.py:82
-#: mygesturesManagement.py:337
+#: CleanConfig.py:104
+#: mygesturesManagement.py:369
 msgid "No items selected."
 msgstr "Tidak ada item yang dipilih."
 
@@ -154,49 +162,43 @@ msgstr "Membuka pembersihan konfigurasi..."
 msgid "Opening gestures management..."
 msgstr "Membuka manajemen gestur..."
 
-#: mygesturesManagement.py:95
-#: mygesturesManagement.py:248
+#: mygesturesManagement.py:97
+#: mygesturesManagement.py:255
 msgid "Remove Checked"
 msgstr "Hapus yang Dicentang"
 
-#: CleanConfig.py:40
+#: CleanConfig.py:41
 msgid "Remove Selected"
 msgstr "Hapus yang Dipilih"
 
-#: mygesturesManagement.py:324
+#: mygesturesManagement.py:357
 msgid "Remove all {} custom gestures for addon '{}'?"
 msgstr "Hapus semua {} gestur kustom untuk pengaya '{}'?"
 
-#: mygesturesManagement.py:363
+#: mygesturesManagement.py:394
 msgid "Remove all {} custom gestures from {} addons?"
 msgstr "Hapus semua {} gestur kustomจาก {} pengaya?"
 
-#: mygesturesManagement.py:341
+#: mygesturesManagement.py:373
 msgid "Remove {} selected gesture(s)?"
 msgstr "Hapus {} gestur yang dipilih?"
 
-#: CleanConfig.py:94
+#: CleanConfig.py:116
 msgid "Removed successfully."
 msgstr "Berhasil dihapus."
 
-#: mygesturesManagement.py:327
-#: mygesturesManagement.py:344
-#: mygesturesManagement.py:368
-msgid "Success"
-msgstr "Berhasil"
-
-#: CheckDuplicateGestures.py:91
+#: CheckDuplicateGestures.py:97
 msgid "Unknown"
 msgstr "Tidak diketahui"
 
-#: CleanConfig.py:65
-#: mygesturesManagement.py:234
-#: mygesturesManagement.py:270
+#: CleanConfig.py:72
+#: mygesturesManagement.py:241
+#: mygesturesManagement.py:303
 msgid "checked"
 msgstr "dicentang"
 
-#: CleanConfig.py:65
-#: mygesturesManagement.py:234
-#: mygesturesManagement.py:270
+#: CleanConfig.py:72
+#: mygesturesManagement.py:241
+#: mygesturesManagement.py:303
 msgid "not checked"
 msgstr "tidak dicentang"

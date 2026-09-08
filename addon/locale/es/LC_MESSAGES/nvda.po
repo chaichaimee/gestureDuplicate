@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: gestureDuplicate 2026.5.1\n"
+"Project-Id-Version: gestureDuplicate 2026.9.9\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-02 09:45+0700\n"
-"PO-Revision-Date: 2026-05-02 10:00+0700\n"
+"POT-Creation-Date: 2026-09-08 16:37+0700\n"
+"PO-Revision-Date: \n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Spanish\n"
 "Language: es\n"
@@ -12,28 +12,32 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: CheckDuplicateGestures.py:121
+#: CheckDuplicateGestures.py:127
 msgid "&Close"
 msgstr "&Cerrar"
 
-#: CheckDuplicateGestures.py:117
+#: CheckDuplicateGestures.py:123
 msgid "&Open Input Gestures"
 msgstr "&Abrir Gestos de entrada"
 
-#: mygesturesManagement.py:245
+#: mygesturesManagement.py:252
 msgid "&Remove addon"
 msgstr "&Eliminar complemento"
 
-#: mygesturesManagement.py:78
+#: mygesturesManagement.py:105
+msgid "&Restart NVDA Now"
+msgstr "&Reiniciar NVDA ahora"
+
+#: mygesturesManagement.py:80
 msgid "Addon name:"
 msgstr "Nombre del complemento:"
 
-#: mygesturesManagement.py:194
+#: mygesturesManagement.py:201
 msgid "All addons"
 msgstr "Todos los complementos"
 
-#: CheckDuplicateGestures.py:99
-#: mygesturesManagement.py:67
+#: CheckDuplicateGestures.py:105
+#: mygesturesManagement.py:69
 msgid "Application: "
 msgstr "Aplicación: "
 
@@ -41,7 +45,7 @@ msgstr "Aplicación: "
 msgid "Check Duplicate Gestures..."
 msgstr "Comprobar gestos duplicados..."
 
-#: CleanConfig.py:30
+#: CleanConfig.py:31
 msgid "Check sections to remove. Press Space to toggle, Delete to remove."
 msgstr "Marca las secciones a eliminar. Pulsa Espacio para alternar, Suprimir para eliminar."
 
@@ -57,63 +61,63 @@ msgstr "Limpiar configuración..."
 msgid "Clean NVDA.ini Sections"
 msgstr "Limpiar secciones de NVDA.ini"
 
-#: mygesturesManagement.py:73
+#: mygesturesManagement.py:75
 msgid "Clean up gestures for uninstalled addons from gestures.ini:"
 msgstr "Limpiar gestos de complementos desinstalados de gestures.ini:"
 
-#: mygesturesManagement.py:98
+#: mygesturesManagement.py:100
 msgid "Clear All"
 msgstr "Borrar todo"
 
-#: CleanConfig.py:44
-#: mygesturesManagement.py:101
+#: CleanConfig.py:45
+#: mygesturesManagement.py:103
 msgid "Close"
 msgstr "Cerrar"
 
-#: CleanConfig.py:88
-#: mygesturesManagement.py:325
-#: mygesturesManagement.py:342
-#: mygesturesManagement.py:365
+#: CleanConfig.py:110
+#: mygesturesManagement.py:358
+#: mygesturesManagement.py:374
+#: mygesturesManagement.py:396
 msgid "Confirm"
 msgstr "Confirmar"
 
-#: CheckDuplicateGestures.py:112
+#: CheckDuplicateGestures.py:118
 msgid "Context"
 msgstr "Contexto"
 
-#: CleanConfig.py:86
+#: CleanConfig.py:108
 msgid "Delete {count} sections?"
 msgstr "¿Eliminar {count} secciones?"
 
-#: CheckDuplicateGestures.py:72
+#: CheckDuplicateGestures.py:76
 msgid "Duplicate Gestures"
 msgstr "Gestos duplicados"
 
-#: mygesturesManagement.py:373
+#: mygesturesManagement.py:403
 msgid "Failed to clear gestures from configuration."
 msgstr "Error al limpiar los gestos de la configuración."
 
-#: CheckDuplicateGestures.py:230
+#: CheckDuplicateGestures.py:236
 msgid "Failed to open Input Gestures dialog"
 msgstr "Error al abrir el diálogo de Gestos de entrada"
 
-#: mygesturesManagement.py:332
+#: mygesturesManagement.py:364
 msgid "Failed to remove addon from configuration."
 msgstr "Error al eliminar el complemento de la configuración."
 
-#: mygesturesManagement.py:349
+#: mygesturesManagement.py:380
 msgid "Failed to remove selected gestures."
 msgstr "Error al eliminar los gestos seleccionados."
 
-#: CheckDuplicateGestures.py:105
+#: CheckDuplicateGestures.py:111
 msgid "Found {} duplicate entries. Select an item and click 'Open' to fix."
 msgstr "Se encontraron {} entradas duplicadas. Selecciona un elemento y pulsa 'Abrir' para solucionar."
 
-#: CheckDuplicateGestures.py:111
+#: CheckDuplicateGestures.py:117
 msgid "Function"
 msgstr "Función"
 
-#: CheckDuplicateGestures.py:110
+#: CheckDuplicateGestures.py:116
 msgid "Gesture"
 msgstr "Gesto"
 
@@ -121,7 +125,11 @@ msgstr "Gesto"
 msgid "Gesture Duplicate"
 msgstr "Gestos Duplicados"
 
-#: CheckDuplicateGestures.py:221
+#: mygesturesManagement.py:263
+msgid "Gestures cleaned. Restart NVDA now to apply the changes."
+msgstr "Gesta eliminada. Reinicie NVDA ahora para aplicar los cambios."
+
+#: CheckDuplicateGestures.py:227
 msgid "Input gestures dialog opened. Navigate with arrow keys to see Add and Remove buttons."
 msgstr "Diálogo de gestos de entrada abierto. Navega con las flechas para ver los botones Añadir y Eliminar."
 
@@ -133,16 +141,16 @@ msgstr "Gestionar gestos personalizados..."
 msgid "Multi-tap: 1=Check, 2=Manage, 3=Clean"
 msgstr "Toque múltiple: 1=Comprobar, 2=Gestionar, 3=Limpiar"
 
-#: mygesturesManagement.py:23
+#: mygesturesManagement.py:24
 msgid "My Gestures Management"
 msgstr "Mi gestión de gestos"
 
-#: mygesturesManagement.py:360
+#: mygesturesManagement.py:391
 msgid "No addon gestures to clear."
 msgstr "No hay gestos de complementos para limpiar."
 
-#: CleanConfig.py:82
-#: mygesturesManagement.py:337
+#: CleanConfig.py:104
+#: mygesturesManagement.py:369
 msgid "No items selected."
 msgstr "No se seleccionaron elementos."
 
@@ -154,49 +162,43 @@ msgstr "Abriendo limpieza de configuración..."
 msgid "Opening gestures management..."
 msgstr "Abriendo gestión de gestos..."
 
-#: mygesturesManagement.py:95
-#: mygesturesManagement.py:248
+#: mygesturesManagement.py:97
+#: mygesturesManagement.py:255
 msgid "Remove Checked"
 msgstr "Eliminar marcados"
 
-#: CleanConfig.py:40
+#: CleanConfig.py:41
 msgid "Remove Selected"
 msgstr "Eliminar seleccionados"
 
-#: mygesturesManagement.py:324
+#: mygesturesManagement.py:357
 msgid "Remove all {} custom gestures for addon '{}'?"
 msgstr "¿Eliminar todos los {} gestos personalizados del complemento '{}'?"
 
-#: mygesturesManagement.py:363
+#: mygesturesManagement.py:394
 msgid "Remove all {} custom gestures from {} addons?"
 msgstr "¿Eliminar todos los {} gestos personalizados de {} complementos?"
 
-#: mygesturesManagement.py:341
+#: mygesturesManagement.py:373
 msgid "Remove {} selected gesture(s)?"
 msgstr "¿Eliminar {} gesto(s) seleccionado(s)?"
 
-#: CleanConfig.py:94
+#: CleanConfig.py:116
 msgid "Removed successfully."
 msgstr "Eliminado con éxito."
 
-#: mygesturesManagement.py:327
-#: mygesturesManagement.py:344
-#: mygesturesManagement.py:368
-msgid "Success"
-msgstr "Éxito"
-
-#: CheckDuplicateGestures.py:91
+#: CheckDuplicateGestures.py:97
 msgid "Unknown"
 msgstr "Desconocido"
 
-#: CleanConfig.py:65
-#: mygesturesManagement.py:234
-#: mygesturesManagement.py:270
+#: CleanConfig.py:72
+#: mygesturesManagement.py:241
+#: mygesturesManagement.py:303
 msgid "checked"
 msgstr "marcado"
 
-#: CleanConfig.py:65
-#: mygesturesManagement.py:234
-#: mygesturesManagement.py:270
+#: CleanConfig.py:72
+#: mygesturesManagement.py:241
+#: mygesturesManagement.py:303
 msgid "not checked"
 msgstr "no marcado"

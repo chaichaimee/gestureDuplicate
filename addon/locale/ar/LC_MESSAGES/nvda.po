@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: gestureDuplicate 2026.5.1\n"
+"Project-Id-Version: gestureDuplicate 2026.9.9\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-02 09:45+0700\n"
-"PO-Revision-Date: 2026-05-02 10:00+0700\n"
+"POT-Creation-Date: 2026-09-08 16:37+0700\n"
+"PO-Revision-Date: \n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Arabic\n"
 "Language: ar\n"
@@ -12,28 +12,32 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: CheckDuplicateGestures.py:121
+#: CheckDuplicateGestures.py:127
 msgid "&Close"
-msgstr "إ&غلاق"
+msgstr "&إغلاق"
 
-#: CheckDuplicateGestures.py:117
+#: CheckDuplicateGestures.py:123
 msgid "&Open Input Gestures"
 msgstr "&فتح اختصارات الإدخال"
 
-#: mygesturesManagement.py:245
+#: mygesturesManagement.py:252
 msgid "&Remove addon"
 msgstr "إ&زالة الإضافة"
 
-#: mygesturesManagement.py:78
+#: mygesturesManagement.py:105
+msgid "&Restart NVDA Now"
+msgstr "إعادة تشغيل NVDA الآن"
+
+#: mygesturesManagement.py:80
 msgid "Addon name:"
 msgstr "اسم الإضافة:"
 
-#: mygesturesManagement.py:194
+#: mygesturesManagement.py:201
 msgid "All addons"
 msgstr "كل الإضافات"
 
-#: CheckDuplicateGestures.py:99
-#: mygesturesManagement.py:67
+#: CheckDuplicateGestures.py:105
+#: mygesturesManagement.py:69
 msgid "Application: "
 msgstr "التطبيق: "
 
@@ -41,7 +45,7 @@ msgstr "التطبيق: "
 msgid "Check Duplicate Gestures..."
 msgstr "فحص الاختصارات المكررة..."
 
-#: CleanConfig.py:30
+#: CleanConfig.py:31
 msgid "Check sections to remove. Press Space to toggle, Delete to remove."
 msgstr "حدد الأقسام المراد إزالتها. اضغط مسافة للتبديل، و Delete للإزالة."
 
@@ -57,63 +61,63 @@ msgstr "تنظيف الإعدادات..."
 msgid "Clean NVDA.ini Sections"
 msgstr "تنظيف أقسام NVDA.ini"
 
-#: mygesturesManagement.py:73
+#: mygesturesManagement.py:75
 msgid "Clean up gestures for uninstalled addons from gestures.ini:"
 msgstr "تنظيف اختصارات الإضافات غير المثبتة من gestures.ini:"
 
-#: mygesturesManagement.py:98
+#: mygesturesManagement.py:100
 msgid "Clear All"
 msgstr "مسح الكل"
 
-#: CleanConfig.py:44
-#: mygesturesManagement.py:101
+#: CleanConfig.py:45
+#: mygesturesManagement.py:103
 msgid "Close"
 msgstr "إغلاق"
 
-#: CleanConfig.py:88
-#: mygesturesManagement.py:325
-#: mygesturesManagement.py:342
-#: mygesturesManagement.py:365
+#: CleanConfig.py:110
+#: mygesturesManagement.py:358
+#: mygesturesManagement.py:374
+#: mygesturesManagement.py:396
 msgid "Confirm"
 msgstr "تأكيد"
 
-#: CheckDuplicateGestures.py:112
+#: CheckDuplicateGestures.py:118
 msgid "Context"
 msgstr "السياق"
 
-#: CleanConfig.py:86
+#: CleanConfig.py:108
 msgid "Delete {count} sections?"
 msgstr "حذف {count} من الأقسام؟"
 
-#: CheckDuplicateGestures.py:72
+#: CheckDuplicateGestures.py:76
 msgid "Duplicate Gestures"
 msgstr "اختصارات مكررة"
 
-#: mygesturesManagement.py:373
+#: mygesturesManagement.py:403
 msgid "Failed to clear gestures from configuration."
 msgstr "فشل مسح الاختصارات من الإعدادات."
 
-#: CheckDuplicateGestures.py:230
+#: CheckDuplicateGestures.py:236
 msgid "Failed to open Input Gestures dialog"
 msgstr "فشل فتح محاورة اختصارات الإدخال"
 
-#: mygesturesManagement.py:332
+#: mygesturesManagement.py:364
 msgid "Failed to remove addon from configuration."
 msgstr "فشل إزالة الإضافة من الإعدادات."
 
-#: mygesturesManagement.py:349
+#: mygesturesManagement.py:380
 msgid "Failed to remove selected gestures."
 msgstr "فشل إزالة الاختصارات المحددة."
 
-#: CheckDuplicateGestures.py:105
+#: CheckDuplicateGestures.py:111
 msgid "Found {} duplicate entries. Select an item and click 'Open' to fix."
 msgstr "تم العثور على {} من الإدخالات المكررة. اختر عنصرا واضغط 'فتح' للإصلاح."
 
-#: CheckDuplicateGestures.py:111
+#: CheckDuplicateGestures.py:117
 msgid "Function"
 msgstr "الوظيفة"
 
-#: CheckDuplicateGestures.py:110
+#: CheckDuplicateGestures.py:116
 msgid "Gesture"
 msgstr "الاختصار"
 
@@ -121,7 +125,11 @@ msgstr "الاختصار"
 msgid "Gesture Duplicate"
 msgstr "تكرار الاختصارات"
 
-#: CheckDuplicateGestures.py:221
+#: mygesturesManagement.py:263
+msgid "Gestures cleaned. Restart NVDA now to apply the changes."
+msgstr "تم تنظيف الإيماءات. أعِد تشغيل NVDA الآن لتطبيق التغييرات."
+
+#: CheckDuplicateGestures.py:227
 msgid "Input gestures dialog opened. Navigate with arrow keys to see Add and Remove buttons."
 msgstr "فُتحت محاورة اختصارات الإدخال. تنقل بالأسهم لرؤية أزرار الإضافة والإزالة."
 
@@ -133,16 +141,16 @@ msgstr "إدارة الاختصارات المخصصة..."
 msgid "Multi-tap: 1=Check, 2=Manage, 3=Clean"
 msgstr "ضغط متعدد: 1=فحص، 2=إدارة، 3=تنظيف"
 
-#: mygesturesManagement.py:23
+#: mygesturesManagement.py:24
 msgid "My Gestures Management"
 msgstr "إدارة اختصاراتي"
 
-#: mygesturesManagement.py:360
+#: mygesturesManagement.py:391
 msgid "No addon gestures to clear."
 msgstr "لا توجد اختصارات للإضافة لمسحها."
 
-#: CleanConfig.py:82
-#: mygesturesManagement.py:337
+#: CleanConfig.py:104
+#: mygesturesManagement.py:369
 msgid "No items selected."
 msgstr "لم يتم تحديد أي عناصر."
 
@@ -154,49 +162,43 @@ msgstr "جاري فتح تنظيف الإعدادات..."
 msgid "Opening gestures management..."
 msgstr "جاري فتح إدارة الاختصارات..."
 
-#: mygesturesManagement.py:95
-#: mygesturesManagement.py:248
+#: mygesturesManagement.py:97
+#: mygesturesManagement.py:255
 msgid "Remove Checked"
 msgstr "إزالة المحدد"
 
-#: CleanConfig.py:40
+#: CleanConfig.py:41
 msgid "Remove Selected"
 msgstr "إزالة المحدد"
 
-#: mygesturesManagement.py:324
+#: mygesturesManagement.py:357
 msgid "Remove all {} custom gestures for addon '{}'?"
 msgstr "إزالة كافة الاختصارات المخصصة البالغ عددها {} للإضافة '{}'؟"
 
-#: mygesturesManagement.py:363
+#: mygesturesManagement.py:394
 msgid "Remove all {} custom gestures from {} addons?"
 msgstr "إزالة كافة الاختصارات المخصصة البالغ عددها {} من {} من الإضافات؟"
 
-#: mygesturesManagement.py:341
+#: mygesturesManagement.py:373
 msgid "Remove {} selected gesture(s)?"
 msgstr "إزالة {} من الاختصارات المحددة؟"
 
-#: CleanConfig.py:94
+#: CleanConfig.py:116
 msgid "Removed successfully."
 msgstr "تمت الإزالة بنجاح."
 
-#: mygesturesManagement.py:327
-#: mygesturesManagement.py:344
-#: mygesturesManagement.py:368
-msgid "Success"
-msgstr "نجاح"
-
-#: CheckDuplicateGestures.py:91
+#: CheckDuplicateGestures.py:97
 msgid "Unknown"
 msgstr "غير معروف"
 
-#: CleanConfig.py:65
-#: mygesturesManagement.py:234
-#: mygesturesManagement.py:270
+#: CleanConfig.py:72
+#: mygesturesManagement.py:241
+#: mygesturesManagement.py:303
 msgid "checked"
 msgstr "محدد"
 
-#: CleanConfig.py:65
-#: mygesturesManagement.py:234
-#: mygesturesManagement.py:270
+#: CleanConfig.py:72
+#: mygesturesManagement.py:241
+#: mygesturesManagement.py:303
 msgid "not checked"
 msgstr "غير محدد"

@@ -17,6 +17,7 @@ class CleanConfigDialog(wx.Dialog):
 						style=wx.DEFAULT_DIALOG_STYLE | wx.RESIZE_BORDER | wx.STAY_ON_TOP)
 		
 		self.sections = []
+		self._removedSections = set()
 		self._setup_ui()
 		self._load_sections()
 		
@@ -54,7 +55,13 @@ class CleanConfigDialog(wx.Dialog):
 		self.checkList.Clear()
 		try:
 			conf = config.conf.profiles[0]
-			self.sections = sorted([str(k) for k in conf.keys()])
+			# Sections purged this session are kept out of the list even if
+			# NVDA's config validation regenerates an empty default stub for
+			# them, since that stub still carries no real settings.
+			self.sections = sorted(
+				str(k) for k in conf.keys()
+				if str(k) not in self._removedSections
+			)
 			self.checkList.AppendItems(self.sections)
 		except Exception as e:
 			log.error(f"Error loading config: {e}")
@@ -76,6 +83,21 @@ class CleanConfigDialog(wx.Dialog):
 		"""Properly destroy the dialog to free memory and return focus."""
 		self.Destroy()
 
+	def _purge_section(self, conf, name):
+		"""Remove both the stored values and the schema entry for a section.
+		Deleting only the values leaves the section name defined in the
+		config's own validation spec, which recreates an empty stub for it
+		the next time NVDA validates the profile, making the name reappear
+		even though every setting under it is gone."""
+		if name in conf:
+			del conf[name]
+		configSpec = getattr(conf, 'configspec', None)
+		if configSpec is not None and name in configSpec:
+			try:
+				del configSpec[name]
+			except Exception as e:
+				log.debug(f"Could not remove configspec entry for {name}: {e}")
+
 	def confirm_and_delete(self):
 		indices = self.checkList.GetCheckedItems()
 		if not indices:
@@ -88,8 +110,8 @@ class CleanConfigDialog(wx.Dialog):
 		if gui.messageBox(msg, _("Confirm"), wx.YES_NO | wx.ICON_WARNING) == wx.YES:
 			conf = config.conf.profiles[0]
 			for name in selected:
-				if name in conf:
-					del conf[name]
+				self._purge_section(conf, name)
+				self._removedSections.add(name)
 			config.conf.save()
 			ui.message(_("Removed successfully."))
 			self._load_sections()

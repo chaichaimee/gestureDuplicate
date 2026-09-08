@@ -27,7 +27,8 @@ def _normalize_gesture(gesture: str) -> str:
 	return norm_gesture
 
 def find_duplicate_gestures_data() -> List[Dict]:
-	"""Scans all registered gestures to find duplicates."""
+	"""Scans all registered gestures relevant to the current focus to find
+	duplicates."""
 	all_gestures = []
 	seen_keys: Set[Tuple[str, str, str]] = set()
 
@@ -53,7 +54,8 @@ def find_duplicate_gestures_data() -> List[Dict]:
 							'className': class_name,
 							'scriptName': script_name
 						})
-					except:
+					except Exception as e:
+						log.debug(f"Skipped malformed gesture entry for {script_name}: {e}")
 						continue
 	except Exception as e:
 		log.error(f"Critical error scanning gestures: {e}")
@@ -69,19 +71,23 @@ def find_duplicate_gestures_data() -> List[Dict]:
 
 class DuplicateGesturesDialog(wx.Dialog):
 	def __init__(self, parent, duplicates: List[Dict]):
-		super().__init__(parent, title=_("Duplicate Gestures"), size=(800, 500))
+		# STAY_ON_TOP ensures the dialog does not end up hidden behind Explorer
+		# or whichever application last had foreground focus.
+		super().__init__(parent, title=_("Duplicate Gestures"), size=(800, 500),
+						style=wx.DEFAULT_DIALOG_STYLE | wx.RESIZE_BORDER | wx.STAY_ON_TOP)
 		self.duplicates = duplicates
 		self.selected_item_index = -1
 		self.SetEscapeId(wx.ID_CLOSE)
 		self._setup_ui()
 		self.Bind(wx.EVT_CLOSE, lambda e: self.Destroy())
+		self.Raise()
 
 	def _get_gesture_display(self, gesture: str) -> str:
 		try:
 			display_text = inputCore.getDisplayTextForGestureIdentifier(gesture)
 			if display_text and len(display_text) >= 2:
 				return display_text[1]
-		except:
+		except Exception:
 			pass
 		return gesture
 
@@ -175,10 +181,10 @@ class DuplicateGesturesDialog(wx.Dialog):
 		try:
 			# Use the EXACT method from the old version that shows Add/Remove buttons
 			from gui.inputGestures import InputGesturesDialog
-			
+
 			# Close current dialog first
 			self.Close()
-			
+
 			# Create and show the Input Gestures dialog directly
 			dialog = InputGesturesDialog(gui.mainFrame)
 			if script_name and hasattr(dialog, 'filterCtrl'):
@@ -186,17 +192,17 @@ class DuplicateGesturesDialog(wx.Dialog):
 				# Try to call filter method with proper argument
 				if hasattr(dialog, 'filter'):
 					dialog.filter(filterText=script_name)
-			
+
 			# Show the dialog
 			dialog.Show()
 			dialog.Raise()
-			
+
 			# Wait for dialog to be fully loaded and tree items to be available
 			def expand_and_focus():
 				try:
 					if hasattr(dialog, 'gesturesTree'):
 						tree = dialog.gesturesTree
-						
+
 						# Get the root item
 						root = tree.GetRootItem()
 						if root.IsOk():
@@ -207,26 +213,24 @@ class DuplicateGesturesDialog(wx.Dialog):
 								tree.Expand(item)
 								tree.SelectItem(item)
 								tree.EnsureVisible(item)
-								
+
 								# Now move down to the first child to show Add/Remove buttons
 								child_item, child_cookie = tree.GetFirstChild(item)
 								if child_item.IsOk():
 									tree.SelectItem(child_item)
 									tree.EnsureVisible(child_item)
-								
+
 								# Set focus to tree
 								tree.SetFocus()
-								
+
 								# Announce that dialog is ready
 								ui.message(_("Input gestures dialog opened. Navigate with arrow keys to see Add and Remove buttons."))
 				except Exception as e:
 					log.error(f"Error expanding tree: {e}")
-			
+
 			# Schedule the expansion after dialog is shown
 			wx.CallLater(200, expand_and_focus)
-			
+
 		except Exception as e:
 			log.error(f"Failed to open Input Gestures dialog: {e}")
 			ui.message(_("Failed to open Input Gestures dialog"))
-
-

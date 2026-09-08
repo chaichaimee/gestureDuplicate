@@ -5,6 +5,7 @@ import os
 import globalVars
 import gui
 import ui
+import core
 from logHandler import log
 import inputCore
 import addonHandler
@@ -28,10 +29,11 @@ class MyGesturesManagementDialog(wx.Dialog):
 		self.ini_path = ""
 		self.gestures_data: List[Dict] = []      # filtered list of gestures (current view)
 		self.checked_indices: Set[int] = set()   # indices in gestures_data that are checked
+		self._pendingRestart = False
 		self.SetEscapeId(wx.ID_CLOSE)
 		self._setup_ui()
 		self._load_gestures_from_ini()
-		self.Bind(wx.EVT_CLOSE, lambda e: self.Destroy())
+		self.Bind(wx.EVT_CLOSE, self.onCloseAttempt)
 
 		# Bring dialog to front
 		self.Raise()
@@ -98,12 +100,17 @@ class MyGesturesManagementDialog(wx.Dialog):
 		self.clearBtn = wx.Button(self, label=_("Clear All"))
 		self.clearBtn.Bind(wx.EVT_BUTTON, self.onClearAll)
 
-		closeBtn = wx.Button(self, wx.ID_CLOSE, label=_("Close"))
+		self.closeBtn = wx.Button(self, wx.ID_CLOSE, label=_("Close"))
+
+		self.restartBtn = wx.Button(self, label=_("&Restart NVDA Now"))
+		self.restartBtn.Bind(wx.EVT_BUTTON, self.onRestartNow)
+		self.restartBtn.Hide()
 
 		btn_sizer.Add(self.deleteBtn, 0, wx.LEFT, 10)
 		btn_sizer.Add(self.clearBtn, 0, wx.LEFT, 10)
 		btn_sizer.AddStretchSpacer()
-		btn_sizer.Add(closeBtn, 0)
+		btn_sizer.Add(self.restartBtn, 0, wx.RIGHT, 10)
+		btn_sizer.Add(self.closeBtn, 0)
 		main_sizer.Add(btn_sizer, 0, wx.ALL | wx.EXPAND, 10)
 
 		self.SetSizer(main_sizer)
@@ -248,6 +255,32 @@ class MyGesturesManagementDialog(wx.Dialog):
 			self.deleteBtn.SetLabel(_("Remove Checked"))
 			self.deleteBtn.Enable(bool(self.checked_indices))
 
+	def _activate_restart_pending(self):
+		"""Switch the dialog into restart-required mode after a gestures.ini
+		cleanup, since stale entries in inputCore's cached gesture mappings
+		are only fully cleared once NVDA reloads on the next startup."""
+		self._pendingRestart = True
+		ui.message(_("Gestures cleaned. Restart NVDA now to apply the changes."))
+		self.closeBtn.Disable()
+		self.closeBtn.Hide()
+		self.restartBtn.Show()
+		self.restartBtn.Enable()
+		self.GetSizer().Layout()
+		wx.CallAfter(self.restartBtn.SetFocus)
+
+	def onRestartNow(self, event):
+		"""Restart NVDA immediately so the cleaned gesture mappings take effect."""
+		core.restart()
+
+	def onCloseAttempt(self, event):
+		"""Force an immediate NVDA restart if a cleanup is pending, covering
+		the Escape key and the window's native close button as well as the
+		Close button itself, since all of them raise this same close event."""
+		if self._pendingRestart:
+			core.restart()
+			return
+		self.Destroy()
+
 	def onAddonChanged(self, event):
 		selection = self.addon_combo.GetSelection()
 		if selection == 0:
@@ -324,10 +357,9 @@ class MyGesturesManagementDialog(wx.Dialog):
 		msg = _("Remove all {} custom gestures for addon '{}'?").format(len(items_to_remove), addon_name)
 		if wx.MessageBox(msg, _("Confirm"), wx.YES_NO) == wx.YES:
 			if self._remove_gestures_from_ini(items_to_remove):
-				ui.message(_("Success"))
 				self._load_gestures_from_ini()
 				self._update_delete_button()
-				wx.CallAfter(self.addon_combo.SetFocus)
+				self._activate_restart_pending()
 			else:
 				ui.message(_("Failed to remove addon from configuration."))
 
@@ -341,10 +373,9 @@ class MyGesturesManagementDialog(wx.Dialog):
 		msg = _("Remove {} selected gesture(s)?").format(len(items_to_remove))
 		if wx.MessageBox(msg, _("Confirm"), wx.YES_NO) == wx.YES:
 			if self._remove_gestures_from_ini(items_to_remove):
-				ui.message(_("Success"))
 				self._load_gestures_from_ini()
 				self._update_delete_button()
-				wx.CallAfter(self.addon_combo.SetFocus)
+				self._activate_restart_pending()
 			else:
 				ui.message(_("Failed to remove selected gestures."))
 
@@ -365,9 +396,8 @@ class MyGesturesManagementDialog(wx.Dialog):
 		if wx.MessageBox(msg, _("Confirm"), wx.YES_NO | wx.ICON_WARNING) == wx.YES:
 			items_to_remove = self.all_gestures[:]
 			if self._remove_gestures_from_ini(items_to_remove):
-				ui.message(_("Success"))
 				self._load_gestures_from_ini()
 				self._update_delete_button()
-				wx.CallAfter(self.addon_combo.SetFocus)
+				self._activate_restart_pending()
 			else:
 				ui.message(_("Failed to clear gestures from configuration."))
