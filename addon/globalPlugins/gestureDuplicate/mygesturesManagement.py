@@ -44,8 +44,8 @@ class MyGesturesManagementDialog(wx.Dialog):
 			display_text = inputCore.getDisplayTextForGestureIdentifier(gesture)
 			if display_text and len(display_text) >= 2:
 				return display_text[1]
-		except:
-			pass
+		except Exception as e:
+			log.debug("Gesture display text unavailable for %s: %s", gesture, e)
 		return gesture
 
 	def _get_script_display_name(self, script_name: str, section: str) -> str:
@@ -54,8 +54,8 @@ class MyGesturesManagementDialog(wx.Dialog):
 			if section in all_mappings and script_name in all_mappings[section]:
 				info = all_mappings[section][script_name]
 				return getattr(info, 'displayName', None) or script_name
-		except:
-			pass
+		except Exception as e:
+			log.debug("Script display name lookup failed for %s: %s", script_name, e)
 		return script_name
 
 	def _get_context_display(self, section: str) -> str:
@@ -193,7 +193,8 @@ class MyGesturesManagementDialog(wx.Dialog):
 			if section.startswith("appModules."):
 				return True
 			return False
-		except:
+		except Exception as e:
+			log.debug("Installed-addon check failed for %s: %s", addon_name, e)
 			return False
 
 	def _populate_addon_combo(self):

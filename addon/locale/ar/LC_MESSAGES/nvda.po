@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: gestureDuplicate 2026.9.9\n"
+"Project-Id-Version: gestureDuplicate 2026.11.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-09-08 16:37+0700\n"
+"POT-Creation-Date: 2026-10-25 16:30+0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Arabic\n"
@@ -10,7 +10,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: DevOn Addon\n"
+"X-Generator: ChaiBot Addon\n"
 
 #: CheckDuplicateGestures.py:127
 msgid "&Close"
@@ -20,7 +20,7 @@ msgstr "&إغلاق"
 msgid "&Open Input Gestures"
 msgstr "&فتح اختصارات الإدخال"
 
-#: mygesturesManagement.py:252
+#: mygesturesManagement.py:253
 msgid "&Remove addon"
 msgstr "إ&زالة الإضافة"
 
@@ -32,7 +32,7 @@ msgstr "إعادة تشغيل NVDA الآن"
 msgid "Addon name:"
 msgstr "اسم الإضافة:"
 
-#: mygesturesManagement.py:201
+#: mygesturesManagement.py:202
 msgid "All addons"
 msgstr "كل الإضافات"
 
@@ -41,25 +41,33 @@ msgstr "كل الإضافات"
 msgid "Application: "
 msgstr "التطبيق: "
 
-#: __init__.py:49
+#: addonCore.py:49
 msgid "Check Duplicate Gestures..."
 msgstr "فحص الاختصارات المكررة..."
 
-#: CleanConfig.py:31
-msgid "Check sections to remove. Press Space to toggle, Delete to remove."
-msgstr "حدد الأقسام المراد إزالتها. اضغط مسافة للتبديل، و Delete للإزالة."
+#: CleanConfig.py:212
+msgid "Check items to remove; unchecked items are kept. Press Space to toggle, Delete to remove, Enter to open a subsection."
+msgstr "حدد العناصر المراد إزالتها؛ العناصر غير المحددة يتم الاحتفاظ بها. اضغط على مسافة للتبديل، وديليت للإزالة، وإنتر لفتح قسم فرعي."
 
-#: __init__.py:68
+#: CleanConfig.py:70
+msgid "Check sections to remove. Press Space to toggle, Delete to remove, Enter to choose individual items inside a section."
+msgstr "حدد الأقسام المراد إزالتها. اضغط على مسافة للتبديل، وديليت للإزالة، وإنتر لاختيار عناصر فردية داخل القسم."
+
+#: addonCore.py:68
 msgid "Checking duplicate gestures..."
 msgstr "جاري فحص الاختصارات المكررة..."
 
-#: __init__.py:53
+#: addonCore.py:53
 msgid "Clean Configuration..."
 msgstr "تنظيف الإعدادات..."
 
-#: CleanConfig.py:16
+#: CleanConfig.py:55
 msgid "Clean NVDA.ini Sections"
 msgstr "تنظيف أقسام NVDA.ini"
+
+#: CleanConfig.py:198
+msgid "Clean NVDA.ini: {path}"
+msgstr "تنظيف NVDA.ini: {path}"
 
 #: mygesturesManagement.py:75
 msgid "Clean up gestures for uninstalled addons from gestures.ini:"
@@ -69,15 +77,17 @@ msgstr "تنظيف اختصارات الإضافات غير المثبتة من 
 msgid "Clear All"
 msgstr "مسح الكل"
 
-#: CleanConfig.py:45
+#: CleanConfig.py:87
+#: CleanConfig.py:229
 #: mygesturesManagement.py:103
 msgid "Close"
 msgstr "إغلاق"
 
-#: CleanConfig.py:110
-#: mygesturesManagement.py:358
-#: mygesturesManagement.py:374
-#: mygesturesManagement.py:396
+#: CleanConfig.py:179
+#: CleanConfig.py:318
+#: mygesturesManagement.py:359
+#: mygesturesManagement.py:375
+#: mygesturesManagement.py:397
 msgid "Confirm"
 msgstr "تأكيد"
 
@@ -85,15 +95,24 @@ msgstr "تأكيد"
 msgid "Context"
 msgstr "السياق"
 
-#: CleanConfig.py:108
+#: CleanConfig.py:315
+msgid "Delete {count} items from {path}? Removed settings return to their default values."
+msgstr "هل تريد حذف {count} من العناصر من {path}؟ الإعدادات المزالة ستعود إلى قيمها الافتراضية."
+
+#: CleanConfig.py:177
 msgid "Delete {count} sections?"
 msgstr "حذف {count} من الأقسام؟"
+
+#: CleanConfig.py:80
+#: CleanConfig.py:223
+msgid "Details..."
+msgstr "التفاصيل..."
 
 #: CheckDuplicateGestures.py:76
 msgid "Duplicate Gestures"
 msgstr "اختصارات مكررة"
 
-#: mygesturesManagement.py:403
+#: mygesturesManagement.py:404
 msgid "Failed to clear gestures from configuration."
 msgstr "فشل مسح الاختصارات من الإعدادات."
 
@@ -101,11 +120,11 @@ msgstr "فشل مسح الاختصارات من الإعدادات."
 msgid "Failed to open Input Gestures dialog"
 msgstr "فشل فتح محاورة اختصارات الإدخال"
 
-#: mygesturesManagement.py:364
+#: mygesturesManagement.py:365
 msgid "Failed to remove addon from configuration."
 msgstr "فشل إزالة الإضافة من الإعدادات."
 
-#: mygesturesManagement.py:380
+#: mygesturesManagement.py:381
 msgid "Failed to remove selected gestures."
 msgstr "فشل إزالة الاختصارات المحددة."
 
@@ -121,11 +140,11 @@ msgstr "الوظيفة"
 msgid "Gesture"
 msgstr "الاختصار"
 
-#: __init__.py:58
+#: addonCore.py:58
 msgid "Gesture Duplicate"
 msgstr "تكرار الاختصارات"
 
-#: mygesturesManagement.py:263
+#: mygesturesManagement.py:264
 msgid "Gestures cleaned. Restart NVDA now to apply the changes."
 msgstr "تم تنظيف الإيماءات. أعِد تشغيل NVDA الآن لتطبيق التغييرات."
 
@@ -133,11 +152,11 @@ msgstr "تم تنظيف الإيماءات. أعِد تشغيل NVDA الآن ل
 msgid "Input gestures dialog opened. Navigate with arrow keys to see Add and Remove buttons."
 msgstr "فُتحت محاورة اختصارات الإدخال. تنقل بالأسهم لرؤية أزرار الإضافة والإزالة."
 
-#: __init__.py:51
+#: addonCore.py:51
 msgid "Manage Custom Gestures..."
 msgstr "إدارة الاختصارات المخصصة..."
 
-#: __init__.py:87
+#: addonCore.py:87
 msgid "Multi-tap: 1=Check, 2=Manage, 3=Clean"
 msgstr "ضغط متعدد: 1=فحص، 2=إدارة، 3=تنظيف"
 
@@ -145,60 +164,87 @@ msgstr "ضغط متعدد: 1=فحص، 2=إدارة، 3=تنظيف"
 msgid "My Gestures Management"
 msgstr "إدارة اختصاراتي"
 
-#: mygesturesManagement.py:391
+#: mygesturesManagement.py:392
 msgid "No addon gestures to clear."
 msgstr "لا توجد اختصارات للإضافة لمسحها."
 
-#: CleanConfig.py:104
-#: mygesturesManagement.py:369
+#: CleanConfig.py:140
+#: CleanConfig.py:292
+msgid "No item focused."
+msgstr "لا يوجد عنصر مركز عليه."
+
+#: CleanConfig.py:173
+#: CleanConfig.py:311
+#: mygesturesManagement.py:370
 msgid "No items selected."
 msgstr "لم يتم تحديد أي عناصر."
 
-#: __init__.py:83
+#: addonCore.py:83
 msgid "Opening clean configuration..."
 msgstr "جاري فتح تنظيف الإعدادات..."
 
-#: __init__.py:77
+#: addonCore.py:77
 msgid "Opening gestures management..."
 msgstr "جاري فتح إدارة الاختصارات..."
 
 #: mygesturesManagement.py:97
-#: mygesturesManagement.py:255
+#: mygesturesManagement.py:256
 msgid "Remove Checked"
 msgstr "إزالة المحدد"
 
-#: CleanConfig.py:41
+#: CleanConfig.py:83
+#: CleanConfig.py:226
 msgid "Remove Selected"
 msgstr "إزالة المحدد"
 
-#: mygesturesManagement.py:357
+#: mygesturesManagement.py:358
 msgid "Remove all {} custom gestures for addon '{}'?"
 msgstr "إزالة كافة الاختصارات المخصصة البالغ عددها {} للإضافة '{}'؟"
 
-#: mygesturesManagement.py:394
+#: mygesturesManagement.py:395
 msgid "Remove all {} custom gestures from {} addons?"
 msgstr "إزالة كافة الاختصارات المخصصة البالغ عددها {} من {} من الإضافات؟"
 
-#: mygesturesManagement.py:373
+#: mygesturesManagement.py:374
 msgid "Remove {} selected gesture(s)?"
 msgstr "إزالة {} من الاختصارات المحددة؟"
 
-#: CleanConfig.py:116
+#: CleanConfig.py:185
+#: CleanConfig.py:331
 msgid "Removed successfully."
 msgstr "تمت الإزالة بنجاح."
+
+#: CleanConfig.py:298
+msgid "This item has no subsections."
+msgstr "هذا العنصر ليس له أقسام فرعية."
+
+#: CleanConfig.py:145
+msgid "This section has no items to choose from."
+msgstr "هذا القسم ليس به عناصر للاختيار منها."
+
+#: CleanConfig.py:244
+#: CleanConfig.py:323
+msgid "This section no longer exists."
+msgstr "هذا القسم لم يعد موجوداً."
 
 #: CheckDuplicateGestures.py:97
 msgid "Unknown"
 msgstr "غير معروف"
 
-#: CleanConfig.py:72
-#: mygesturesManagement.py:241
-#: mygesturesManagement.py:303
+#: CleanConfig.py:121
+#: CleanConfig.py:270
+#: mygesturesManagement.py:242
+#: mygesturesManagement.py:304
 msgid "checked"
 msgstr "محدد"
 
-#: CleanConfig.py:72
-#: mygesturesManagement.py:241
-#: mygesturesManagement.py:303
+#: CleanConfig.py:121
+#: CleanConfig.py:270
+#: mygesturesManagement.py:242
+#: mygesturesManagement.py:304
 msgid "not checked"
 msgstr "غير محدد"
+
+#: CleanConfig.py:47
+msgid "{name} ({subs} subsections, {settings} settings)"
+msgstr "{name} ({subs} قسم فرعي، {settings} إعداد)"

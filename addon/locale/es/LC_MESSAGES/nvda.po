@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: gestureDuplicate 2026.9.9\n"
+"Project-Id-Version: gestureDuplicate 2026.11.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-09-08 16:37+0700\n"
+"POT-Creation-Date: 2026-10-25 16:30+0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Spanish\n"
@@ -10,7 +10,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: DevOn Addon\n"
+"X-Generator: ChaiBot Addon\n"
 
 #: CheckDuplicateGestures.py:127
 msgid "&Close"
@@ -20,7 +20,7 @@ msgstr "&Cerrar"
 msgid "&Open Input Gestures"
 msgstr "&Abrir Gestos de entrada"
 
-#: mygesturesManagement.py:252
+#: mygesturesManagement.py:253
 msgid "&Remove addon"
 msgstr "&Eliminar complemento"
 
@@ -32,7 +32,7 @@ msgstr "&Reiniciar NVDA ahora"
 msgid "Addon name:"
 msgstr "Nombre del complemento:"
 
-#: mygesturesManagement.py:201
+#: mygesturesManagement.py:202
 msgid "All addons"
 msgstr "Todos los complementos"
 
@@ -41,25 +41,33 @@ msgstr "Todos los complementos"
 msgid "Application: "
 msgstr "Aplicación: "
 
-#: __init__.py:49
+#: addonCore.py:49
 msgid "Check Duplicate Gestures..."
 msgstr "Comprobar gestos duplicados..."
 
-#: CleanConfig.py:31
-msgid "Check sections to remove. Press Space to toggle, Delete to remove."
-msgstr "Marca las secciones a eliminar. Pulsa Espacio para alternar, Suprimir para eliminar."
+#: CleanConfig.py:212
+msgid "Check items to remove; unchecked items are kept. Press Space to toggle, Delete to remove, Enter to open a subsection."
+msgstr "Marca los elementos para eliminar; los desmarcados se conservan. Pulsa Espacio para alternar, Supr para eliminar, Intro para abrir una subsección."
 
-#: __init__.py:68
+#: CleanConfig.py:70
+msgid "Check sections to remove. Press Space to toggle, Delete to remove, Enter to choose individual items inside a section."
+msgstr "Marca las secciones para eliminar. Pulsa Espacio para alternar, Supr para eliminar, Intro para elegir elementos individuales dentro de una sección."
+
+#: addonCore.py:68
 msgid "Checking duplicate gestures..."
 msgstr "Comprobando gestos duplicados..."
 
-#: __init__.py:53
+#: addonCore.py:53
 msgid "Clean Configuration..."
 msgstr "Limpiar configuración..."
 
-#: CleanConfig.py:16
+#: CleanConfig.py:55
 msgid "Clean NVDA.ini Sections"
 msgstr "Limpiar secciones de NVDA.ini"
+
+#: CleanConfig.py:198
+msgid "Clean NVDA.ini: {path}"
+msgstr "Limpiar NVDA.ini: {path}"
 
 #: mygesturesManagement.py:75
 msgid "Clean up gestures for uninstalled addons from gestures.ini:"
@@ -69,15 +77,17 @@ msgstr "Limpiar gestos de complementos desinstalados de gestures.ini:"
 msgid "Clear All"
 msgstr "Borrar todo"
 
-#: CleanConfig.py:45
+#: CleanConfig.py:87
+#: CleanConfig.py:229
 #: mygesturesManagement.py:103
 msgid "Close"
 msgstr "Cerrar"
 
-#: CleanConfig.py:110
-#: mygesturesManagement.py:358
-#: mygesturesManagement.py:374
-#: mygesturesManagement.py:396
+#: CleanConfig.py:179
+#: CleanConfig.py:318
+#: mygesturesManagement.py:359
+#: mygesturesManagement.py:375
+#: mygesturesManagement.py:397
 msgid "Confirm"
 msgstr "Confirmar"
 
@@ -85,15 +95,24 @@ msgstr "Confirmar"
 msgid "Context"
 msgstr "Contexto"
 
-#: CleanConfig.py:108
+#: CleanConfig.py:315
+msgid "Delete {count} items from {path}? Removed settings return to their default values."
+msgstr "¿Deseas eliminar {count} elementos de {path}? Los ajustes eliminados volverán a sus valores predeterminados."
+
+#: CleanConfig.py:177
 msgid "Delete {count} sections?"
 msgstr "¿Eliminar {count} secciones?"
+
+#: CleanConfig.py:80
+#: CleanConfig.py:223
+msgid "Details..."
+msgstr "Detalles..."
 
 #: CheckDuplicateGestures.py:76
 msgid "Duplicate Gestures"
 msgstr "Gestos duplicados"
 
-#: mygesturesManagement.py:403
+#: mygesturesManagement.py:404
 msgid "Failed to clear gestures from configuration."
 msgstr "Error al limpiar los gestos de la configuración."
 
@@ -101,11 +120,11 @@ msgstr "Error al limpiar los gestos de la configuración."
 msgid "Failed to open Input Gestures dialog"
 msgstr "Error al abrir el diálogo de Gestos de entrada"
 
-#: mygesturesManagement.py:364
+#: mygesturesManagement.py:365
 msgid "Failed to remove addon from configuration."
 msgstr "Error al eliminar el complemento de la configuración."
 
-#: mygesturesManagement.py:380
+#: mygesturesManagement.py:381
 msgid "Failed to remove selected gestures."
 msgstr "Error al eliminar los gestos seleccionados."
 
@@ -121,11 +140,11 @@ msgstr "Función"
 msgid "Gesture"
 msgstr "Gesto"
 
-#: __init__.py:58
+#: addonCore.py:58
 msgid "Gesture Duplicate"
 msgstr "Gestos Duplicados"
 
-#: mygesturesManagement.py:263
+#: mygesturesManagement.py:264
 msgid "Gestures cleaned. Restart NVDA now to apply the changes."
 msgstr "Gesta eliminada. Reinicie NVDA ahora para aplicar los cambios."
 
@@ -133,11 +152,11 @@ msgstr "Gesta eliminada. Reinicie NVDA ahora para aplicar los cambios."
 msgid "Input gestures dialog opened. Navigate with arrow keys to see Add and Remove buttons."
 msgstr "Diálogo de gestos de entrada abierto. Navega con las flechas para ver los botones Añadir y Eliminar."
 
-#: __init__.py:51
+#: addonCore.py:51
 msgid "Manage Custom Gestures..."
 msgstr "Gestionar gestos personalizados..."
 
-#: __init__.py:87
+#: addonCore.py:87
 msgid "Multi-tap: 1=Check, 2=Manage, 3=Clean"
 msgstr "Toque múltiple: 1=Comprobar, 2=Gestionar, 3=Limpiar"
 
@@ -145,60 +164,87 @@ msgstr "Toque múltiple: 1=Comprobar, 2=Gestionar, 3=Limpiar"
 msgid "My Gestures Management"
 msgstr "Mi gestión de gestos"
 
-#: mygesturesManagement.py:391
+#: mygesturesManagement.py:392
 msgid "No addon gestures to clear."
 msgstr "No hay gestos de complementos para limpiar."
 
-#: CleanConfig.py:104
-#: mygesturesManagement.py:369
+#: CleanConfig.py:140
+#: CleanConfig.py:292
+msgid "No item focused."
+msgstr "Ningún elemento enfocado."
+
+#: CleanConfig.py:173
+#: CleanConfig.py:311
+#: mygesturesManagement.py:370
 msgid "No items selected."
 msgstr "No se seleccionaron elementos."
 
-#: __init__.py:83
+#: addonCore.py:83
 msgid "Opening clean configuration..."
 msgstr "Abriendo limpieza de configuración..."
 
-#: __init__.py:77
+#: addonCore.py:77
 msgid "Opening gestures management..."
 msgstr "Abriendo gestión de gestos..."
 
 #: mygesturesManagement.py:97
-#: mygesturesManagement.py:255
+#: mygesturesManagement.py:256
 msgid "Remove Checked"
 msgstr "Eliminar marcados"
 
-#: CleanConfig.py:41
+#: CleanConfig.py:83
+#: CleanConfig.py:226
 msgid "Remove Selected"
 msgstr "Eliminar seleccionados"
 
-#: mygesturesManagement.py:357
+#: mygesturesManagement.py:358
 msgid "Remove all {} custom gestures for addon '{}'?"
 msgstr "¿Eliminar todos los {} gestos personalizados del complemento '{}'?"
 
-#: mygesturesManagement.py:394
+#: mygesturesManagement.py:395
 msgid "Remove all {} custom gestures from {} addons?"
 msgstr "¿Eliminar todos los {} gestos personalizados de {} complementos?"
 
-#: mygesturesManagement.py:373
+#: mygesturesManagement.py:374
 msgid "Remove {} selected gesture(s)?"
 msgstr "¿Eliminar {} gesto(s) seleccionado(s)?"
 
-#: CleanConfig.py:116
+#: CleanConfig.py:185
+#: CleanConfig.py:331
 msgid "Removed successfully."
 msgstr "Eliminado con éxito."
+
+#: CleanConfig.py:298
+msgid "This item has no subsections."
+msgstr "Este elemento no tiene subsecciones."
+
+#: CleanConfig.py:145
+msgid "This section has no items to choose from."
+msgstr "Esta sección no tiene elementos para elegir."
+
+#: CleanConfig.py:244
+#: CleanConfig.py:323
+msgid "This section no longer exists."
+msgstr "Esta sección ya no existe."
 
 #: CheckDuplicateGestures.py:97
 msgid "Unknown"
 msgstr "Desconocido"
 
-#: CleanConfig.py:72
-#: mygesturesManagement.py:241
-#: mygesturesManagement.py:303
+#: CleanConfig.py:121
+#: CleanConfig.py:270
+#: mygesturesManagement.py:242
+#: mygesturesManagement.py:304
 msgid "checked"
 msgstr "marcado"
 
-#: CleanConfig.py:72
-#: mygesturesManagement.py:241
-#: mygesturesManagement.py:303
+#: CleanConfig.py:121
+#: CleanConfig.py:270
+#: mygesturesManagement.py:242
+#: mygesturesManagement.py:304
 msgid "not checked"
 msgstr "no marcado"
+
+#: CleanConfig.py:47
+msgid "{name} ({subs} subsections, {settings} settings)"
+msgstr "{name} ({subs} subsecciones, {settings} ajustes)"

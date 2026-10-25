@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: gestureDuplicate 2026.9.9\n"
+"Project-Id-Version: gestureDuplicate 2026.11.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-09-08 16:37+0700\n"
+"POT-Creation-Date: 2026-10-25 16:30+0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Indonesian\n"
@@ -10,7 +10,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: DevOn Addon\n"
+"X-Generator: ChaiBot Addon\n"
 
 #: CheckDuplicateGestures.py:127
 msgid "&Close"
@@ -20,7 +20,7 @@ msgstr "&Tutup"
 msgid "&Open Input Gestures"
 msgstr "&Buka Gestur Masukan"
 
-#: mygesturesManagement.py:252
+#: mygesturesManagement.py:253
 msgid "&Remove addon"
 msgstr "&Hapus pengaya"
 
@@ -32,7 +32,7 @@ msgstr "&Muat ulang NVDA sekarang"
 msgid "Addon name:"
 msgstr "Nama pengaya:"
 
-#: mygesturesManagement.py:201
+#: mygesturesManagement.py:202
 msgid "All addons"
 msgstr "Semua pengaya"
 
@@ -41,25 +41,33 @@ msgstr "Semua pengaya"
 msgid "Application: "
 msgstr "Aplikasi: "
 
-#: __init__.py:49
+#: addonCore.py:49
 msgid "Check Duplicate Gestures..."
 msgstr "Periksa Gestur Duplikat..."
 
-#: CleanConfig.py:31
-msgid "Check sections to remove. Press Space to toggle, Delete to remove."
-msgstr "Centang bagian yang akan dihapus. Tekan Spasi untuk beralih, Delete untuk menghapus."
+#: CleanConfig.py:212
+msgid "Check items to remove; unchecked items are kept. Press Space to toggle, Delete to remove, Enter to open a subsection."
+msgstr "Centang item yang akan dihapus; item yang tidak dicentang akan disimpan. Tekan Spasi untuk beralih, Delete untuk menghapus, Enter untuk membuka subbagian."
 
-#: __init__.py:68
+#: CleanConfig.py:70
+msgid "Check sections to remove. Press Space to toggle, Delete to remove, Enter to choose individual items inside a section."
+msgstr "Centang bagian yang akan dihapus. Tekan Spasi untuk beralih, Delete untuk menghapus, Enter untuk memilih item individual di dalam bagian."
+
+#: addonCore.py:68
 msgid "Checking duplicate gestures..."
 msgstr "Memeriksa gestur duplikat..."
 
-#: __init__.py:53
+#: addonCore.py:53
 msgid "Clean Configuration..."
 msgstr "Bersihkan Konfigurasi..."
 
-#: CleanConfig.py:16
+#: CleanConfig.py:55
 msgid "Clean NVDA.ini Sections"
 msgstr "Bersihkan Bagian NVDA.ini"
+
+#: CleanConfig.py:198
+msgid "Clean NVDA.ini: {path}"
+msgstr "Bersihkan NVDA.ini: {path}"
 
 #: mygesturesManagement.py:75
 msgid "Clean up gestures for uninstalled addons from gestures.ini:"
@@ -69,15 +77,17 @@ msgstr "Bersihkan gestur untuk pengaya yang sudah dihapus dari gestures.ini:"
 msgid "Clear All"
 msgstr "Bersihkan Semua"
 
-#: CleanConfig.py:45
+#: CleanConfig.py:87
+#: CleanConfig.py:229
 #: mygesturesManagement.py:103
 msgid "Close"
 msgstr "Tutup"
 
-#: CleanConfig.py:110
-#: mygesturesManagement.py:358
-#: mygesturesManagement.py:374
-#: mygesturesManagement.py:396
+#: CleanConfig.py:179
+#: CleanConfig.py:318
+#: mygesturesManagement.py:359
+#: mygesturesManagement.py:375
+#: mygesturesManagement.py:397
 msgid "Confirm"
 msgstr "Konfirmasi"
 
@@ -85,15 +95,24 @@ msgstr "Konfirmasi"
 msgid "Context"
 msgstr "Konteks"
 
-#: CleanConfig.py:108
+#: CleanConfig.py:315
+msgid "Delete {count} items from {path}? Removed settings return to their default values."
+msgstr "Hapus {count} item dari {path}? Pengaturan yang dihapus akan kembali ke nilai defaultnya."
+
+#: CleanConfig.py:177
 msgid "Delete {count} sections?"
 msgstr "Hapus {count} bagian?"
+
+#: CleanConfig.py:80
+#: CleanConfig.py:223
+msgid "Details..."
+msgstr "Detail..."
 
 #: CheckDuplicateGestures.py:76
 msgid "Duplicate Gestures"
 msgstr "Gestur Duplikat"
 
-#: mygesturesManagement.py:403
+#: mygesturesManagement.py:404
 msgid "Failed to clear gestures from configuration."
 msgstr "Gagal membersihkan gestur dari konfigurasi."
 
@@ -101,11 +120,11 @@ msgstr "Gagal membersihkan gestur dari konfigurasi."
 msgid "Failed to open Input Gestures dialog"
 msgstr "Gagal membuka dialog Gestur Masukan"
 
-#: mygesturesManagement.py:364
+#: mygesturesManagement.py:365
 msgid "Failed to remove addon from configuration."
 msgstr "Gagal menghapus pengaya dari konfigurasi."
 
-#: mygesturesManagement.py:380
+#: mygesturesManagement.py:381
 msgid "Failed to remove selected gestures."
 msgstr "Gagal menghapus gestur yang dipilih."
 
@@ -121,11 +140,11 @@ msgstr "Fungsi"
 msgid "Gesture"
 msgstr "Gestur"
 
-#: __init__.py:58
+#: addonCore.py:58
 msgid "Gesture Duplicate"
 msgstr "Gestur Duplikat"
 
-#: mygesturesManagement.py:263
+#: mygesturesManagement.py:264
 msgid "Gestures cleaned. Restart NVDA now to apply the changes."
 msgstr "Gestur telah dibersihkan. Muat ulang NVDA sekarang untuk menerapkan perubahan."
 
@@ -133,11 +152,11 @@ msgstr "Gestur telah dibersihkan. Muat ulang NVDA sekarang untuk menerapkan peru
 msgid "Input gestures dialog opened. Navigate with arrow keys to see Add and Remove buttons."
 msgstr "Dialog gestur masukan terbuka. Navigasi dengan tombol panah untuk melihat tombol Tambah dan Hapus."
 
-#: __init__.py:51
+#: addonCore.py:51
 msgid "Manage Custom Gestures..."
 msgstr "Kelola Gestur Kustom..."
 
-#: __init__.py:87
+#: addonCore.py:87
 msgid "Multi-tap: 1=Check, 2=Manage, 3=Clean"
 msgstr "Ketukan ganda: 1=Periksa, 2=Kelola, 3=Bersihkan"
 
@@ -145,60 +164,87 @@ msgstr "Ketukan ganda: 1=Periksa, 2=Kelola, 3=Bersihkan"
 msgid "My Gestures Management"
 msgstr "Manajemen Gestur Saya"
 
-#: mygesturesManagement.py:391
+#: mygesturesManagement.py:392
 msgid "No addon gestures to clear."
 msgstr "Tidak ada gestur pengaya untuk dibersihkan."
 
-#: CleanConfig.py:104
-#: mygesturesManagement.py:369
+#: CleanConfig.py:140
+#: CleanConfig.py:292
+msgid "No item focused."
+msgstr "Tidak ada item yang difokuskan."
+
+#: CleanConfig.py:173
+#: CleanConfig.py:311
+#: mygesturesManagement.py:370
 msgid "No items selected."
 msgstr "Tidak ada item yang dipilih."
 
-#: __init__.py:83
+#: addonCore.py:83
 msgid "Opening clean configuration..."
 msgstr "Membuka pembersihan konfigurasi..."
 
-#: __init__.py:77
+#: addonCore.py:77
 msgid "Opening gestures management..."
 msgstr "Membuka manajemen gestur..."
 
 #: mygesturesManagement.py:97
-#: mygesturesManagement.py:255
+#: mygesturesManagement.py:256
 msgid "Remove Checked"
 msgstr "Hapus yang Dicentang"
 
-#: CleanConfig.py:41
+#: CleanConfig.py:83
+#: CleanConfig.py:226
 msgid "Remove Selected"
 msgstr "Hapus yang Dipilih"
 
-#: mygesturesManagement.py:357
+#: mygesturesManagement.py:358
 msgid "Remove all {} custom gestures for addon '{}'?"
 msgstr "Hapus semua {} gestur kustom untuk pengaya '{}'?"
 
-#: mygesturesManagement.py:394
+#: mygesturesManagement.py:395
 msgid "Remove all {} custom gestures from {} addons?"
 msgstr "Hapus semua {} gestur kustomจาก {} pengaya?"
 
-#: mygesturesManagement.py:373
+#: mygesturesManagement.py:374
 msgid "Remove {} selected gesture(s)?"
 msgstr "Hapus {} gestur yang dipilih?"
 
-#: CleanConfig.py:116
+#: CleanConfig.py:185
+#: CleanConfig.py:331
 msgid "Removed successfully."
 msgstr "Berhasil dihapus."
+
+#: CleanConfig.py:298
+msgid "This item has no subsections."
+msgstr "Item ini tidak memiliki subbagian."
+
+#: CleanConfig.py:145
+msgid "This section has no items to choose from."
+msgstr "Bagian ini tidak memiliki item untuk dipilih."
+
+#: CleanConfig.py:244
+#: CleanConfig.py:323
+msgid "This section no longer exists."
+msgstr "Bagian ini sudah tidak ada."
 
 #: CheckDuplicateGestures.py:97
 msgid "Unknown"
 msgstr "Tidak diketahui"
 
-#: CleanConfig.py:72
-#: mygesturesManagement.py:241
-#: mygesturesManagement.py:303
+#: CleanConfig.py:121
+#: CleanConfig.py:270
+#: mygesturesManagement.py:242
+#: mygesturesManagement.py:304
 msgid "checked"
 msgstr "dicentang"
 
-#: CleanConfig.py:72
-#: mygesturesManagement.py:241
-#: mygesturesManagement.py:303
+#: CleanConfig.py:121
+#: CleanConfig.py:270
+#: mygesturesManagement.py:242
+#: mygesturesManagement.py:304
 msgid "not checked"
 msgstr "tidak dicentang"
+
+#: CleanConfig.py:47
+msgid "{name} ({subs} subsections, {settings} settings)"
+msgstr "{name} ({subs} subbagian, {settings} pengaturan)"

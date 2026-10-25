@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: gestureDuplicate 2026.9.9\n"
+"Project-Id-Version: gestureDuplicate 2026.11.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-09-08 16:37+0700\n"
+"POT-Creation-Date: 2026-10-25 16:30+0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Japanese\n"
@@ -10,7 +10,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: DevOn Addon\n"
+"X-Generator: ChaiBot Addon\n"
 
 #: CheckDuplicateGestures.py:127
 msgid "&Close"
@@ -20,7 +20,7 @@ msgstr "閉じる(&C)"
 msgid "&Open Input Gestures"
 msgstr "入力ジェスチャーを開く(&O)"
 
-#: mygesturesManagement.py:252
+#: mygesturesManagement.py:253
 msgid "&Remove addon"
 msgstr "アドオンを削除(&R)"
 
@@ -32,7 +32,7 @@ msgstr "NVDAを今すぐ再起動(&R)"
 msgid "Addon name:"
 msgstr "アドオン名:"
 
-#: mygesturesManagement.py:201
+#: mygesturesManagement.py:202
 msgid "All addons"
 msgstr "すべてのアドオン"
 
@@ -41,25 +41,33 @@ msgstr "すべてのアドオン"
 msgid "Application: "
 msgstr "アプリケーション: "
 
-#: __init__.py:49
+#: addonCore.py:49
 msgid "Check Duplicate Gestures..."
 msgstr "重複ジェスチャーの確認..."
 
-#: CleanConfig.py:31
-msgid "Check sections to remove. Press Space to toggle, Delete to remove."
-msgstr "削除するセクションを選択してください。スペースで切り替え、Deleteで削除します。"
+#: CleanConfig.py:212
+msgid "Check items to remove; unchecked items are kept. Press Space to toggle, Delete to remove, Enter to open a subsection."
+msgstr "削除する項目にチェックを入れてください。チェックのない項目は維持されます。スペースキーで切り替え、Deleteキーで削除、Enterキーでサブセクションを開きます。"
 
-#: __init__.py:68
+#: CleanConfig.py:70
+msgid "Check sections to remove. Press Space to toggle, Delete to remove, Enter to choose individual items inside a section."
+msgstr "削除するセクションにチェックを入れてください。スペースキーで切り替え、Deleteキーで削除、Enterキーでセクション内の個別の項目を選択します。"
+
+#: addonCore.py:68
 msgid "Checking duplicate gestures..."
 msgstr "重複ジェスチャーを確認中..."
 
-#: __init__.py:53
+#: addonCore.py:53
 msgid "Clean Configuration..."
 msgstr "設定のクリーンアップ..."
 
-#: CleanConfig.py:16
+#: CleanConfig.py:55
 msgid "Clean NVDA.ini Sections"
 msgstr "NVDA.iniセクションのクリーンアップ"
+
+#: CleanConfig.py:198
+msgid "Clean NVDA.ini: {path}"
+msgstr "NVDA.iniのクリーンアップ: {path}"
 
 #: mygesturesManagement.py:75
 msgid "Clean up gestures for uninstalled addons from gestures.ini:"
@@ -69,15 +77,17 @@ msgstr "削除済みアドオンのジェスチャーをgestures.iniからクリ
 msgid "Clear All"
 msgstr "すべてクリア"
 
-#: CleanConfig.py:45
+#: CleanConfig.py:87
+#: CleanConfig.py:229
 #: mygesturesManagement.py:103
 msgid "Close"
 msgstr "閉じる"
 
-#: CleanConfig.py:110
-#: mygesturesManagement.py:358
-#: mygesturesManagement.py:374
-#: mygesturesManagement.py:396
+#: CleanConfig.py:179
+#: CleanConfig.py:318
+#: mygesturesManagement.py:359
+#: mygesturesManagement.py:375
+#: mygesturesManagement.py:397
 msgid "Confirm"
 msgstr "確認"
 
@@ -85,15 +95,24 @@ msgstr "確認"
 msgid "Context"
 msgstr "コンテキスト"
 
-#: CleanConfig.py:108
+#: CleanConfig.py:315
+msgid "Delete {count} items from {path}? Removed settings return to their default values."
+msgstr "{path}から{count}個の項目を削除しますか？ 削除された設定はデフォルト値に戻ります。"
+
+#: CleanConfig.py:177
 msgid "Delete {count} sections?"
 msgstr "{count} 個のセクションを削除しますか？"
+
+#: CleanConfig.py:80
+#: CleanConfig.py:223
+msgid "Details..."
+msgstr "詳細..."
 
 #: CheckDuplicateGestures.py:76
 msgid "Duplicate Gestures"
 msgstr "重複ジェスチャー"
 
-#: mygesturesManagement.py:403
+#: mygesturesManagement.py:404
 msgid "Failed to clear gestures from configuration."
 msgstr "設定からジェスチャーをクリアできませんでした。"
 
@@ -101,11 +120,11 @@ msgstr "設定からジェスチャーをクリアできませんでした。"
 msgid "Failed to open Input Gestures dialog"
 msgstr "入力ジェスチャーダイアログを開けませんでした"
 
-#: mygesturesManagement.py:364
+#: mygesturesManagement.py:365
 msgid "Failed to remove addon from configuration."
 msgstr "設定からアドオンを削除できませんでした。"
 
-#: mygesturesManagement.py:380
+#: mygesturesManagement.py:381
 msgid "Failed to remove selected gestures."
 msgstr "選択したジェスチャーを削除できませんでした。"
 
@@ -121,11 +140,11 @@ msgstr "機能"
 msgid "Gesture"
 msgstr "ジェスチャー"
 
-#: __init__.py:58
+#: addonCore.py:58
 msgid "Gesture Duplicate"
 msgstr "ジェスチャーの重複"
 
-#: mygesturesManagement.py:263
+#: mygesturesManagement.py:264
 msgid "Gestures cleaned. Restart NVDA now to apply the changes."
 msgstr "ジェスチャが整理されました。変更を適用するには、NVDAを今すぐ再起動してください。"
 
@@ -133,11 +152,11 @@ msgstr "ジェスチャが整理されました。変更を適用するには、
 msgid "Input gestures dialog opened. Navigate with arrow keys to see Add and Remove buttons."
 msgstr "入力ジェスチャーダイアログが開きました。矢印キーで移動して「追加」および「削除」ボタンを確認してください。"
 
-#: __init__.py:51
+#: addonCore.py:51
 msgid "Manage Custom Gestures..."
 msgstr "カスタムジェスチャーの管理..."
 
-#: __init__.py:87
+#: addonCore.py:87
 msgid "Multi-tap: 1=Check, 2=Manage, 3=Clean"
 msgstr "マルチタップ: 1=確認, 2=管理, 3=クリーンアップ"
 
@@ -145,60 +164,87 @@ msgstr "マルチタップ: 1=確認, 2=管理, 3=クリーンアップ"
 msgid "My Gestures Management"
 msgstr "マージェスチャー管理"
 
-#: mygesturesManagement.py:391
+#: mygesturesManagement.py:392
 msgid "No addon gestures to clear."
 msgstr "クリアするアドオンジェスチャーはありません。"
 
-#: CleanConfig.py:104
-#: mygesturesManagement.py:369
+#: CleanConfig.py:140
+#: CleanConfig.py:292
+msgid "No item focused."
+msgstr "フォーカスされている項目はありません。"
+
+#: CleanConfig.py:173
+#: CleanConfig.py:311
+#: mygesturesManagement.py:370
 msgid "No items selected."
 msgstr "項目が選択されていません。"
 
-#: __init__.py:83
+#: addonCore.py:83
 msgid "Opening clean configuration..."
 msgstr "設定クリーンアップを開いています..."
 
-#: __init__.py:77
+#: addonCore.py:77
 msgid "Opening gestures management..."
 msgstr "ジェスチャー管理を開いています..."
 
 #: mygesturesManagement.py:97
-#: mygesturesManagement.py:255
+#: mygesturesManagement.py:256
 msgid "Remove Checked"
 msgstr "チェックした項目を削除"
 
-#: CleanConfig.py:41
+#: CleanConfig.py:83
+#: CleanConfig.py:226
 msgid "Remove Selected"
 msgstr "選択項目を削除"
 
-#: mygesturesManagement.py:357
+#: mygesturesManagement.py:358
 msgid "Remove all {} custom gestures for addon '{}'?"
 msgstr "アドオン '{}' のすべての {} 個のカスタムジェスチャーを削除しますか？"
 
-#: mygesturesManagement.py:394
+#: mygesturesManagement.py:395
 msgid "Remove all {} custom gestures from {} addons?"
 msgstr "{} 個のアドオンからすべての {} 個のカスタムジェスチャーを削除しますか？"
 
-#: mygesturesManagement.py:373
+#: mygesturesManagement.py:374
 msgid "Remove {} selected gesture(s)?"
 msgstr "選択した {} 個のジェスチャーを削除しますか？"
 
-#: CleanConfig.py:116
+#: CleanConfig.py:185
+#: CleanConfig.py:331
 msgid "Removed successfully."
 msgstr "正常に削除されました。"
+
+#: CleanConfig.py:298
+msgid "This item has no subsections."
+msgstr "この項目にはサブセクションがありません。"
+
+#: CleanConfig.py:145
+msgid "This section has no items to choose from."
+msgstr "このセクションには選択できる項目がありません。"
+
+#: CleanConfig.py:244
+#: CleanConfig.py:323
+msgid "This section no longer exists."
+msgstr "このセクションはすでに存在しません。"
 
 #: CheckDuplicateGestures.py:97
 msgid "Unknown"
 msgstr "不明"
 
-#: CleanConfig.py:72
-#: mygesturesManagement.py:241
-#: mygesturesManagement.py:303
+#: CleanConfig.py:121
+#: CleanConfig.py:270
+#: mygesturesManagement.py:242
+#: mygesturesManagement.py:304
 msgid "checked"
 msgstr "チェック済み"
 
-#: CleanConfig.py:72
-#: mygesturesManagement.py:241
-#: mygesturesManagement.py:303
+#: CleanConfig.py:121
+#: CleanConfig.py:270
+#: mygesturesManagement.py:242
+#: mygesturesManagement.py:304
 msgid "not checked"
 msgstr "未チェック"
+
+#: CleanConfig.py:47
+msgid "{name} ({subs} subsections, {settings} settings)"
+msgstr "{name} (サブセクション {subs} 個、設定 {settings} 個)"

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: gestureDuplicate 2026.9.9\n"
+"Project-Id-Version: gestureDuplicate 2026.11.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-09-08 16:37+0700\n"
+"POT-Creation-Date: 2026-10-25 16:30+0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Thai\n"
@@ -10,7 +10,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: DevOn Addon\n"
+"X-Generator: ChaiBot Addon\n"
 
 #: CheckDuplicateGestures.py:127
 msgid "&Close"
@@ -20,7 +20,7 @@ msgstr "&ปิด"
 msgid "&Open Input Gestures"
 msgstr "&เปิดคำสั่งป้อนข้อมูล"
 
-#: mygesturesManagement.py:252
+#: mygesturesManagement.py:253
 msgid "&Remove addon"
 msgstr "&ลบส่วนเสริม"
 
@@ -32,7 +32,7 @@ msgstr "&รีสตาร์ท NVDA ตอนนี้"
 msgid "Addon name:"
 msgstr "ชื่อส่วนเสริม:"
 
-#: mygesturesManagement.py:201
+#: mygesturesManagement.py:202
 msgid "All addons"
 msgstr "ส่วนเสริมทั้งหมด"
 
@@ -41,25 +41,33 @@ msgstr "ส่วนเสริมทั้งหมด"
 msgid "Application: "
 msgstr "โปรแกรม: "
 
-#: __init__.py:49
+#: addonCore.py:49
 msgid "Check Duplicate Gestures..."
 msgstr "ตรวจสอบคำสั่งที่ซ้ำกัน..."
 
-#: CleanConfig.py:31
-msgid "Check sections to remove. Press Space to toggle, Delete to remove."
-msgstr "เลือกหัวข้อที่จะลบ กด Space เพื่อเลือก กด Delete เพื่อลบ"
+#: CleanConfig.py:212
+msgid "Check items to remove; unchecked items are kept. Press Space to toggle, Delete to remove, Enter to open a subsection."
+msgstr "ทำเครื่องหมายรายการที่ต้องการลบ รายการที่ไม่1. ทำเครื่องหมายรายการที่จะลบ รายการที่ไม่ได้ทำเครื่องหมายจะถูกเก็บไว้ กด Space เพื่อสลับ, Delete เพื่อลบ, Enter เพื่อเปิดหมวดหมู่ย่อย"
 
-#: __init__.py:68
+#: CleanConfig.py:70
+msgid "Check sections to remove. Press Space to toggle, Delete to remove, Enter to choose individual items inside a section."
+msgstr "ทำเครื่องหมายส่วนที่ต้องการลบ กด Space เพื่อสลับ, Delete เพื่อลบ, Enter เพื่อเลือกรายการเฉพาะภายในส่วนนั้น"
+
+#: addonCore.py:68
 msgid "Checking duplicate gestures..."
 msgstr "กำลังตรวจสอบคำสั่งที่ซ้ำกัน..."
 
-#: __init__.py:53
+#: addonCore.py:53
 msgid "Clean Configuration..."
 msgstr "ล้างการตั้งค่า..."
 
-#: CleanConfig.py:16
+#: CleanConfig.py:55
 msgid "Clean NVDA.ini Sections"
 msgstr "ล้างหัวข้อใน NVDA.ini"
+
+#: CleanConfig.py:198
+msgid "Clean NVDA.ini: {path}"
+msgstr "ล้างค่า NVDA.ini: {path}"
 
 #: mygesturesManagement.py:75
 msgid "Clean up gestures for uninstalled addons from gestures.ini:"
@@ -69,15 +77,17 @@ msgstr "ล้างคำสั่งของส่วนเสริมที
 msgid "Clear All"
 msgstr "ล้างทั้งหมด"
 
-#: CleanConfig.py:45
+#: CleanConfig.py:87
+#: CleanConfig.py:229
 #: mygesturesManagement.py:103
 msgid "Close"
 msgstr "ปิด"
 
-#: CleanConfig.py:110
-#: mygesturesManagement.py:358
-#: mygesturesManagement.py:374
-#: mygesturesManagement.py:396
+#: CleanConfig.py:179
+#: CleanConfig.py:318
+#: mygesturesManagement.py:359
+#: mygesturesManagement.py:375
+#: mygesturesManagement.py:397
 msgid "Confirm"
 msgstr "ยืนยัน"
 
@@ -85,15 +95,24 @@ msgstr "ยืนยัน"
 msgid "Context"
 msgstr "บริบท"
 
-#: CleanConfig.py:108
+#: CleanConfig.py:315
+msgid "Delete {count} items from {path}? Removed settings return to their default values."
+msgstr "ต้องการลบ {count} รายการออกจาก {path} หรือไม่? การตั้งค่าที่ถูกลบจะกลับไปใช้ค่าเริ่มต้น"
+
+#: CleanConfig.py:177
 msgid "Delete {count} sections?"
 msgstr "ลบ {count} หัวข้อนี้หรือไม่?"
+
+#: CleanConfig.py:80
+#: CleanConfig.py:223
+msgid "Details..."
+msgstr "รายละเอียด..."
 
 #: CheckDuplicateGestures.py:76
 msgid "Duplicate Gestures"
 msgstr "คำสั่งที่ซ้ำกัน"
 
-#: mygesturesManagement.py:403
+#: mygesturesManagement.py:404
 msgid "Failed to clear gestures from configuration."
 msgstr "ไม่สามารถล้างคำสั่งจากการตั้งค่าได้"
 
@@ -101,11 +120,11 @@ msgstr "ไม่สามารถล้างคำสั่งจากกา
 msgid "Failed to open Input Gestures dialog"
 msgstr "ไม่สามารถเปิดหน้าต่างคำสั่งป้อนข้อมูลได้"
 
-#: mygesturesManagement.py:364
+#: mygesturesManagement.py:365
 msgid "Failed to remove addon from configuration."
 msgstr "ไม่สามารถลบส่วนเสริมจากการตั้งค่าได้"
 
-#: mygesturesManagement.py:380
+#: mygesturesManagement.py:381
 msgid "Failed to remove selected gestures."
 msgstr "ไม่สามารถลบคำสั่งที่เลือกได้"
 
@@ -121,11 +140,11 @@ msgstr "ฟังก์ชัน"
 msgid "Gesture"
 msgstr "คำสั่ง"
 
-#: __init__.py:58
+#: addonCore.py:58
 msgid "Gesture Duplicate"
 msgstr "คำสั่งซ้ำ"
 
-#: mygesturesManagement.py:263
+#: mygesturesManagement.py:264
 msgid "Gestures cleaned. Restart NVDA now to apply the changes."
 msgstr "ล้างคำสั่งท่าทางแล้ว รีสตาร์ท NVDA ตอนนี้เพื่อใช้การเปลี่ยนแปลง"
 
@@ -133,11 +152,11 @@ msgstr "ล้างคำสั่งท่าทางแล้ว รีส�
 msgid "Input gestures dialog opened. Navigate with arrow keys to see Add and Remove buttons."
 msgstr "เปิดหน้าต่างคำสั่งป้อนข้อมูลแล้ว ใช้ปุ่มลูกศรเพื่อดูปุ่มเพิ่มและลบ"
 
-#: __init__.py:51
+#: addonCore.py:51
 msgid "Manage Custom Gestures..."
 msgstr "จัดการคำสั่งที่กำหนดเอง..."
 
-#: __init__.py:87
+#: addonCore.py:87
 msgid "Multi-tap: 1=Check, 2=Manage, 3=Clean"
 msgstr "กดหลายครั้ง: 1=ตรวจสอบ, 2=จัดการ, 3=ล้าง"
 
@@ -145,60 +164,87 @@ msgstr "กดหลายครั้ง: 1=ตรวจสอบ, 2=จัด�
 msgid "My Gestures Management"
 msgstr "การจัดการคำสั่งของฉัน"
 
-#: mygesturesManagement.py:391
+#: mygesturesManagement.py:392
 msgid "No addon gestures to clear."
 msgstr "ไม่มีคำสั่งส่วนเสริมให้ล้าง"
 
-#: CleanConfig.py:104
-#: mygesturesManagement.py:369
+#: CleanConfig.py:140
+#: CleanConfig.py:292
+msgid "No item focused."
+msgstr "ไม่มีรายการที่โฟกัสอยู่"
+
+#: CleanConfig.py:173
+#: CleanConfig.py:311
+#: mygesturesManagement.py:370
 msgid "No items selected."
 msgstr "ไม่ได้เลือกรายการใดไว้"
 
-#: __init__.py:83
+#: addonCore.py:83
 msgid "Opening clean configuration..."
 msgstr "กำลังเปิดการล้างการตั้งค่า..."
 
-#: __init__.py:77
+#: addonCore.py:77
 msgid "Opening gestures management..."
 msgstr "กำลังเปิดการจัดการคำสั่ง..."
 
 #: mygesturesManagement.py:97
-#: mygesturesManagement.py:255
+#: mygesturesManagement.py:256
 msgid "Remove Checked"
 msgstr "ลบที่เลือก"
 
-#: CleanConfig.py:41
+#: CleanConfig.py:83
+#: CleanConfig.py:226
 msgid "Remove Selected"
 msgstr "ลบที่เลือก"
 
-#: mygesturesManagement.py:357
+#: mygesturesManagement.py:358
 msgid "Remove all {} custom gestures for addon '{}'?"
 msgstr "ลบคำสั่งที่กำหนดเองทั้งหมด {} รายการสำหรับส่วนเสริม '{}' หรือไม่?"
 
-#: mygesturesManagement.py:394
+#: mygesturesManagement.py:395
 msgid "Remove all {} custom gestures from {} addons?"
 msgstr "ลบคำสั่งที่กำหนดเองทั้งหมด {} รายการจาก {} ส่วนเสริมหรือไม่?"
 
-#: mygesturesManagement.py:373
+#: mygesturesManagement.py:374
 msgid "Remove {} selected gesture(s)?"
 msgstr "ลบ {} คำสั่งที่เลือกหรือไม่?"
 
-#: CleanConfig.py:116
+#: CleanConfig.py:185
+#: CleanConfig.py:331
 msgid "Removed successfully."
 msgstr "ลบสำเร็จแล้ว"
+
+#: CleanConfig.py:298
+msgid "This item has no subsections."
+msgstr "รายการนี้ไม่มีหมวดหมู่ย่อย"
+
+#: CleanConfig.py:145
+msgid "This section has no items to choose from."
+msgstr "ส่วนนี้ไม่มีรายการให้เลือก"
+
+#: CleanConfig.py:244
+#: CleanConfig.py:323
+msgid "This section no longer exists."
+msgstr "ส่วนนี้ไม่มีอยู่แล้ว"
 
 #: CheckDuplicateGestures.py:97
 msgid "Unknown"
 msgstr "ไม่รู้จัก"
 
-#: CleanConfig.py:72
-#: mygesturesManagement.py:241
-#: mygesturesManagement.py:303
+#: CleanConfig.py:121
+#: CleanConfig.py:270
+#: mygesturesManagement.py:242
+#: mygesturesManagement.py:304
 msgid "checked"
 msgstr "เลือกแล้ว"
 
-#: CleanConfig.py:72
-#: mygesturesManagement.py:241
-#: mygesturesManagement.py:303
+#: CleanConfig.py:121
+#: CleanConfig.py:270
+#: mygesturesManagement.py:242
+#: mygesturesManagement.py:304
 msgid "not checked"
 msgstr "ไม่ได้เลือก"
+
+#: CleanConfig.py:47
+msgid "{name} ({subs} subsections, {settings} settings)"
+msgstr "{name} ({subs} หมวดหมู่ย่อย, {settings} การตั้งค่า)"
