@@ -1,29 +1,29 @@
-<div align="center">
-
-<img src="https://www.nvaccess.org/files/nvda/documentation/userGuide/images/nvda.ico" alt="NVDA Logo" width="120" style="display: block; margin: 0 auto 20px;" />
+<p align="center">
+  <img src="https://www.nvaccess.org/files/nvda/documentation/userGuide/images/nvda.ico" alt="NVDA Logo" width="120">
+</p>
 
 # Gesture Duplicate
 
-Find, fix and clean up messy keyboard gesture assignments — before they cause conflicts.
-
-</div>
+Find shortcut conflicts, clear out leftover add-on gestures, and tidy your NVDA configuration, all from one hotkey.
 
 ---
-
-<div align="center">
 
 **author:** chai chaimee  
-**url:** [https://github.com/chaichaimee/GestureDuplicate](https://github.com/chaichaimee/GestureDuplicate)
-
-</div>
+**url:** https://github.com/chaichaimee/gestureDuplicate
 
 ---
 
-## Introduction
+### Introduction
 
-Gesture Duplicate is a housekeeping tool for NVDA's keyboard shortcuts and configuration. Over time, as you install and remove add-ons, your NVDA setup can accumulate two kinds of clutter: keyboard gestures that are assigned to more than one command at once (so only one of them actually fires), and leftover custom gesture entries or configuration sections belonging to add-ons you no longer have installed.
+When you install many NVDA add-ons, two of them will sooner or later want the same keyboard shortcut. When that happens, one of the shortcuts silently stops doing what you expect, and it is hard to tell which add-on is responsible. Removing an add-on also does not always remove the shortcuts you assigned to it, so old entries stay behind in your configuration files.
 
-This add-on gives you three simple tools to deal with that clutter: a scanner that finds duplicate gesture assignments and lets you jump straight to fixing them, a manager for custom gestures tied to add-ons, and a cleaner for stray sections left behind in your NVDA settings file. All three are reachable from a single hotkey or from a new submenu in NVDA's Tools menu.
+**Gesture Duplicate** solves these problems with three simple tools:
+
+1. **Check Duplicate Gestures** : shows every shortcut that is assigned to more than one function, and takes you straight to NVDA's Input Gestures dialog to fix it.
+2. **Manage Custom Gestures** : lists the custom shortcuts that add-ons and applications have saved in your `gestures.ini` file, and lets you remove them, including those left behind by add-ons you have already uninstalled.
+3. **Clean Configuration** : lets you browse the sections of your `nvda.ini` file and remove stale sections or individual settings.
+
+All three tools are available from one hotkey, and also from a **Gesture Duplicate** submenu in NVDA's **Tools** menu.
 
 ---
 
@@ -32,68 +32,120 @@ This add-on gives you three simple tools to deal with that clutter: a scanner th
 > **Windows+Shift+G**  
 > Single Tap : Check Duplicate Gestures  
 > Double Tap : Manage Custom Gestures  
-> Triple Tap (or more) : Clean Configuration
+> Triple Tap : Clean Configuration
 
-> **How the multi-tap works:**  
-> Gesture Duplicate uses a single hotkey for all three tools, distinguishing between them by counting how many times you press it in quick succession.
-> 
-> Each time you press Windows+Shift+G, the add-on checks how long it has been since your last press. If that gap is under 0.4 seconds, your tap is added to a running count for the current "burst"; if more time has passed, the count restarts at 1. After every tap, a 0.4-second timer is (re)armed. If you tap again before the timer fires, the previous timer is cancelled and a fresh one is started, so the add-on keeps waiting as long as you keep tapping.
-> 
-> Only once the timer finally elapses without a new tap does the add-on act on the total number of taps recorded: 1 tap opens Check Duplicate Gestures, 2 taps opens Manage Custom Gestures, and 3 or more taps opens Clean Configuration.
+**How the taps work:**
 
-> **Note:** All three tools are also available at any time from NVDA's **Tools menu → Gesture Duplicate** submenu, as separate menu items: "Check Duplicate Gestures...", "Manage Custom Gestures...", and "Clean Configuration...". This submenu is added automatically when NVDA starts and removed cleanly when the add-on is disabled or NVDA exits.
+1. Press **Windows+Shift+G** one or more times in quick succession. Each press must come within 0.4 seconds of the previous one to count as part of the same series.
+2. After you stop pressing, the add-on waits 0.4 seconds, then counts the taps.
+3. One tap opens Check Duplicate Gestures, two taps open Manage Custom Gestures, and three or more taps open Clean Configuration.
+
+> **Note:** This shortcut appears in NVDA's Input Gestures dialog under the category **Gesture Duplicate**, so you can change it to any key you prefer. The same three tools can also be opened without any hotkey: go to **NVDA menu > Tools > Gesture Duplicate** and choose **Check Duplicate Gestures...**, **Manage Custom Gestures...** or **Clean Configuration...**.
 
 ---
 
-## Features
+### Features
 
 ### 1. Check Duplicate Gestures
 
-This tool scans every gesture currently registered in NVDA — across all add-ons, app modules, and NVDA's own commands — to find any keyboard (or other input) gesture that has been assigned to more than one command. When two commands share the same gesture, only one of them can actually run, which is usually a sign of a conflict you'll want to resolve.
+This tool scans every shortcut that NVDA currently knows about and reports the ones that are assigned to more than one function.
 
-**Step by step:**
+**How it works, step by step:**
 
-1. The add-on asks NVDA's input manager for the complete map of every gesture registered to every script, across every category.
+1. The add-on reads all gesture mappings that NVDA has registered for the current focus.
+2. Each shortcut is normalized by removing the keyboard layout label (for example, the "(desktop)" or "(laptop)" part), so the same key combination is treated as identical in either layout.
+3. Exact repeats of the same shortcut, function and source are ignored so that you do not see false conflicts.
+4. Every shortcut that is still used by more than one function is collected and sorted alphabetically, so conflicting entries sit next to each other.
+5. A dialog called **Duplicate Gestures** opens and announces how many duplicate entries were found.
 
-2. Each gesture is "normalized" first — if your keyboard layout name (for example, "desktop") is embedded in the gesture string, it's stripped out, so the same physical key combination is recognized as identical regardless of layout.
+**The list contains three columns:**
 
-3. The add-on counts how many distinct commands use each normalized gesture. Any gesture used by more than one command is flagged as a duplicate.
+* **Gesture** : the key combination.
+* **Function** : the name of the script it triggers.
+* **Context** : where the function comes from. For an add-on, the add-on's module name is shown. For an application-specific function, it is shown as "Application: " followed by the application name.
 
-4. The duplicates are shown in a list dialog with three columns: the human-readable Gesture, the Function (command) it triggers, and the Context (which add-on or application module it belongs to). Duplicates are sorted alphabetically by gesture so related conflicts sit together.
+**Fixing a conflict:**
 
-5. Selecting an entry and choosing "Open Input Gestures" (or pressing Enter) closes this dialog and opens NVDA's own Input Gestures dialog, automatically filtered to the conflicting command and with the relevant tree branch expanded and focused, so you can add or remove the gesture immediately without hunting for it.
+1. Select an entry in the list. The **Open Input Gestures** button becomes available.
+2. Press **Enter**, double-click the entry, or activate the button (**Alt+O**).
+3. The duplicate list closes and NVDA's own **Input Gestures** dialog opens, already filtered by the name of the selected function.
+4. The first item in the tree is expanded and selected, and focus is placed on the tree, so you can move through it with the arrow keys and use the **Add** and **Remove** buttons to change the shortcut.
+
+Press **Escape** or **Close** (**Alt+C**) to leave the dialog.
 
 ### 2. Manage Custom Gestures
 
-This tool is aimed specifically at custom gestures that were created for add-ons — the entries NVDA stores in its gestures.ini file. Its main purpose is to clean up gestures left behind for add-ons you've since uninstalled, which otherwise sit in your configuration indefinitely.
+When you assign or change a shortcut for an add-on or an application, NVDA records it in your `gestures.ini` file. If you later uninstall that add-on, the record stays behind. This tool lets you review and remove those records.
 
-**Step by step:**
+**What it shows:**
 
-1. The add-on reads your gestures.ini file directly and collects every custom gesture that belongs to an add-on section (either a global plugin or an application module), ignoring NVDA's own built-in "main"/"run" sections.
+1. The add-on opens `gestures.ini` from your NVDA configuration folder.
+2. It lists only entries that belong to add-ons (`globalPlugins`) and to applications (`appModules`). NVDA's own built-in sections are not listed. Entries whose function is set to "None" are skipped.
+3. Every entry is shown as one line in the form **Gesture | Function | Context**.
+4. Entries that belong to an add-on which is no longer installed are marked in gray. Application entries are always treated as installed.
 
-2. For each entry it checks whether the owning add-on is still installed on your system. Entries belonging to add-ons that are no longer installed are shown in gray text so they stand out as safe-to-remove clutter.
+**Filtering by add-on:**
 
-3. Each gesture is listed with its display text, the function it's mapped to, and the add-on or application it belongs to. A drop-down lets you filter the list down to a single add-on, or show gestures from all add-ons at once.
+Use the **Addon name** combo box to choose **All addons** or a single add-on. The list then shows only the gestures of that add-on.
 
-4. You can check individual entries and click "Remove Checked" to delete just those, or select a specific add-on in the filter and click "Remove addon" to strip every custom gesture belonging to it in one go. "Clear All" removes every custom add-on gesture in the file. Every removal asks for confirmation first.
+**Removing gestures, step by step:**
 
-5. Because NVDA caches gesture mappings in memory for the running session, cleaned-up entries won't fully disappear from NVDA's own view until NVDA restarts. After any successful cleanup, the dialog switches into a "restart required" mode: the Close button is replaced with a "Restart NVDA Now" button (closing the dialog, including via Escape or the window's close box, triggers the same restart) so the change is guaranteed to take effect.
+1. In the list, move to an item and press **Space** to check it. Each change is announced, for example the item text followed by "checked" or "not checked". Pressing **Enter** on an item also toggles its check mark.
+2. Press **Delete** or activate the **Remove Checked** button.
+3. A confirmation message asks whether you want to remove the selected gestures. Choose Yes to continue.
+4. The chosen entries are deleted from `gestures.ini`. If a section becomes empty, the section itself is removed too.
+
+**Removing a whole add-on's gestures:**
+
+When a single add-on is selected in the combo box, the button changes to **Remove addon**. Activating it (or pressing **Delete**) removes **all** custom gestures of that add-on, after you confirm the number of gestures that will be deleted.
+
+**Clear All:**
+
+The **Clear All** button removes every add-on and application gesture shown in this tool, after a warning that tells you how many gestures and how many add-ons are affected. It is disabled when there is nothing to clear.
+
+> **Restart required:** After any successful removal, the dialog announces "Gestures cleaned. Restart NVDA now to apply the changes." The **Close** button is replaced by **Restart NVDA Now** (**Alt+R**) and focus moves to it. Closing the dialog in any way (Escape or the window's close button) also restarts NVDA, because NVDA only fully forgets the old gesture mappings when it starts again.
 
 ### 3. Clean Configuration
 
-This tool lets you remove whole top-level sections from your NVDA configuration profile (nvda.ini) — for example, leftover settings sections created by add-ons you no longer use.
+This tool lets you look inside your `nvda.ini` settings and remove sections that no longer belong to anything, for example settings left behind by an add-on you have uninstalled.
 
-**Step by step:**
+**Step 1: Choose sections**
 
-1. The add-on lists every top-level section name currently present in your active NVDA configuration profile, sorted alphabetically, as a checkable list.
+1. The **Clean NVDA.ini Sections** dialog opens with an alphabetical list of the top-level sections of your base (normal) configuration profile.
+2. Each line shows the section name and, when it has content, how many subsections and settings it holds, for example "name (2 subsections, 5 settings)".
+3. Press **Space** to check a section. The change is announced.
+4. Press **Delete** or activate **Remove Selected**. After you confirm "Delete N sections?", the checked sections are removed and the configuration is saved.
+5. Both the stored values and the section's definition are removed, so the section does not come back as an empty entry. Sections you removed during the current session stay hidden from the list.
 
-2. You check the sections you want to remove (Space toggles a checkbox; Delete also triggers removal) and click "Remove Selected".
+**Step 2: Choose individual items inside a section**
 
-3. After you confirm, each selected section is purged in two parts: its stored values are deleted, and its entry in the configuration's validation schema is also removed. Deleting only the stored values isn't enough, since NVDA would otherwise regenerate an empty stub for that section the next time it validates your profile, making it silently reappear.
+If you do not want to delete a whole section, open it instead:
 
-4. The configuration is saved immediately, and the list refreshes to confirm the sections are gone.
+1. Focus a section and press **Enter** or activate **Details...**.
+2. A new dialog opens, titled with the path to the section, for example "Clean NVDA.ini: sectionName".
+3. Subsections are listed first, followed by individual settings. Each setting is shown as `name = value`, and long values are shortened to 40 characters followed by "...".
+4. Check the items you want to remove and press **Delete** or **Remove Selected**, then confirm.
+5. Only the stored values are removed, and the configuration is saved. Removed settings simply return to their default values.
+6. To go deeper, focus a subsection and press **Enter** again. The title shows the full path, with each level separated by " > ".
+7. When you close a details dialog, the list behind it refreshes and keeps your position.
 
-> **Note:** All three tools are defensive by design — every scan and load operation is wrapped so that an unexpected error is logged rather than crashing NVDA, and destructive actions (removing gestures, removing config sections) always ask for confirmation before making changes.
+**Messages you may hear:**
+
+* "No items selected." : you pressed delete without checking anything.
+* "No item focused." : nothing was focused when you opened details.
+* "This section has no items to choose from." : the section is empty.
+* "This item has no subsections." : you pressed Enter on a plain setting.
+* "Removed successfully." : the deletion finished and was saved.
+
+> **Caution:** Changes made in this tool are saved to your NVDA configuration immediately after you confirm. Remove only sections and settings that you recognize as leftovers, and consider keeping a backup copy of your `nvda.ini` file before cleaning.
+
+### 4. Tools Menu Integration
+
+When NVDA starts, the add-on adds a **Gesture Duplicate** submenu at the end of the **Tools** menu. It contains **Check Duplicate Gestures...**, **Manage Custom Gestures...** and **Clean Configuration...**, which open the same three tools described above. The submenu is removed again when the add-on is unloaded or NVDA exits.
+
+### 5. Dialog Behavior
+
+All dialogs stay on top of other windows, so they are not hidden behind the application you were using (such as File Explorer). Every dialog can be closed with **Escape**.
 
 ---
 
@@ -103,6 +155,8 @@ If this tool has made your life easier, consider fueling the next update with a 
 
 [![Support me](https://img.shields.io/badge/Donate-Support%20Me-blue?style=for-the-badge&logo=stripe)](https://buy.stripe.com/dRm9AU1xQ3Ds22N6VK1VK01)
 
-Your support means the world. Let's build something great together
+Your support means the world. Let's build something great together.
+
+---
 
 &copy; 2026 Chai Chaimee NVDA Add-on Released under GNU GPL
